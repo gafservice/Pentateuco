@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluación Pentateuco - Tema 2</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { text-align: center; }
+        .question { margin: 20px 0; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+        .options label { display: block; margin-bottom: 5px; }
+        .feedback { margin-top: 5px; font-weight: bold; display: none; }
+        #results { font-weight: bold; margin-top: 20px; text-align: center; font-size: 18px; white-space: pre-line; }
+        button { padding: 10px 20px; font-size: 16px; margin: 10px auto; display: block; }
+    </style>
+</head>
+<body>
+    <h1>Evaluación del Pentateuco</h1>
+    <h2>Tema 2: La Creación – Génesis 1 y 2</h2>
+    <p style="text-align:center;"><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre"></p>
+    <form id="quizForm">
+        <div class="question" id="q1">
+<p>1. ¿Cuál fue el propósito de Dios al crear el universo?</p>
+<div class="options">
+<label><input type="radio" name="q1" value="Mostrar su poder"> Mostrar su poder</label>
+<label><input type="radio" name="q1" value="Desarrollar una historia"> Desarrollar una historia</label>
+<label><input type="radio" name="q1" value="Probar al hombre"> Probar al hombre</label>
+<label><input type="radio" name="q1" value="Manifestar su gloria"> Manifestar su gloria</label>
+</div>
+<p class="feedback" id="fb1" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q2">
+<p>2. ¿Cuál es el propósito del hogar o familia?</p>
+<div class="options">
+<label><input type="radio" name="q2" value="Formación espiritual y emocional"> Formación espiritual y emocional</label>
+<label><input type="radio" name="q2" value="Crear ciudadanos"> Crear ciudadanos</label>
+<label><input type="radio" name="q2" value="Celebraciones"> Celebraciones</label>
+<label><input type="radio" name="q2" value="Multiplicación de bienes"> Multiplicación de bienes</label>
+</div>
+<p class="feedback" id="fb2" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q3">
+<p>3. ¿Cuál fue el primer mandamiento que Dios dio al hombre según Génesis 1:28?</p>
+<div class="options">
+<label><input type="radio" name="q3" value="No matarás"> No matarás</label>
+<label><input type="radio" name="q3" value="No comerás del árbol"> No comerás del árbol</label>
+<label><input type="radio" name="q3" value="Guardarás el sábado"> Guardarás el sábado</label>
+<label><input type="radio" name="q3" value="Fructificad y multiplicaos"> Fructificad y multiplicaos</label>
+</div>
+<p class="feedback" id="fb3" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q4">
+<p>4. ¿Qué versículo apoya que Dios creó por su palabra?</p>
+<div class="options">
+<label><input type="radio" name="q4" value="Éxodo 20:1"> Éxodo 20:1</label>
+<label><input type="radio" name="q4" value="Juan 1:10"> Juan 1:10</label>
+<label><input type="radio" name="q4" value="Hebreos 10:22"> Hebreos 10:22</label>
+<label><input type="radio" name="q4" value="Salmo 33:9"> Salmo 33:9</label>
+</div>
+<p class="feedback" id="fb4" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q5">
+<p>5. ¿Qué nombre añade Moisés en Génesis 2 para Dios?</p>
+<div class="options">
+<label><input type="radio" name="q5" value="Yahvéh"> Yahvéh</label>
+<label><input type="radio" name="q5" value="Elión"> Elión</label>
+<label><input type="radio" name="q5" value="Shekinah"> Shekinah</label>
+<label><input type="radio" name="q5" value="Baal"> Baal</label>
+</div>
+<p class="feedback" id="fb5" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q6">
+<p>6. ¿Cuál es la teoría más correcta sobre la creación según el libro?</p>
+<div class="options">
+<label><input type="radio" name="q6" value="Creación directa"> Creación directa</label>
+<label><input type="radio" name="q6" value="Creación mítica"> Creación mítica</label>
+<label><input type="radio" name="q6" value="Evolución teísta"> Evolución teísta</label>
+<label><input type="radio" name="q6" value="Teoría de brecha"> Teoría de brecha</label>
+</div>
+<p class="feedback" id="fb6" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q7">
+<p>7. ¿Qué conflicto se presenta entre ciencia y Biblia?</p>
+<div class="options">
+<label><input type="radio" name="q7" value="La ciencia niega lo espiritual"> La ciencia niega lo espiritual</label>
+<label><input type="radio" name="q7" value="Confusión por interpretación literal o simbólica"> Confusión por interpretación literal o simbólica</label>
+<label><input type="radio" name="q7" value="La ciencia es enemiga de Dios"> La ciencia es enemiga de Dios</label>
+<label><input type="radio" name="q7" value="No hay conflicto"> No hay conflicto</label>
+</div>
+<p class="feedback" id="fb7" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q8">
+<p>8. ¿Por qué debemos guardar el día de descanso?</p>
+<div class="options">
+<label><input type="radio" name="q8" value="Por mandato del papa"> Por mandato del papa</label>
+<label><input type="radio" name="q8" value="Porque Dios también descansó y lo santificó"> Porque Dios también descansó y lo santificó</label>
+<label><input type="radio" name="q8" value="Para cumplir un rito judío"> Para cumplir un rito judío</label>
+<label><input type="radio" name="q8" value="Por tradición"> Por tradición</label>
+</div>
+<p class="feedback" id="fb8" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q9">
+<p>9. ¿Qué advertencia se da respecto a armonizar ciencia y Biblia?</p>
+<div class="options">
+<label><input type="radio" name="q9" value="Es imposible"> Es imposible</label>
+<label><input type="radio" name="q9" value="Solo puede hacerlo un teólogo"> Solo puede hacerlo un teólogo</label>
+<label><input type="radio" name="q9" value="Debemos ser prudentes"> Debemos ser prudentes</label>
+<label><input type="radio" name="q9" value="Es irrelevante"> Es irrelevante</label>
+</div>
+<p class="feedback" id="fb9" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q10">
+<p>10. ¿Cuál fue el método usado por Dios para crear?</p>
+<div class="options">
+<label><input type="radio" name="q10" value="Por medio de sacrificios"> Por medio de sacrificios</label>
+<label><input type="radio" name="q10" value="Por ángeles intermediarios"> Por ángeles intermediarios</label>
+<label><input type="radio" name="q10" value="Por su palabra"> Por su palabra</label>
+<label><input type="radio" name="q10" value="Por evolución natural"> Por evolución natural</label>
+</div>
+<p class="feedback" id="fb10" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q11">
+<p>11. ¿Cuál fue el propósito del matrimonio según Génesis?</p>
+<div class="options">
+<label><input type="radio" name="q11" value="Estabilidad emocional"> Estabilidad emocional</label>
+<label><input type="radio" name="q11" value="Unidad y ayuda mutua"> Unidad y ayuda mutua</label>
+<label><input type="radio" name="q11" value="Evitar pecados"> Evitar pecados</label>
+<label><input type="radio" name="q11" value="Procrear"> Procrear</label>
+</div>
+<p class="feedback" id="fb11" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q12">
+<p>12. ¿Qué diferencia hay entre la creación del hombre y la del resto?</p>
+<div class="options">
+<label><input type="radio" name="q12" value="No fue creado, apareció"> No fue creado, apareció</label>
+<label><input type="radio" name="q12" value="Fue creado sin palabra"> Fue creado sin palabra</label>
+<label><input type="radio" name="q12" value="Fue creado con polvo mágico"> Fue creado con polvo mágico</label>
+<label><input type="radio" name="q12" value="Fue hecho a imagen de Dios"> Fue hecho a imagen de Dios</label>
+</div>
+<p class="feedback" id="fb12" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q13">
+<p>13. ¿Cuál fue el agente que utilizó Dios en la creación según Génesis 1:2?</p>
+<div class="options">
+<label><input type="radio" name="q13" value="El hombre"> El hombre</label>
+<label><input type="radio" name="q13" value="El Hijo"> El Hijo</label>
+<label><input type="radio" name="q13" value="El Espíritu de Dios"> El Espíritu de Dios</label>
+<label><input type="radio" name="q13" value="Los ángeles"> Los ángeles</label>
+</div>
+<p class="feedback" id="fb13" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q14">
+<p>14. ¿Qué hizo Dios para probar al hombre en el Edén?</p>
+<div class="options">
+<label><input type="radio" name="q14" value="Puso una serpiente"> Puso una serpiente</label>
+<label><input type="radio" name="q14" value="Nada"> Nada</label>
+<label><input type="radio" name="q14" value="Le prohibió comer del árbol del bien y del mal"> Le prohibió comer del árbol del bien y del mal</label>
+<label><input type="radio" name="q14" value="Envió ángeles"> Envió ángeles</label>
+</div>
+<p class="feedback" id="fb14" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q15">
+<p>15. ¿Qué nombre usa Moisés para Dios en Génesis 1?</p>
+<div class="options">
+<label><input type="radio" name="q15" value="Elohim"> Elohim</label>
+<label><input type="radio" name="q15" value="Adonay"> Adonay</label>
+<label><input type="radio" name="q15" value="Yahvéh"> Yahvéh</label>
+<label><input type="radio" name="q15" value="El Shaddai"> El Shaddai</label>
+</div>
+<p class="feedback" id="fb15" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q16">
+<p>16. ¿Cuál era el trabajo del primer hombre?</p>
+<div class="options">
+<label><input type="radio" name="q16" value="Construir ciudades"> Construir ciudades</label>
+<label><input type="radio" name="q16" value="Ofrecer sacrificios"> Ofrecer sacrificios</label>
+<label><input type="radio" name="q16" value="Cultivar el huerto y poner nombre a los animales"> Cultivar el huerto y poner nombre a los animales</label>
+<label><input type="radio" name="q16" value="Ninguno"> Ninguno</label>
+</div>
+<p class="feedback" id="fb16" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q17">
+<p>17. ¿Qué significa que el hombre fue creado a imagen de Dios?</p>
+<div class="options">
+<label><input type="radio" name="q17" value="Tenía cuerpo espiritual"> Tenía cuerpo espiritual</label>
+<label><input type="radio" name="q17" value="Tenía voluntad, moral, comunión y razón"> Tenía voluntad, moral, comunión y razón</label>
+<label><input type="radio" name="q17" value="Era perfecto"> Era perfecto</label>
+<label><input type="radio" name="q17" value="Era un ángel"> Era un ángel</label>
+</div>
+<p class="feedback" id="fb17" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q18">
+<p>18. ¿Está intacta la imagen de Dios en el hombre actual?</p>
+<div class="options">
+<label><input type="radio" name="q18" value="Solo en parte moral"> Solo en parte moral</label>
+<label><input type="radio" name="q18" value="Sí completamente"> Sí completamente</label>
+<label><input type="radio" name="q18" value="Sí, pero se corrompió parcialmente"> Sí, pero se corrompió parcialmente</label>
+<label><input type="radio" name="q18" value="No, se perdió por el pecado"> No, se perdió por el pecado</label>
+</div>
+<p class="feedback" id="fb18" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q19">
+<p>19. ¿Qué implica la expresión 'hagamos al hombre' en Génesis 1:26?</p>
+<div class="options">
+<label><input type="radio" name="q19" value="Un error de traducción"> Un error de traducción</label>
+<label><input type="radio" name="q19" value="Pluralidad en la divinidad"> Pluralidad en la divinidad</label>
+<label><input type="radio" name="q19" value="Nada importante"> Nada importante</label>
+<label><input type="radio" name="q19" value="Consejo angelical"> Consejo angelical</label>
+</div>
+<p class="feedback" id="fb19" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q20">
+<p>20. ¿Por qué Dios le dio trabajo al hombre?</p>
+<div class="options">
+<label><input type="radio" name="q20" value="Para que tuviera propósito y dignidad"> Para que tuviera propósito y dignidad</label>
+<label><input type="radio" name="q20" value="Para entretenerlo"> Para entretenerlo</label>
+<label><input type="radio" name="q20" value="Para que se cansara"> Para que se cansara</label>
+<label><input type="radio" name="q20" value="Para castigarle"> Para castigarle</label>
+</div>
+<p class="feedback" id="fb20" style="color:red; display:none;"></p>
+</div>
+
+        <button type="button" onclick="submitQuiz()">Enviar respuestas</button>
+    </form>
+    <div id="results"></div>
+    <div id="options" style="text-align:center; display:none;">
+        <button onclick="resetQuiz()">🔁 Volver a intentar este tema</button>
+        <button onclick="alert('En una futura versión podrá elegir otro tema')">📚 Elegir otro tema</button>
+    </div>
+
+    <script>
+        const correctAnswers = {"q1": "Manifestar su gloria", "q2": "Formación espiritual y emocional", "q3": "Fructificad y multiplicaos", "q4": "Salmo 33:9", "q5": "Yahvéh", "q6": "Creación directa", "q7": "Confusión por interpretación literal o simbólica", "q8": "Porque Dios también descansó y lo santificó", "q9": "Debemos ser prudentes", "q10": "Por su palabra", "q11": "Unidad y ayuda mutua", "q12": "Fue hecho a imagen de Dios", "q13": "El Espíritu de Dios", "q14": "Le prohibió comer del árbol del bien y del mal", "q15": "Elohim", "q16": "Cultivar el huerto y poner nombre a los animales", "q17": "Tenía voluntad, moral, comunión y razón", "q18": "Sí, pero se corrompió parcialmente", "q19": "Pluralidad en la divinidad", "q20": "Para que tuviera propósito y dignidad"};
+
+        function submitQuiz() {
+            let score = 0;
+            let total = Object.keys(correctAnswers).length;
+            let student = document.getElementById("studentName").value.trim() || "Estudiante";
+            for (let i = 1; i <= total; i++) {
+                const key = "q" + i;
+                const selected = document.querySelector('input[name="' + key + '"]:checked');
+                const feedback = document.getElementById("fb" + i);
+                if (selected) {
+                    if (selected.value === correctAnswers[key]) {
+                        score++;
+                        feedback.innerText = "✅ Respuesta correcta.";
+                        feedback.style.color = "green";
+                    } else {
+                        feedback.innerText = "❌ Respuesta incorrecta.";
+                        feedback.style.color = "red";
+                    }
+                } else {
+                    feedback.innerText = "❌ No respondió esta pregunta.";
+                    feedback.style.color = "red";
+                }
+                feedback.style.display = "block";
+            }
+            let percentage = (score / total) * 100;
+            let resultText = `${student}\nNota obtenida: ${percentage.toFixed(2)}%\nResultado: `;
+            resultText += (percentage >= 80)
+                ? "✅ ¡Has superado el 80% y has aprobado!"
+                : "❌ No alcanzaste el 80%. Puedes intentarlo de nuevo.";
+            window.parent.postMessage({ tema: 2, nota: percentage }, "*");
+document.getElementById("results").innerText = resultText;
+            document.getElementById("options").style.display = "block";
+        }
+
+        function resetQuiz() {
+            document.getElementById("quizForm").reset();
+            const feedbacks = document.querySelectorAll(".feedback");
+            feedbacks.forEach(fb => {
+                fb.style.display = "none";
+                fb.innerText = "";
+            });
+            window.parent.postMessage({ tema: 2, nota: percentage }, "*");
+document.getElementById("results").innerText = "";
+            document.getElementById("options").style.display = "none";
+        }
+    </script>
+</body>
+</html>

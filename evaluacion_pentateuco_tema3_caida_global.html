@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluación Pentateuco - Tema 3</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { text-align: center; }
+        .question { margin: 20px 0; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+        .options label { display: block; margin-bottom: 5px; }
+        .feedback { margin-top: 5px; font-weight: bold; display: none; }
+        #results { font-weight: bold; margin-top: 20px; text-align: center; font-size: 18px; white-space: pre-line; }
+        button { padding: 10px 20px; font-size: 16px; margin: 10px auto; display: block; }
+    </style>
+</head>
+<body>
+    <h1>Evaluación del Pentateuco</h1>
+    <h2>Tema 3: La Caída y sus consecuencias – Génesis 3 y 4</h2>
+    <p style="text-align:center;"><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre"></p>
+    <form id="quizForm">
+        <div class="question" id="q1">
+<p>1. ¿Qué conexión hay entre Génesis 3 y los hechos violentos del capítulo 4?</p>
+<div class="options">
+<label><input type="radio" name="q1" value="Ambos reflejan obediencia"> Ambos reflejan obediencia</label>
+<label><input type="radio" name="q1" value="Ambos son poéticos"> Ambos son poéticos</label>
+<label><input type="radio" name="q1" value="Ambos presentan el aumento del pecado"> Ambos presentan el aumento del pecado</label>
+<label><input type="radio" name="q1" value="Ambos muestran redención"> Ambos muestran redención</label>
+</div>
+<p class="feedback" id="fb1" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q2">
+<p>2. ¿Qué nos enseña Génesis 3:1-4 sobre el método de Satanás?</p>
+<div class="options">
+<label><input type="radio" name="q2" value="Habla con voz audible de Dios"> Habla con voz audible de Dios</label>
+<label><input type="radio" name="q2" value="Apela a la duda y tergiversa la verdad"> Apela a la duda y tergiversa la verdad</label>
+<label><input type="radio" name="q2" value="Usa violencia directa"> Usa violencia directa</label>
+<label><input type="radio" name="q2" value="Convierte en animal al hombre"> Convierte en animal al hombre</label>
+</div>
+<p class="feedback" id="fb2" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q3">
+<p>3. ¿Cómo mostró Adán fe en la promesa de redención?</p>
+<div class="options">
+<label><input type="radio" name="q3" value="Nombró a Eva como madre de todos"> Nombró a Eva como madre de todos</label>
+<label><input type="radio" name="q3" value="Rezó en el Edén"> Rezó en el Edén</label>
+<label><input type="radio" name="q3" value="Se escondió"> Se escondió</label>
+<label><input type="radio" name="q3" value="Hizo una ofrenda"> Hizo una ofrenda</label>
+</div>
+<p class="feedback" id="fb3" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q4">
+<p>4. ¿Cómo se explica que la serpiente haya hablado?</p>
+<div class="options">
+<label><input type="radio" name="q4" value="Era común"> Era común</label>
+<label><input type="radio" name="q4" value="No se explica totalmente, pero fue un medio usado por Satanás"> No se explica totalmente, pero fue un medio usado por Satanás</label>
+<label><input type="radio" name="q4" value="Fue un milagro"> Fue un milagro</label>
+<label><input type="radio" name="q4" value="Estaba poseída"> Estaba poseída</label>
+</div>
+<p class="feedback" id="fb4" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q5">
+<p>5. ¿Por qué se desarrolló la civilización entre los descendientes de Caín?</p>
+<div class="options">
+<label><input type="radio" name="q5" value="Porque adoraban correctamente"> Porque adoraban correctamente</label>
+<label><input type="radio" name="q5" value="Porque se alejaron de Dios"> Porque se alejaron de Dios</label>
+<label><input type="radio" name="q5" value="Porque eran más inteligentes"> Porque eran más inteligentes</label>
+<label><input type="radio" name="q5" value="Porque fueron bendecidos"> Porque fueron bendecidos</label>
+</div>
+<p class="feedback" id="fb5" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q6">
+<p>6. ¿Qué revela el acto de protección hacia Caín sobre Dios?</p>
+<div class="options">
+<label><input type="radio" name="q6" value="Es injusto"> Es injusto</label>
+<label><input type="radio" name="q6" value="Es misericordioso"> Es misericordioso</label>
+<label><input type="radio" name="q6" value="Es limitado"> Es limitado</label>
+<label><input type="radio" name="q6" value="Es vengativo"> Es vengativo</label>
+</div>
+<p class="feedback" id="fb6" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q7">
+<p>7. ¿Cuál es la importancia de Génesis 3:15?</p>
+<div class="options">
+<label><input type="radio" name="q7" value="Nacimiento de Eva"> Nacimiento de Eva</label>
+<label><input type="radio" name="q7" value="Maldición para la humanidad"> Maldición para la humanidad</label>
+<label><input type="radio" name="q7" value="Pacto con Abraham"> Pacto con Abraham</label>
+<label><input type="radio" name="q7" value="Primera profecía mesiánica"> Primera profecía mesiánica</label>
+</div>
+<p class="feedback" id="fb7" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q8">
+<p>8. ¿Cómo calumnió Satanás a Dios en el Edén?</p>
+<div class="options">
+<label><input type="radio" name="q8" value="Negó su amor y su justicia"> Negó su amor y su justicia</label>
+<label><input type="radio" name="q8" value="Afirmó que no era el creador"> Afirmó que no era el creador</label>
+<label><input type="radio" name="q8" value="Culpó a Dios del pecado"> Culpó a Dios del pecado</label>
+<label><input type="radio" name="q8" value="Dijo que Dios no existe"> Dijo que Dios no existe</label>
+</div>
+<p class="feedback" id="fb8" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q9">
+<p>9. ¿Qué tipo de muerte experimentaron Adán y Eva al comer del fruto?</p>
+<div class="options">
+<label><input type="radio" name="q9" value="Espiritual"> Espiritual</label>
+<label><input type="radio" name="q9" value="Física inmediata"> Física inmediata</label>
+<label><input type="radio" name="q9" value="Ninguna"> Ninguna</label>
+<label><input type="radio" name="q9" value="Eterna"> Eterna</label>
+</div>
+<p class="feedback" id="fb9" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q10">
+<p>10. ¿Qué parte de la reacción de Adán y Eva refleja al hombre actual?</p>
+<div class="options">
+<label><input type="radio" name="q10" value="Acepta su culpa"> Acepta su culpa</label>
+<label><input type="radio" name="q10" value="Se arrepiente inmediatamente"> Se arrepiente inmediatamente</label>
+<label><input type="radio" name="q10" value="Evita la responsabilidad"> Evita la responsabilidad</label>
+<label><input type="radio" name="q10" value="Busca comunión con Dios"> Busca comunión con Dios</label>
+</div>
+<p class="feedback" id="fb10" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q11">
+<p>11. ¿Cómo sabemos que fue Satanás quien tentó a la mujer?</p>
+<div class="options">
+<label><input type="radio" name="q11" value="Eva lo dice"> Eva lo dice</label>
+<label><input type="radio" name="q11" value="Caín lo escribe"> Caín lo escribe</label>
+<label><input type="radio" name="q11" value="Dios lo revela en sueños"> Dios lo revela en sueños</label>
+<label><input type="radio" name="q11" value="La Biblia lo menciona en Apocalipsis y 2 Corintios"> La Biblia lo menciona en Apocalipsis y 2 Corintios</label>
+</div>
+<p class="feedback" id="fb11" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q12">
+<p>12. ¿Qué relación había entre el trabajo antes y después de la caída?</p>
+<div class="options">
+<label><input type="radio" name="q12" value="Se prohibió el trabajo"> Se prohibió el trabajo</label>
+<label><input type="radio" name="q12" value="No existía trabajo antes"> No existía trabajo antes</label>
+<label><input type="radio" name="q12" value="El trabajo era igual"> El trabajo era igual</label>
+<label><input type="radio" name="q12" value="El trabajo se convirtió en castigo"> El trabajo se convirtió en castigo</label>
+</div>
+<p class="feedback" id="fb12" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q13">
+<p>13. ¿Qué indicio del plan de redención aparece en Génesis 3?</p>
+<div class="options">
+<label><input type="radio" name="q13" value="La torre de Babel"> La torre de Babel</label>
+<label><input type="radio" name="q13" value="La simiente de la mujer que herirá a la serpiente"> La simiente de la mujer que herirá a la serpiente</label>
+<label><input type="radio" name="q13" value="El diluvio"> El diluvio</label>
+<label><input type="radio" name="q13" value="El arco iris"> El arco iris</label>
+</div>
+<p class="feedback" id="fb13" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q14">
+<p>14. ¿Qué representa la 'simiente de la mujer'?</p>
+<div class="options">
+<label><input type="radio" name="q14" value="La descendencia humana"> La descendencia humana</label>
+<label><input type="radio" name="q14" value="Los profetas"> Los profetas</label>
+<label><input type="radio" name="q14" value="La iglesia"> La iglesia</label>
+<label><input type="radio" name="q14" value="Cristo"> Cristo</label>
+</div>
+<p class="feedback" id="fb14" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q15">
+<p>15. ¿Qué revela la reacción de Caín al ser rechazada su ofrenda?</p>
+<div class="options">
+<label><input type="radio" name="q15" value="Justicia"> Justicia</label>
+<label><input type="radio" name="q15" value="Humildad"> Humildad</label>
+<label><input type="radio" name="q15" value="Falsedad"> Falsedad</label>
+<label><input type="radio" name="q15" value="Carácter orgulloso y envidioso"> Carácter orgulloso y envidioso</label>
+</div>
+<p class="feedback" id="fb15" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q16">
+<p>16. ¿Qué hizo Dios por Caín a pesar de haberlo castigado?</p>
+<div class="options">
+<label><input type="radio" name="q16" value="Le puso una señal para protegerlo"> Le puso una señal para protegerlo</label>
+<label><input type="radio" name="q16" value="Lo eliminó"> Lo eliminó</label>
+<label><input type="radio" name="q16" value="Le ofreció otra oportunidad"> Le ofreció otra oportunidad</label>
+<label><input type="radio" name="q16" value="Le dio otra tierra"> Le dio otra tierra</label>
+</div>
+<p class="feedback" id="fb16" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q17">
+<p>17. ¿Sobre qué cayó la maldición divina según Génesis 3?</p>
+<div class="options">
+<label><input type="radio" name="q17" value="Sólo sobre Eva"> Sólo sobre Eva</label>
+<label><input type="radio" name="q17" value="Sobre Adán y Eva solamente"> Sobre Adán y Eva solamente</label>
+<label><input type="radio" name="q17" value="Sobre la serpiente, la mujer, el hombre y la tierra"> Sobre la serpiente, la mujer, el hombre y la tierra</label>
+<label><input type="radio" name="q17" value="Sobre los animales solamente"> Sobre los animales solamente</label>
+</div>
+<p class="feedback" id="fb17" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q18">
+<p>18. ¿Por qué fue aceptado el sacrificio de Abel y no el de Caín?</p>
+<div class="options">
+<label><input type="radio" name="q18" value="Por ser el hijo menor"> Por ser el hijo menor</label>
+<label><input type="radio" name="q18" value="Por el lugar"> Por el lugar</label>
+<label><input type="radio" name="q18" value="Por la cantidad ofrecida"> Por la cantidad ofrecida</label>
+<label><input type="radio" name="q18" value="Por la actitud y fe de Abel"> Por la actitud y fe de Abel</label>
+</div>
+<p class="feedback" id="fb18" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q19">
+<p>19. ¿Qué hicieron Adán y Eva al oír la voz de Dios después de pecar?</p>
+<div class="options">
+<label><input type="radio" name="q19" value="Clamaron por ayuda"> Clamaron por ayuda</label>
+<label><input type="radio" name="q19" value="Se escondieron"> Se escondieron</label>
+<label><input type="radio" name="q19" value="Corrieron hacia Él"> Corrieron hacia Él</label>
+<label><input type="radio" name="q19" value="Lo enfrentaron"> Lo enfrentaron</label>
+</div>
+<p class="feedback" id="fb19" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q20">
+<p>20. ¿En qué consistió concretamente el pecado del hombre?</p>
+<div class="options">
+<label><input type="radio" name="q20" value="Ignorar a Eva"> Ignorar a Eva</label>
+<label><input type="radio" name="q20" value="Ofrecer mal sacrificio"> Ofrecer mal sacrificio</label>
+<label><input type="radio" name="q20" value="Dudar de su creación"> Dudar de su creación</label>
+<label><input type="radio" name="q20" value="Desobedecer la orden directa de Dios"> Desobedecer la orden directa de Dios</label>
+</div>
+<p class="feedback" id="fb20" style="color:red; display:none;"></p>
+</div>
+
+        <button type="button" onclick="submitQuiz()">Enviar respuestas</button>
+    </form>
+    <div id="results"></div>
+    <div id="options" style="text-align:center; display:none;">
+        <button onclick="resetQuiz()">🔁 Volver a intentar este tema</button>
+        <button onclick="alert('En una futura versión podrá elegir otro tema')">📚 Elegir otro tema</button>
+    </div>
+
+    <script>
+        const correctAnswers = {"q1": "Ambos presentan el aumento del pecado", "q2": "Apela a la duda y tergiversa la verdad", "q3": "Nombró a Eva como madre de todos", "q4": "No se explica totalmente, pero fue un medio usado por Satanás", "q5": "Porque se alejaron de Dios", "q6": "Es misericordioso", "q7": "Primera profecía mesiánica", "q8": "Negó su amor y su justicia", "q9": "Espiritual", "q10": "Evita la responsabilidad", "q11": "La Biblia lo menciona en Apocalipsis y 2 Corintios", "q12": "El trabajo se convirtió en castigo", "q13": "La simiente de la mujer que herirá a la serpiente", "q14": "Cristo", "q15": "Carácter orgulloso y envidioso", "q16": "Le puso una señal para protegerlo", "q17": "Sobre la serpiente, la mujer, el hombre y la tierra", "q18": "Por la actitud y fe de Abel", "q19": "Se escondieron", "q20": "Desobedecer la orden directa de Dios"};
+
+        function submitQuiz() {
+            let score = 0;
+            let total = Object.keys(correctAnswers).length;
+            let student = document.getElementById("studentName").value.trim() || "Estudiante";
+            for (let i = 1; i <= total; i++) {
+                const key = "q" + i;
+                const selected = document.querySelector('input[name="' + key + '"]:checked');
+                const feedback = document.getElementById("fb" + i);
+                if (selected) {
+                    if (selected.value === correctAnswers[key]) {
+                        score++;
+                        feedback.innerText = "✅ Respuesta correcta.";
+                        feedback.style.color = "green";
+                    } else {
+                        feedback.innerText = "❌ Respuesta incorrecta.";
+                        feedback.style.color = "red";
+                    }
+                } else {
+                    feedback.innerText = "❌ No respondió esta pregunta.";
+                    feedback.style.color = "red";
+                }
+                feedback.style.display = "block";
+            }
+            let percentage = (score / total) * 100;
+            let resultText = `${student}\nNota obtenida: ${percentage.toFixed(2)}%\nResultado: `;
+            resultText += (percentage >= 80)
+                ? "✅ ¡Has superado el 80% y has aprobado!"
+                : "❌ No alcanzaste el 80%. Puedes intentarlo de nuevo.";
+            window.parent.postMessage({ tema: 3, nota: percentage }, "*");
+document.getElementById("results").innerText = resultText;
+            document.getElementById("options").style.display = "block";
+        }
+
+        function resetQuiz() {
+            document.getElementById("quizForm").reset();
+            const feedbacks = document.querySelectorAll(".feedback");
+            feedbacks.forEach(fb => {
+                fb.style.display = "none";
+                fb.innerText = "";
+            });
+            window.parent.postMessage({ tema: 3, nota: percentage }, "*");
+document.getElementById("results").innerText = "";
+            document.getElementById("options").style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluación Semana 1 - Pentateuco</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; text-align: center; }
+        h1 { font-size: 28px; }
+        .button-container { margin-top: 30px; display: flex; flex-direction: column; gap: 15px; align-items: center; }
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        iframe {
+            width: 100%;
+            height: 1200px;
+            border: none;
+            margin-top: 20px;
+        }
+        #resultadoGlobal {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Evaluación del Pentateuco - Semana 1</h1>
+    <p>Seleccione un tema para comenzar la evaluación. Al completar todos los formularios, obtendrá una nota global.</p>
+
+    <div class="button-container">
+        <button onclick="loadForm('evaluacion_pentateuco_tema1_aleatorio_global.html', 1)">Tema 1: Introducción y Autoría</button>
+        <button onclick="loadForm('evaluacion_pentateuco_tema2_creacion_global.html', 2)">Tema 2: La Creación</button>
+        <button onclick="loadForm('evaluacion_pentateuco_tema3_caida_global.html', 3)">Tema 3: La Caída</button>
+        <button onclick="loadForm('evaluacion_pentateuco_tema4_diluvio_global.html', 4)">Tema 4: El Diluvio</button>
+        <button onclick="loadForm('evaluacion_pentateuco_tema5_dispersion_global.html', 5)">Tema 5: La Dispersión</button>
+        <button onclick="mostrarResultadoGlobal()" style="background-color: #2196F3;">Calcular Nota Global</button>
+    </div>
+
+    <iframe id="formFrame" src=""></iframe>
+
+    <div id="resultadoGlobal"></div>
+
+    <script>
+        let notas = {};
+
+        function loadForm(file, tema) {
+            document.getElementById('formFrame').src = file;
+            const listener = (event) => {
+                if (event.data.tema === tema && event.data.nota !== undefined) {
+                    notas[tema] = event.data.nota;
+                    window.removeEventListener('message', listener);
+                    alert(`✅ Nota registrada para Tema ${tema}: ${event.data.nota}%`);
+                }
+            };
+            window.addEventListener('message', listener);
+        }
+
+        function mostrarResultadoGlobal() {
+            const temasCompletados = Object.keys(notas).length;
+            if (temasCompletados < 5) {
+                document.getElementById('resultadoGlobal').innerText = `⚠️ Aún faltan formularios por completar (${temasCompletados}/5).`;
+                return;
+            }
+            const suma = Object.values(notas).reduce((a, b) => a + b, 0);
+            const promedio = (suma / 5).toFixed(2);
+            document.getElementById('resultadoGlobal').innerText = `📊 Nota global obtenida: ${promedio}%`;
+        }
+    </script>
+</body>
+</html>

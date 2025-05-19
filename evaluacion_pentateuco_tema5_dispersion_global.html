@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluación Pentateuco - Tema 5</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { text-align: center; }
+        .question { margin: 20px 0; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+        .options label { display: block; margin-bottom: 5px; }
+        .feedback { margin-top: 5px; font-weight: bold; display: none; }
+        #results { font-weight: bold; margin-top: 20px; text-align: center; font-size: 18px; white-space: pre-line; }
+        button { padding: 10px 20px; font-size: 16px; margin: 10px auto; display: block; }
+    </style>
+</head>
+<body>
+    <h1>Evaluación del Pentateuco</h1>
+    <h2>Tema 5: La Dispersión de las Naciones – Génesis 10 y 11</h2>
+    <p style="text-align:center;"><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre"></p>
+    <form id="quizForm">
+        <div class="question" id="q1">
+<p>1. ¿Qué revela esta agrupación sobre el pensamiento de Dios?</p>
+<div class="options">
+<label><input type="radio" name="q1" value="Dios no interviene"> Dios no interviene</label>
+<label><input type="radio" name="q1" value="Dios impone castigos"> Dios impone castigos</label>
+<label><input type="radio" name="q1" value="Dios discrimina"> Dios discrimina</label>
+<label><input type="radio" name="q1" value="Dios valora el orden y la diversidad de los pueblos"> Dios valora el orden y la diversidad de los pueblos</label>
+</div>
+<p class="feedback" id="fb1" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q2">
+<p>2. ¿Qué contraste hay entre Génesis 11:4 y 11:7?</p>
+<div class="options">
+<label><input type="radio" name="q2" value="Confusión y claridad"> Confusión y claridad</label>
+<label><input type="radio" name="q2" value="Temor y fe"> Temor y fe</label>
+<label><input type="radio" name="q2" value="Construcción y destrucción"> Construcción y destrucción</label>
+<label><input type="radio" name="q2" value="Soberbia humana vs intervención divina"> Soberbia humana vs intervención divina</label>
+</div>
+<p class="feedback" id="fb2" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q3">
+<p>3. ¿Qué prepara esta sección de genealogía?</p>
+<div class="options">
+<label><input type="radio" name="q3" value="El llamado de Abraham"> El llamado de Abraham</label>
+<label><input type="radio" name="q3" value="La venida del Espíritu Santo"> La venida del Espíritu Santo</label>
+<label><input type="radio" name="q3" value="El éxodo"> El éxodo</label>
+<label><input type="radio" name="q3" value="El juicio final"> El juicio final</label>
+</div>
+<p class="feedback" id="fb3" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q4">
+<p>4. ¿Qué enseñanza se puede extraer al comparar los constructores de Babel con nuestra generación?</p>
+<div class="options">
+<label><input type="radio" name="q4" value="Ambos tienden a construir sin Dios, confiando en sí mismos"> Ambos tienden a construir sin Dios, confiando en sí mismos</label>
+<label><input type="radio" name="q4" value="Ambos buscan a Dios"> Ambos buscan a Dios</label>
+<label><input type="radio" name="q4" value="Ambos obedecen"> Ambos obedecen</label>
+<label><input type="radio" name="q4" value="Ambos son espirituales"> Ambos son espirituales</label>
+</div>
+<p class="feedback" id="fb4" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q5">
+<p>5. ¿Por qué se menciona a los fundadores de naciones no mesiánicas?</p>
+<div class="options">
+<label><input type="radio" name="q5" value="Para rellenar"> Para rellenar</label>
+<label><input type="radio" name="q5" value="Para confundir"> Para confundir</label>
+<label><input type="radio" name="q5" value="Para mostrar el contexto global"> Para mostrar el contexto global</label>
+<label><input type="radio" name="q5" value="Por tradición oral"> Por tradición oral</label>
+</div>
+<p class="feedback" id="fb5" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q6">
+<p>6. ¿Qué construyó Nimrod según Génesis 10?</p>
+<div class="options">
+<label><input type="radio" name="q6" value="Una torre"> Una torre</label>
+<label><input type="radio" name="q6" value="Un arca"> Un arca</label>
+<label><input type="radio" name="q6" value="Un reino y ciudades"> Un reino y ciudades</label>
+<label><input type="radio" name="q6" value="Un templo"> Un templo</label>
+</div>
+<p class="feedback" id="fb6" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q7">
+<p>7. ¿Por qué se dedica más espacio a los descendientes de Sem?</p>
+<div class="options">
+<label><input type="radio" name="q7" value="Porque de ellos vendría la línea mesiánica"> Porque de ellos vendría la línea mesiánica</label>
+<label><input type="radio" name="q7" value="Porque vivían en Asia"> Porque vivían en Asia</label>
+<label><input type="radio" name="q7" value="Porque eran los más ricos"> Porque eran los más ricos</label>
+<label><input type="radio" name="q7" value="Porque eran rebeldes"> Porque eran rebeldes</label>
+</div>
+<p class="feedback" id="fb7" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q8">
+<p>8. ¿Quién se destaca en el capítulo 10 de Génesis?</p>
+<div class="options">
+<label><input type="radio" name="q8" value="Nimrod"> Nimrod</label>
+<label><input type="radio" name="q8" value="Sem"> Sem</label>
+<label><input type="radio" name="q8" value="Caín"> Caín</label>
+<label><input type="radio" name="q8" value="Noé"> Noé</label>
+</div>
+<p class="feedback" id="fb8" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q9">
+<p>9. ¿Cómo se relaciona Nimrod con el Anticristo?</p>
+<div class="options">
+<label><input type="radio" name="q9" value="Gobierna con sabiduría"> Gobierna con sabiduría</label>
+<label><input type="radio" name="q9" value="Es mártir"> Es mártir</label>
+<label><input type="radio" name="q9" value="Se opone a Dios y construye su propio reino"> Se opone a Dios y construye su propio reino</label>
+<label><input type="radio" name="q9" value="Es justo"> Es justo</label>
+</div>
+<p class="feedback" id="fb9" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q10">
+<p>10. ¿Qué doctrina refleja Génesis 11:7?</p>
+<div class="options">
+<label><input type="radio" name="q10" value="La redención"> La redención</label>
+<label><input type="radio" name="q10" value="La Trinidad"> La Trinidad</label>
+<label><input type="radio" name="q10" value="La creación"> La creación</label>
+<label><input type="radio" name="q10" value="El libre albedrío"> El libre albedrío</label>
+</div>
+<p class="feedback" id="fb10" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q11">
+<p>11. ¿Cómo se agrupaban las naciones en ese tiempo?</p>
+<div class="options">
+<label><input type="radio" name="q11" value="Por edad"> Por edad</label>
+<label><input type="radio" name="q11" value="Por riqueza"> Por riqueza</label>
+<label><input type="radio" name="q11" value="Por estatura"> Por estatura</label>
+<label><input type="radio" name="q11" value="Por lengua, familia y territorio"> Por lengua, familia y territorio</label>
+</div>
+<p class="feedback" id="fb11" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q12">
+<p>12. ¿Qué versículo del capítulo 10 parece referirse a la torre de Babel?</p>
+<div class="options">
+<label><input type="radio" name="q12" value="Génesis 10:20"> Génesis 10:20</label>
+<label><input type="radio" name="q12" value="Génesis 10:8-10"> Génesis 10:8-10</label>
+<label><input type="radio" name="q12" value="Génesis 10:5"> Génesis 10:5</label>
+<label><input type="radio" name="q12" value="Génesis 10:32"> Génesis 10:32</label>
+</div>
+<p class="feedback" id="fb12" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q13">
+<p>13. ¿Por qué desagradó a Dios la construcción de la torre?</p>
+<div class="options">
+<label><input type="radio" name="q13" value="Porque expresaba soberbia e independencia de Dios"> Porque expresaba soberbia e independencia de Dios</label>
+<label><input type="radio" name="q13" value="Porque era muy alta"> Porque era muy alta</label>
+<label><input type="radio" name="q13" value="Porque usaron ladrillos"> Porque usaron ladrillos</label>
+<label><input type="radio" name="q13" value="Porque fue hecha sin planos"> Porque fue hecha sin planos</label>
+</div>
+<p class="feedback" id="fb13" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q14">
+<p>14. ¿Cómo se agrupan los descendientes en Génesis 10?</p>
+<div class="options">
+<label><input type="radio" name="q14" value="Por linajes mesiánicos"> Por linajes mesiánicos</label>
+<label><input type="radio" name="q14" value="Por continentes"> Por continentes</label>
+<label><input type="radio" name="q14" value="Por tribus y clanes"> Por tribus y clanes</label>
+<label><input type="radio" name="q14" value="Por ciudades"> Por ciudades</label>
+</div>
+<p class="feedback" id="fb14" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q15">
+<p>15. ¿Qué empieza en Génesis 11:10?</p>
+<div class="options">
+<label><input type="radio" name="q15" value="La ley mosaica"> La ley mosaica</label>
+<label><input type="radio" name="q15" value="La historia de Noé"> La historia de Noé</label>
+<label><input type="radio" name="q15" value="El pacto con Abraham"> El pacto con Abraham</label>
+<label><input type="radio" name="q15" value="La genealogía de Sem"> La genealogía de Sem</label>
+</div>
+<p class="feedback" id="fb15" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q16">
+<p>16. ¿Por qué el escritor bíblico traza el origen de otras naciones?</p>
+<div class="options">
+<label><input type="radio" name="q16" value="Para dar contexto político"> Para dar contexto político</label>
+<label><input type="radio" name="q16" value="Para mostrar que todas provienen de un mismo origen"> Para mostrar que todas provienen de un mismo origen</label>
+<label><input type="radio" name="q16" value="Para justificar guerras"> Para justificar guerras</label>
+<label><input type="radio" name="q16" value="Para explicar su cultura"> Para explicar su cultura</label>
+</div>
+<p class="feedback" id="fb16" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q17">
+<p>17. ¿Qué revela Génesis sobre las razas y su valor ante Dios?</p>
+<div class="options">
+<label><input type="radio" name="q17" value="Todas son igualmente parte del plan de Dios"> Todas son igualmente parte del plan de Dios</label>
+<label><input type="radio" name="q17" value="Solo una es elegida"> Solo una es elegida</label>
+<label><input type="radio" name="q17" value="Unas son superiores"> Unas son superiores</label>
+<label><input type="radio" name="q17" value="No tienen valor"> No tienen valor</label>
+</div>
+<p class="feedback" id="fb17" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q18">
+<p>18. ¿Qué hizo Dios con los planes de los hombres en Babel?</p>
+<div class="options">
+<label><input type="radio" name="q18" value="Los bendijo"> Los bendijo</label>
+<label><input type="radio" name="q18" value="Los confundió"> Los confundió</label>
+<label><input type="radio" name="q18" value="Los apoyó"> Los apoyó</label>
+<label><input type="radio" name="q18" value="Los aprobó"> Los aprobó</label>
+</div>
+<p class="feedback" id="fb18" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q19">
+<p>19. ¿Qué simboliza Babel espiritualmente?</p>
+<div class="options">
+<label><input type="radio" name="q19" value="Unidad verdadera"> Unidad verdadera</label>
+<label><input type="radio" name="q19" value="Centro de adoración"> Centro de adoración</label>
+<label><input type="radio" name="q19" value="Religión del hombre sin Dios"> Religión del hombre sin Dios</label>
+<label><input type="radio" name="q19" value="Monte santo"> Monte santo</label>
+</div>
+<p class="feedback" id="fb19" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q20">
+<p>20. ¿Qué significa el nombre Nimrod?</p>
+<div class="options">
+<label><input type="radio" name="q20" value="Pacífico"> Pacífico</label>
+<label><input type="radio" name="q20" value="Rebelión"> Rebelión</label>
+<label><input type="radio" name="q20" value="Temeroso"> Temeroso</label>
+<label><input type="radio" name="q20" value="Bendecido"> Bendecido</label>
+</div>
+<p class="feedback" id="fb20" style="color:red; display:none;"></p>
+</div>
+
+        <button type="button" onclick="submitQuiz()">Enviar respuestas</button>
+    </form>
+    <div id="results"></div>
+    <div id="options" style="text-align:center; display:none;">
+        <button onclick="resetQuiz()">🔁 Volver a intentar este tema</button>
+        <button onclick="alert('En una futura versión podrá elegir otro tema')">📚 Elegir otro tema</button>
+    </div>
+
+    <script>
+        const correctAnswers = {"q1": "Dios valora el orden y la diversidad de los pueblos", "q2": "Soberbia humana vs intervención divina", "q3": "El llamado de Abraham", "q4": "Ambos tienden a construir sin Dios, confiando en sí mismos", "q5": "Para mostrar el contexto global", "q6": "Un reino y ciudades", "q7": "Porque de ellos vendría la línea mesiánica", "q8": "Nimrod", "q9": "Se opone a Dios y construye su propio reino", "q10": "La Trinidad", "q11": "Por lengua, familia y territorio", "q12": "Génesis 10:8-10", "q13": "Porque expresaba soberbia e independencia de Dios", "q14": "Por tribus y clanes", "q15": "La genealogía de Sem", "q16": "Para mostrar que todas provienen de un mismo origen", "q17": "Todas son igualmente parte del plan de Dios", "q18": "Los confundió", "q19": "Religión del hombre sin Dios", "q20": "Rebelión"};
+
+        function submitQuiz() {
+            let score = 0;
+            let total = Object.keys(correctAnswers).length;
+            let student = document.getElementById("studentName").value.trim() || "Estudiante";
+            for (let i = 1; i <= total; i++) {
+                const key = "q" + i;
+                const selected = document.querySelector('input[name="' + key + '"]:checked');
+                const feedback = document.getElementById("fb" + i);
+                if (selected) {
+                    if (selected.value === correctAnswers[key]) {
+                        score++;
+                        feedback.innerText = "✅ Respuesta correcta.";
+                        feedback.style.color = "green";
+                    } else {
+                        feedback.innerText = "❌ Respuesta incorrecta.";
+                        feedback.style.color = "red";
+                    }
+                } else {
+                    feedback.innerText = "❌ No respondió esta pregunta.";
+                    feedback.style.color = "red";
+                }
+                feedback.style.display = "block";
+            }
+            let percentage = (score / total) * 100;
+            let resultText = `${student}\nNota obtenida: ${percentage.toFixed(2)}%\nResultado: `;
+            resultText += (percentage >= 80)
+                ? "✅ ¡Has superado el 80% y has aprobado!"
+                : "❌ No alcanzaste el 80%. Puedes intentarlo de nuevo.";
+            window.parent.postMessage({ tema: 5, nota: percentage }, "*");
+document.getElementById("results").innerText = resultText;
+            document.getElementById("options").style.display = "block";
+        }
+
+        function resetQuiz() {
+            document.getElementById("quizForm").reset();
+            const feedbacks = document.querySelectorAll(".feedback");
+            feedbacks.forEach(fb => {
+                fb.style.display = "none";
+                fb.innerText = "";
+            });
+            window.parent.postMessage({ tema: 5, nota: percentage }, "*");
+document.getElementById("results").innerText = "";
+            document.getElementById("options").style.display = "none";
+        }
+    </script>
+</body>
+</html>
