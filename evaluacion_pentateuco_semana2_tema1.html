@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Pentateuco Semana 2 - Tema 1</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; background: #f9f9f9; }
+    h1 { text-align: center; }
+    .question { margin-bottom: 20px; padding: 10px; background: white; border-radius: 5px; box-shadow: 0 0 5px #ccc; }
+    .options { margin-left: 20px; }
+    button { padding: 10px 20px; font-size: 16px; margin-top: 20px; }
+    #results { margin-top: 30px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Evaluación Semana 2 - Tema 1<br>Abraham (Génesis 12–20)</h1>
+  <form id="quizForm">
+<div class="question"><p><b>1. ¿A dónde se dirigió Abraham cuando Dios le ordenó salir de su tierra?</b></p><div class="options"><label><input type="radio" name="q0" value="Canaán"> Canaán</label><br><label><input type="radio" name="q0" value="Egipto"> Egipto</label><br><label><input type="radio" name="q0" value="Babilonia"> Babilonia</label><br><label><input type="radio" name="q0" value="Asiria"> Asiria</label><br></div></div><div class="question"><p><b>2. ¿Qué relación tenía Lot con Abraham?</b></p><div class="options"><label><input type="radio" name="q1" value="Sobrino"> Sobrino</label><br><label><input type="radio" name="q1" value="Hermano"> Hermano</label><br><label><input type="radio" name="q1" value="Hijo"> Hijo</label><br><label><input type="radio" name="q1" value="Primo"> Primo</label><br></div></div><div class="question"><p><b>3. ¿Cuál fue el nombre que Abraham dio a su hijo con Agar?</b></p><div class="options"><label><input type="radio" name="q2" value="Ismael"> Ismael</label><br><label><input type="radio" name="q2" value="Isaac"> Isaac</label><br><label><input type="radio" name="q2" value="Jacob"> Jacob</label><br><label><input type="radio" name="q2" value="Esaú"> Esaú</label><br></div></div>
+    <button type="button" onclick="calificar()">Enviar respuestas</button>
+  </form>
+  <div id="results"></div>
+  <div style="text-align:center; margin-top: 30px;">
+    <button onclick="window.top.location.href='index_semana2_global.html'">Evaluar otro tema</button>
+  </div>
+
+  <script>
+    const respuestas = ["Canaán", "Sobrino", "Ismael"];
+
+    function calificar() {
+      let correctas = 0;
+      for (let i = 0; i < respuestas.length; i++) {
+        const opciones = document.getElementsByName("q" + i);
+        for (const opt of opciones) {
+          if (opt.checked && opt.value === respuestas[i]) {
+            correctas++;
+          }
+        }
+      }
+      const porcentaje = ((correctas / respuestas.length) * 100).toFixed(2);
+      document.getElementById("results").innerHTML = "✅ Obtuviste " + correctas + "/" + respuestas.length + " respuestas correctas (" + porcentaje + "%)";
+      window.parent.postMessage({ tema: 1, nota: parseFloat(porcentaje) }, "*");
+    }
+  </script>
+</body>
+</html>

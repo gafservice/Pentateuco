@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Pentateuco Semana 2 - Tema 2</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; background: #f9f9f9; }
+    h1 { text-align: center; }
+    .question { margin-bottom: 20px; padding: 10px; background: white; border-radius: 5px; box-shadow: 0 0 5px #ccc; }
+    .options { margin-left: 20px; }
+    button { padding: 10px 20px; font-size: 16px; margin-top: 20px; }
+    #results { margin-top: 30px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Evaluación Semana 2 - Tema 2<br>Abraham (Génesis 21–25)</h1>
+  <form id="quizForm">
+<div class="question"><p><b>1. ¿Cuál fue el nombre del hijo que tuvo Abraham con Sara?</b></p><div class="options"><label><input type="radio" name="q0" value="Isaac"> Isaac</label><br><label><input type="radio" name="q0" value="Ismael"> Ismael</label><br><label><input type="radio" name="q0" value="Jacob"> Jacob</label><br><label><input type="radio" name="q0" value="Esaú"> Esaú</label><br></div></div><div class="question"><p><b>2. ¿Qué hizo Dios con Agar y su hijo en el desierto?</b></p><div class="options"><label><input type="radio" name="q1" value="Les mostró un pozo de agua"> Les mostró un pozo de agua</label><br><label><input type="radio" name="q1" value="Los ignoró"> Los ignoró</label><br><label><input type="radio" name="q1" value="Los castigó"> Los castigó</label><br><label><input type="radio" name="q1" value="Los llevó a Egipto"> Los llevó a Egipto</label><br></div></div><div class="question"><p><b>3. ¿Qué pidió Dios a Abraham en la prueba de fe?</b></p><div class="options"><label><input type="radio" name="q2" value="Que ofreciera a Isaac como sacrificio"> Que ofreciera a Isaac como sacrificio</label><br><label><input type="radio" name="q2" value="Que se mudara a Egipto"> Que se mudara a Egipto</label><br><label><input type="radio" name="q2" value="Que se separara de Lot"> Que se separara de Lot</label><br><label><input type="radio" name="q2" value="Que destruyera Sodoma"> Que destruyera Sodoma</label><br></div></div>
+    <button type="button" onclick="calificar()">Enviar respuestas</button>
+  </form>
+  <div id="results"></div>
+  <div style="text-align:center; margin-top: 30px;">
+    <button onclick="window.top.location.href='index_semana2_global.html'">Evaluar otro tema</button>
+  </div>
+
+  <script>
+    const respuestas = ["Isaac", "Les mostró un pozo de agua", "Que ofreciera a Isaac como sacrificio"];
+
+    function calificar() {
+      let correctas = 0;
+      for (let i = 0; i < respuestas.length; i++) {
+        const opciones = document.getElementsByName("q" + i);
+        for (const opt of opciones) {
+          if (opt.checked && opt.value === respuestas[i]) {
+            correctas++;
+          }
+        }
+      }
+      const porcentaje = ((correctas / respuestas.length) * 100).toFixed(2);
+      document.getElementById("results").innerHTML = "✅ Obtuviste " + correctas + "/" + respuestas.length + " respuestas correctas (" + porcentaje + "%)";
+      window.parent.postMessage({ tema: 2, nota: parseFloat(porcentaje) }, "*");
+    }
+  </script>
+</body>
+</html>

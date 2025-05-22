@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Pentateuco - Semana 2</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 40px; background-color: #f2f2f2; }
+    h1 { text-align: center; }
+    iframe { width: 100%; height: 620px; border: none; margin-top: 20px; display: none; }
+    .boton-tema {
+      background-color: #4CAF50; color: white; padding: 10px 20px;
+      margin: 5px; border: none; border-radius: 5px; cursor: pointer;
+      font-size: 16px;
+    }
+    .boton-tema:hover { background-color: #45a049; }
+    #notaFinal { font-size: 18px; margin-top: 30px; text-align: center; }
+  </style>
+</head>
+<body>
+  <h1>Evaluación del Pentateuco – Semana 2</h1>
+  <div style="text-align:center;">
+    <button class="boton-tema" onclick="cargarFormulario(1)">Tema 1: Abraham (Gn. 12–20)</button>
+    <button class="boton-tema" onclick="cargarFormulario(2)">Tema 2: Abraham (Gn. 21–25)</button>
+    <button class="boton-tema" onclick="cargarFormulario(3)">Tema 3: Isaac y Jacob</button>
+    <button class="boton-tema" onclick="cargarFormulario(4)">Tema 4: Jacob (Gn. 29–36)</button>
+    <button class="boton-tema" onclick="cargarFormulario(5)">Tema 5: José (Gn. 37–41)</button>
+    <button class="boton-tema" onclick="cargarFormulario(6)">Tema 6: José y Jacob</button>
+  </div>
+
+  <iframe id="formulario" src=""></iframe>
+
+  <div id="notaFinal"></div>
+
+  <script>
+    const formularios = {
+      1: "evaluacion_pentateuco_semana2_tema1.html",
+      2: "evaluacion_pentateuco_semana2_tema2.html",
+      3: "evaluacion_pentateuco_semana2_tema3.html",
+      4: "evaluacion_pentateuco_semana2_tema4.html",
+      5: "evaluacion_pentateuco_semana2_tema5.html",
+      6: "evaluacion_pentateuco_semana2_tema6.html"
+    };
+
+    const notas = {};
+
+    function cargarFormulario(tema) {
+      document.getElementById('formulario').src = formularios[tema];
+      document.getElementById('formulario').style.display = 'block';
+    }
+
+    window.addEventListener("message", (event) => {
+      if (event.data.tema && event.data.nota !== undefined) {
+        notas[event.data.tema] = event.data.nota;
+        mostrarNotaGlobal();
+      }
+    });
+
+    function mostrarNotaGlobal() {
+      const valores = Object.values(notas);
+      if (valores.length === 0) return;
+
+      const promedio = (valores.reduce((a, b) => a + b, 0) / valores.length).toFixed(2);
+      const estado = promedio >= 80 ? "✅ Aprobado" : "❌ Requiere repaso";
+
+      document.getElementById("notaFinal").innerHTML =
+        `<p><strong>Nota global: ${promedio}% – ${estado}</strong></p>` +
+        `<p>Temas completados: ${valores.length}/6</p>`;
+    }
+  </script>
+</body>
+</html>

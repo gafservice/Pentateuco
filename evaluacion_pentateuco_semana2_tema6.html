@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Pentateuco Semana 2 - Tema 6</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; background: #f9f9f9; }
+    h1 { text-align: center; }
+    .question { margin-bottom: 20px; padding: 10px; background: white; border-radius: 5px; box-shadow: 0 0 5px #ccc; }
+    .options { margin-left: 20px; }
+    button { padding: 10px 20px; font-size: 16px; margin-top: 20px; }
+    #results { margin-top: 30px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Evaluación Semana 2 - Tema 6<br>José y Jacob (Génesis 42–50)</h1>
+  <form id="quizForm">
+<div class="question"><p><b>1. ¿Qué hizo José cuando vio a sus hermanos en Egipto?</b></p><div class="options"><label><input type="radio" name="q0" value="Los puso a prueba"> Los puso a prueba</label><br><label><input type="radio" name="q0" value="Los ignoró"> Los ignoró</label><br><label><input type="radio" name="q0" value="Los atacó"> Los atacó</label><br><label><input type="radio" name="q0" value="Los liberó de prisión"> Los liberó de prisión</label><br></div></div><div class="question"><p><b>2. ¿Quién ofreció quedarse como esclavo en lugar de Benjamín?</b></p><div class="options"><label><input type="radio" name="q1" value="Judá"> Judá</label><br><label><input type="radio" name="q1" value="Rubén"> Rubén</label><br><label><input type="radio" name="q1" value="Simeón"> Simeón</label><br><label><input type="radio" name="q1" value="Leví"> Leví</label><br></div></div><div class="question"><p><b>3. ¿Dónde murió Jacob?</b></p><div class="options"><label><input type="radio" name="q2" value="En Egipto"> En Egipto</label><br><label><input type="radio" name="q2" value="En Canaán"> En Canaán</label><br><label><input type="radio" name="q2" value="En Betel"> En Betel</label><br><label><input type="radio" name="q2" value="En Hebrón"> En Hebrón</label><br></div></div>
+    <button type="button" onclick="calificar()">Enviar respuestas</button>
+  </form>
+  <div id="results"></div>
+  <div style="text-align:center; margin-top: 30px;">
+    <button onclick="window.top.location.href='index_semana2_global.html'">Evaluar otro tema</button>
+  </div>
+
+  <script>
+    const respuestas = ["Los puso a prueba", "Judá", "En Egipto"];
+
+    function calificar() {
+      let correctas = 0;
+      for (let i = 0; i < respuestas.length; i++) {
+        const opciones = document.getElementsByName("q" + i);
+        for (const opt of opciones) {
+          if (opt.checked && opt.value === respuestas[i]) {
+            correctas++;
+          }
+        }
+      }
+      const porcentaje = ((correctas / respuestas.length) * 100).toFixed(2);
+      document.getElementById("results").innerHTML = "✅ Obtuviste " + correctas + "/" + respuestas.length + " respuestas correctas (" + porcentaje + "%)";
+      window.parent.postMessage({ tema: 6, nota: parseFloat(porcentaje) }, "*");
+    }
+  </script>
+</body>
+</html>

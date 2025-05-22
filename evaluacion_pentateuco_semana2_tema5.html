@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Pentateuco Semana 2 - Tema 5</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; background: #f9f9f9; }
+    h1 { text-align: center; }
+    .question { margin-bottom: 20px; padding: 10px; background: white; border-radius: 5px; box-shadow: 0 0 5px #ccc; }
+    .options { margin-left: 20px; }
+    button { padding: 10px 20px; font-size: 16px; margin-top: 20px; }
+    #results { margin-top: 30px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Evaluación Semana 2 - Tema 5<br>José (Génesis 37–41)</h1>
+  <form id="quizForm">
+<div class="question"><p><b>1. ¿Qué le hicieron los hermanos de José?</b></p><div class="options"><label><input type="radio" name="q0" value="Lo vendieron como esclavo"> Lo vendieron como esclavo</label><br><label><input type="radio" name="q0" value="Lo nombraron líder"> Lo nombraron líder</label><br><label><input type="radio" name="q0" value="Le dieron un regalo"> Le dieron un regalo</label><br><label><input type="radio" name="q0" value="Le construyeron una casa"> Le construyeron una casa</label><br></div></div><div class="question"><p><b>2. ¿Dónde terminó José después de ser vendido?</b></p><div class="options"><label><input type="radio" name="q1" value="En Egipto"> En Egipto</label><br><label><input type="radio" name="q1" value="En Babilonia"> En Babilonia</label><br><label><input type="radio" name="q1" value="En Jerusalén"> En Jerusalén</label><br><label><input type="radio" name="q1" value="En Canaán"> En Canaán</label><br></div></div><div class="question"><p><b>3. ¿Qué habilidad especial tenía José?</b></p><div class="options"><label><input type="radio" name="q2" value="Interpretar sueños"> Interpretar sueños</label><br><label><input type="radio" name="q2" value="Escribir leyes"> Escribir leyes</label><br><label><input type="radio" name="q2" value="Construir altares"> Construir altares</label><br><label><input type="radio" name="q2" value="Domar animales"> Domar animales</label><br></div></div>
+    <button type="button" onclick="calificar()">Enviar respuestas</button>
+  </form>
+  <div id="results"></div>
+  <div style="text-align:center; margin-top: 30px;">
+    <button onclick="window.top.location.href='index_semana2_global.html'">Evaluar otro tema</button>
+  </div>
+
+  <script>
+    const respuestas = ["Lo vendieron como esclavo", "En Egipto", "Interpretar sueños"];
+
+    function calificar() {
+      let correctas = 0;
+      for (let i = 0; i < respuestas.length; i++) {
+        const opciones = document.getElementsByName("q" + i);
+        for (const opt of opciones) {
+          if (opt.checked && opt.value === respuestas[i]) {
+            correctas++;
+          }
+        }
+      }
+      const porcentaje = ((correctas / respuestas.length) * 100).toFixed(2);
+      document.getElementById("results").innerHTML = "✅ Obtuviste " + correctas + "/" + respuestas.length + " respuestas correctas (" + porcentaje + "%)";
+      window.parent.postMessage({ tema: 5, nota: parseFloat(porcentaje) }, "*");
+    }
+  </script>
+</body>
+</html>

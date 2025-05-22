@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Pentateuco Semana 2 - Tema 3</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; background: #f9f9f9; }
+    h1 { text-align: center; }
+    .question { margin-bottom: 20px; padding: 10px; background: white; border-radius: 5px; box-shadow: 0 0 5px #ccc; }
+    .options { margin-left: 20px; }
+    button { padding: 10px 20px; font-size: 16px; margin-top: 20px; }
+    #results { margin-top: 30px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Evaluación Semana 2 - Tema 3<br>Isaac y Jacob (Gén. 25:19–28:22)</h1>
+  <form id="quizForm">
+<div class="question"><p><b>1. ¿Quién era el padre de Jacob?</b></p><div class="options"><label><input type="radio" name="q0" value="Isaac"> Isaac</label><br><label><input type="radio" name="q0" value="Abraham"> Abraham</label><br><label><input type="radio" name="q0" value="Esaú"> Esaú</label><br><label><input type="radio" name="q0" value="Lot"> Lot</label><br></div></div><div class="question"><p><b>2. ¿Qué hizo Jacob para obtener la bendición de su padre?</b></p><div class="options"><label><input type="radio" name="q1" value="Se disfrazó de Esaú"> Se disfrazó de Esaú</label><br><label><input type="radio" name="q1" value="Le pidió permiso"> Le pidió permiso</label><br><label><input type="radio" name="q1" value="Huyó al desierto"> Huyó al desierto</label><br><label><input type="radio" name="q1" value="Oró a Dios"> Oró a Dios</label><br></div></div><div class="question"><p><b>3. ¿Qué vio Jacob en el sueño cuando huyó de su hermano?</b></p><div class="options"><label><input type="radio" name="q2" value="Una escalera al cielo"> Una escalera al cielo</label><br><label><input type="radio" name="q2" value="Un ángel con espada"> Un ángel con espada</label><br><label><input type="radio" name="q2" value="Una zarza ardiendo"> Una zarza ardiendo</label><br><label><input type="radio" name="q2" value="Una visión del diluvio"> Una visión del diluvio</label><br></div></div>
+    <button type="button" onclick="calificar()">Enviar respuestas</button>
+  </form>
+  <div id="results"></div>
+  <div style="text-align:center; margin-top: 30px;">
+    <button onclick="window.top.location.href='index_semana2_global.html'">Evaluar otro tema</button>
+  </div>
+
+  <script>
+    const respuestas = ["Isaac", "Se disfrazó de Esaú", "Una escalera al cielo"];
+
+    function calificar() {
+      let correctas = 0;
+      for (let i = 0; i < respuestas.length; i++) {
+        const opciones = document.getElementsByName("q" + i);
+        for (const opt of opciones) {
+          if (opt.checked && opt.value === respuestas[i]) {
+            correctas++;
+          }
+        }
+      }
+      const porcentaje = ((correctas / respuestas.length) * 100).toFixed(2);
+      document.getElementById("results").innerHTML = "✅ Obtuviste " + correctas + "/" + respuestas.length + " respuestas correctas (" + porcentaje + "%)";
+      window.parent.postMessage({ tema: 3, nota: parseFloat(porcentaje) }, "*");
+    }
+  </script>
+</body>
+</html>

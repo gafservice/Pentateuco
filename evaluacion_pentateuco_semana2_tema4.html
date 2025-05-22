@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación Pentateuco Semana 2 - Tema 4</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; background: #f9f9f9; }
+    h1 { text-align: center; }
+    .question { margin-bottom: 20px; padding: 10px; background: white; border-radius: 5px; box-shadow: 0 0 5px #ccc; }
+    .options { margin-left: 20px; }
+    button { padding: 10px 20px; font-size: 16px; margin-top: 20px; }
+    #results { margin-top: 30px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Evaluación Semana 2 - Tema 4<br>Jacob (Génesis 29–36)</h1>
+  <form id="quizForm">
+<div class="question"><p><b>1. ¿Con qué mujer se casó Jacob primero por error?</b></p><div class="options"><label><input type="radio" name="q0" value="Lea"> Lea</label><br><label><input type="radio" name="q0" value="Raquel"> Raquel</label><br><label><input type="radio" name="q0" value="Tamar"> Tamar</label><br><label><input type="radio" name="q0" value="Bilhá"> Bilhá</label><br></div></div><div class="question"><p><b>2. ¿Cuál fue el nombre que Dios dio a Jacob después de luchar con el ángel?</b></p><div class="options"><label><input type="radio" name="q1" value="Israel"> Israel</label><br><label><input type="radio" name="q1" value="Judá"> Judá</label><br><label><input type="radio" name="q1" value="Manasés"> Manasés</label><br><label><input type="radio" name="q1" value="Efraín"> Efraín</label><br></div></div><div class="question"><p><b>3. ¿Qué hizo Jacob al ver que su hija Dina fue deshonrada?</b></p><div class="options"><label><input type="radio" name="q2" value="Sus hijos vengaron el agravio"> Sus hijos vengaron el agravio</label><br><label><input type="radio" name="q2" value="Se fue del lugar"> Se fue del lugar</label><br><label><input type="radio" name="q2" value="Condenó a Dina"> Condenó a Dina</label><br><label><input type="radio" name="q2" value="Construyó un altar"> Construyó un altar</label><br></div></div>
+    <button type="button" onclick="calificar()">Enviar respuestas</button>
+  </form>
+  <div id="results"></div>
+  <div style="text-align:center; margin-top: 30px;">
+    <button onclick="window.top.location.href='index_semana2_global.html'">Evaluar otro tema</button>
+  </div>
+
+  <script>
+    const respuestas = ["Lea", "Israel", "Sus hijos vengaron el agravio"];
+
+    function calificar() {
+      let correctas = 0;
+      for (let i = 0; i < respuestas.length; i++) {
+        const opciones = document.getElementsByName("q" + i);
+        for (const opt of opciones) {
+          if (opt.checked && opt.value === respuestas[i]) {
+            correctas++;
+          }
+        }
+      }
+      const porcentaje = ((correctas / respuestas.length) * 100).toFixed(2);
+      document.getElementById("results").innerHTML = "✅ Obtuviste " + correctas + "/" + respuestas.length + " respuestas correctas (" + porcentaje + "%)";
+      window.parent.postMessage({ tema: 4, nota: parseFloat(porcentaje) }, "*");
+    }
+  </script>
+</body>
+</html>
