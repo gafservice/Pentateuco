@@ -8,13 +8,13 @@ st.markdown("Lectura sugerida: Génesis 12–50 y páginas 48–103 del libro *E
 st.markdown("---")
 
 temas = {
-    "Tema 6 – Abraham (Gén. 12–25)": "evaluacion_pentateuco_tema6_abraham_30preguntas.html",
-    "Tema 7 – Agar e Ismael": "evaluacion_pentateuco_tema7_agar_ismael.html",
-    "Tema 8 – Abraham y Abimelec / Isaac e Ismael": "evaluacion_pentateuco_tema8_abimelec_isaac.html",
-    "Tema 9 – Isaac y Jacob": "evaluacion_pentateuco_tema9_isaac_jacob.html",
-    "Tema 10 – Jacob en Canaán": "evaluacion_pentateuco_tema10_jacob_canaan.html",
-    "Tema 11 – José (Gén. 37–50)": "evaluacion_pentateuco_tema11_jose.html",
-    "Tema 12 – José en Egipto": "evaluacion_pentateuco_tema12_jose_egipto.html"
+    "Tema 6 – Abraham (Gén. 12–25)": "evaluacion_pentateuco_semana2_tema6.html",
+    "Tema 7 – Agar e Ismael": "evaluacion_pentateuco_semana2_tema7.html",
+    "Tema 8 – Abraham y Abimelec / Isaac e Ismael": "evaluacion_pentateuco_semana2_tema8.html",
+    "Tema 9 – Isaac y Jacob": "evaluacion_pentateuco_semana2_tema9.html",
+    "Tema 10 – Jacob en Canaán": "evaluacion_pentateuco_semana2_tema10.html",
+    "Tema 11 – José (Gén. 37–50)": "evaluacion_pentateuco_semana2_tema11.html",
+    "Tema 12 – José en Egipto": "evaluacion_pentateuco_semana2_tema12.html"
 }
 
 seleccion = st.selectbox("Seleccione el tema para evaluar:", list(temas.keys()))
@@ -26,4 +26,4 @@ if seleccion:
             html_content = f.read()
         components.html(html_content, height=1800, scrolling=True)
     except FileNotFoundError:
-        st.warning(f"⚠️ El archivo '{archivo}' aún no ha sido generado.")
+        st.warning(f"⚠️ El archivo '{archivo}' aún no ha sido generado o no está en el directorio.")
