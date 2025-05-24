@@ -1,27 +1,29 @@
 
 import streamlit as st
+import streamlit.components.v1 as components
 
-st.set_page_config(page_title="Evaluación Pentateuco - Semana 2", layout="centered")
-
-st.title("📘 Evaluación del Pentateuco - Semana 2")
-st.markdown("Instituto Bíblico de las Asambleas de Dios – IBAD")
+st.set_page_config(page_title="Pentateuco – Semana 2", layout="wide")
+st.title("📘 Evaluaciones – Semana 2")
+st.markdown("Lectura sugerida: Génesis 12–50 y páginas 48–103 del libro *El Pentateuco* de Pablo Hoff.")
 st.markdown("---")
 
-st.header("Seleccione un tema para iniciar la evaluación:")
+temas = {
+    "Tema 6 – Abraham (Gén. 12–25)": "evaluacion_pentateuco_tema6_abraham_30preguntas.html",
+    "Tema 7 – Agar e Ismael": "evaluacion_pentateuco_tema7_agar_ismael.html",
+    "Tema 8 – Abraham y Abimelec / Isaac e Ismael": "evaluacion_pentateuco_tema8_abimelec_isaac.html",
+    "Tema 9 – Isaac y Jacob": "evaluacion_pentateuco_tema9_isaac_jacob.html",
+    "Tema 10 – Jacob en Canaán": "evaluacion_pentateuco_tema10_jacob_canaan.html",
+    "Tema 11 – José (Gén. 37–50)": "evaluacion_pentateuco_tema11_jose.html",
+    "Tema 12 – José en Egipto": "evaluacion_pentateuco_tema12_jose_egipto.html"
+}
 
-col1, col2 = st.columns(2)
+seleccion = st.selectbox("Seleccione el tema para evaluar:", list(temas.keys()))
 
-with col1:
-    st.markdown('[📝 Tema 1: Abraham (Gn. 12–20)](https://gafservice.github.io/Pentateuco/evaluacion_pentateuco_semana2_tema1.html)', unsafe_allow_html=True)
-    st.markdown('[📝 Tema 2: Abraham (Gn. 21–25)](https://gafservice.github.io/Pentateuco/evaluacion_pentateuco_semana2_tema2.html)', unsafe_allow_html=True)
-    st.markdown('[📝 Tema 3: Isaac y Jacob](https://gafservice.github.io/Pentateuco/evaluacion_pentateuco_semana2_tema3.html)', unsafe_allow_html=True)
-
-with col2:
-    st.markdown('[📝 Tema 4: Jacob (Gn. 29–36)](https://gafservice.github.io/Pentateuco/evaluacion_pentateuco_semana2_tema4.html)', unsafe_allow_html=True)
-    st.markdown('[📝 Tema 5: José (Gn. 37–41)](https://gafservice.github.io/Pentateuco/evaluacion_pentateuco_semana2_tema5.html)', unsafe_allow_html=True)
-    st.markdown('[📝 Tema 6: José y Jacob](https://gafservice.github.io/Pentateuco/evaluacion_pentateuco_semana2_tema6.html)', unsafe_allow_html=True)
-
-st.markdown("---")
-st.info("Cada enlace abrirá el formulario correspondiente en una nueva pestaña del navegador. Al terminar todos, podrás calcular la nota global en el formulario principal.")
-
-st.markdown('[🔗 Abrir Panel Global para calcular nota final](https://gafservice.github.io/Pentateuco/index_semana2_global.html)', unsafe_allow_html=True)
+if seleccion:
+    archivo = temas[seleccion]
+    try:
+        with open(archivo, "r", encoding="utf-8") as f:
+            html_content = f.read()
+        components.html(html_content, height=1800, scrolling=True)
+    except FileNotFoundError:
+        st.warning(f"⚠️ El archivo '{archivo}' aún no ha sido generado.")
