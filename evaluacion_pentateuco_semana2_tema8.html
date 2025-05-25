@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación del Pentateuco – Tema 8: Abraham y Abimelec / Isaac e Ismael</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    h1, h2 { text-align: center; }
+    .question { background: #fff; border-radius: 8px; padding: 15px; margin: 10px 0; box-shadow: 0 0 5px #ccc; }
+    .options { margin-left: 20px; }
+    .feedback { font-weight: bold; margin-top: 5px; }
+    #results { margin-top: 30px; font-size: 18px; text-align: center; }
+    button { padding: 10px 15px; font-size: 16px; margin: 10px; }
+  </style>
+</head>
+<body>
+
+<h1>Evaluación del Pentateuco</h1>
+<h2>Tema 8: Abraham y Abimelec / Isaac e Ismael (Génesis 20–25)</h2>
+
+<p><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre" style="width: 300px;"></p>
+
+<form id="quizForm">
+<div class="question" id="q0"><p><strong>1. ¿Quiénes sepultaron a Abraham?</strong></p><div class="options"><label><input type="radio" name="q0" value="Lot y Abraham"> Lot y Abraham</label><br><label><input type="radio" name="q0" value="Isaac e Ismael"> Isaac e Ismael</label><br><label><input type="radio" name="q0" value="Isaac y Jacob"> Isaac y Jacob</label><br><label><input type="radio" name="q0" value="Sara e Isaac"> Sara e Isaac</label><br></div><p class="feedback" id="fb0" style="display:none;"></p></div>
+<div class="question" id="q1"><p><strong>2. ¿Cómo reaccionó Abraham ante la orden de sacrificar a Isaac?</strong></p><div class="options"><label><input type="radio" name="q1" value="Pidió explicaciones"> Pidió explicaciones</label><br><label><input type="radio" name="q1" value="Se negó"> Se negó</label><br><label><input type="radio" name="q1" value="Obedeció de inmediato"> Obedeció de inmediato</label><br><label><input type="radio" name="q1" value="Huyó al desierto"> Huyó al desierto</label><br></div><p class="feedback" id="fb1" style="display:none;"></p></div>
+<div class="question" id="q2"><p><strong>3. ¿Qué mandó Abimelec a Abraham tras enterarse del engaño?</strong></p><div class="options"><label><input type="radio" name="q2" value="Que se quedara en su tierra"> Que se quedara en su tierra</label><br><label><input type="radio" name="q2" value="Que saliera de su país"> Que saliera de su país</label><br><label><input type="radio" name="q2" value="Que entregara animales en sacrificio"> Que entregara animales en sacrificio</label><br><label><input type="radio" name="q2" value="Que le devolviera su dinero"> Que le devolviera su dinero</label><br></div><p class="feedback" id="fb2" style="display:none;"></p></div>
+<div class="question" id="q3"><p><strong>4. ¿Por qué Sara pidió que Agar e Ismael fueran echados?</strong></p><div class="options"><label><input type="radio" name="q3" value="Ismael quiso tomar la herencia"> Ismael quiso tomar la herencia</label><br><label><input type="radio" name="q3" value="Ismael era mayor"> Ismael era mayor</label><br><label><input type="radio" name="q3" value="Agar era rebelde"> Agar era rebelde</label><br><label><input type="radio" name="q3" value="Ismael se burló de Isaac"> Ismael se burló de Isaac</label><br></div><p class="feedback" id="fb3" style="display:none;"></p></div>
+<div class="question" id="q4"><p><strong>5. ¿Qué pidió Dios a Abraham como prueba de obediencia en Génesis 22?</strong></p><div class="options"><label><input type="radio" name="q4" value="Que ayunara 40 días"> Que ayunara 40 días</label><br><label><input type="radio" name="q4" value="Que abandonara Canaán"> Que abandonara Canaán</label><br><label><input type="radio" name="q4" value="Que sacrificara a Isaac"> Que sacrificara a Isaac</label><br><label><input type="radio" name="q4" value="Que enviara a Sara a Egipto"> Que enviara a Sara a Egipto</label><br></div><p class="feedback" id="fb4" style="display:none;"></p></div>
+<div class="question" id="q5"><p><strong>6. ¿Cómo respondió Dios al clamor de Agar en el desierto?</strong></p><div class="options"><label><input type="radio" name="q5" value="La llevó a Abraham"> La llevó a Abraham</label><br><label><input type="radio" name="q5" value="Envió un ángel"> Envió un ángel</label><br><label><input type="radio" name="q5" value="Le dio maná"> Le dio maná</label><br><label><input type="radio" name="q5" value="Le mostró un pozo"> Le mostró un pozo</label><br></div><p class="feedback" id="fb5" style="display:none;"></p></div>
+<div class="question" id="q6"><p><strong>7. ¿Dónde creció Ismael después de ser echado?</strong></p><div class="options"><label><input type="radio" name="q6" value="En Egipto"> En Egipto</label><br><label><input type="radio" name="q6" value="En el desierto de Parán"> En el desierto de Parán</label><br><label><input type="radio" name="q6" value="En Betel"> En Betel</label><br><label><input type="radio" name="q6" value="En Canaán"> En Canaán</label><br></div><p class="feedback" id="fb6" style="display:none;"></p></div>
+<div class="question" id="q7"><p><strong>8. ¿Qué hizo Isaac cuando vio a Rebeca?</strong></p><div class="options"><label><input type="radio" name="q7" value="La llevó a la tienda de su madre"> La llevó a la tienda de su madre</label><br><label><input type="radio" name="q7" value="Consultó a Dios"> Consultó a Dios</label><br><label><input type="radio" name="q7" value="Se escondió"> Se escondió</label><br><label><input type="radio" name="q7" value="Lloró"> Lloró</label><br></div><p class="feedback" id="fb7" style="display:none;"></p></div>
+<div class="question" id="q8"><p><strong>9. ¿Qué nombre le dio Abraham al lugar del sacrificio?</strong></p><div class="options"><label><input type="radio" name="q8" value="Betel"> Betel</label><br><label><input type="radio" name="q8" value="Jehová Jireh"> Jehová Jireh</label><br><label><input type="radio" name="q8" value="El Shaddai"> El Shaddai</label><br><label><input type="radio" name="q8" value="Eben Ezer"> Eben Ezer</label><br></div><p class="feedback" id="fb8" style="display:none;"></p></div>
+<div class="question" id="q9"><p><strong>10. ¿Cómo se llamó el lugar donde Abraham hizo un pacto con Abimelec?</strong></p><div class="options"><label><input type="radio" name="q9" value="Siquem"> Siquem</label><br><label><input type="radio" name="q9" value="Beerseba"> Beerseba</label><br><label><input type="radio" name="q9" value="Betel"> Betel</label><br><label><input type="radio" name="q9" value="Hebrón"> Hebrón</label><br></div><p class="feedback" id="fb9" style="display:none;"></p></div>
+<div class="question" id="q10"><p><strong>11. ¿A quién dejó Abraham toda su herencia principal?</strong></p><div class="options"><label><input type="radio" name="q10" value="Lot"> Lot</label><br><label><input type="radio" name="q10" value="Cetura"> Cetura</label><br><label><input type="radio" name="q10" value="Ismael"> Ismael</label><br><label><input type="radio" name="q10" value="Isaac"> Isaac</label><br></div><p class="feedback" id="fb10" style="display:none;"></p></div>
+<div class="question" id="q11"><p><strong>12. ¿Dónde conoció Isaac a Rebeca?</strong></p><div class="options"><label><input type="radio" name="q11" value="En Harán"> En Harán</label><br><label><input type="radio" name="q11" value="En el campo mientras oraba"> En el campo mientras oraba</label><br><label><input type="radio" name="q11" value="En Beerseba"> En Beerseba</label><br><label><input type="radio" name="q11" value="En un pozo"> En un pozo</label><br></div><p class="feedback" id="fb11" style="display:none;"></p></div>
+<div class="question" id="q12"><p><strong>13. ¿Qué reafirmó Dios a Abraham después de la prueba de Isaac?</strong></p><div class="options"><label><input type="radio" name="q12" value="Su bendición y descendencia"> Su bendición y descendencia</label><br><label><input type="radio" name="q12" value="Su castigo"> Su castigo</label><br><label><input type="radio" name="q12" value="Su partida a Egipto"> Su partida a Egipto</label><br><label><input type="radio" name="q12" value="Que vendría juicio"> Que vendría juicio</label><br></div><p class="feedback" id="fb12" style="display:none;"></p></div>
+<div class="question" id="q13"><p><strong>14. ¿Qué hizo Dios para proteger a Sara en casa de Abimelec?</strong></p><div class="options"><label><input type="radio" name="q13" value="Advirtió a Abimelec en un sueño"> Advirtió a Abimelec en un sueño</label><br><label><input type="radio" name="q13" value="Le dio miedo a Abimelec"> Le dio miedo a Abimelec</label><br><label><input type="radio" name="q13" value="Envió una plaga"> Envió una plaga</label><br><label><input type="radio" name="q13" value="Cambió la mente de Abraham"> Cambió la mente de Abraham</label><br></div><p class="feedback" id="fb13" style="display:none;"></p></div>
+<div class="question" id="q14"><p><strong>15. ¿Cómo se llamaba el rey ante quien Abraham volvió a decir que Sara era su hermana?</strong></p><div class="options"><label><input type="radio" name="q14" value="Ben-adad"> Ben-adad</label><br><label><input type="radio" name="q14" value="Abimelec"> Abimelec</label><br><label><input type="radio" name="q14" value="Melquisedec"> Melquisedec</label><br><label><input type="radio" name="q14" value="Faraón"> Faraón</label><br></div><p class="feedback" id="fb14" style="display:none;"></p></div>
+<div class="question" id="q15"><p><strong>16. ¿Qué le dijo Isaac a Abraham cuando subían al sacrificio?</strong></p><div class="options"><label><input type="radio" name="q15" value="¿Por qué traemos fuego?"> ¿Por qué traemos fuego?</label><br><label><input type="radio" name="q15" value="¿Qué haremos padre?"> ¿Qué haremos padre?</label><br><label><input type="radio" name="q15" value="¿Estamos perdidos?"> ¿Estamos perdidos?</label><br><label><input type="radio" name="q15" value="¿Dónde está el cordero?"> ¿Dónde está el cordero?</label><br></div><p class="feedback" id="fb15" style="display:none;"></p></div>
+<div class="question" id="q16"><p><strong>17. ¿Dónde fue enterrada Sara?</strong></p><div class="options"><label><input type="radio" name="q16" value="En el monte Moriah"> En el monte Moriah</label><br><label><input type="radio" name="q16" value="En un pozo en Beerseba"> En un pozo en Beerseba</label><br><label><input type="radio" name="q16" value="En la cueva de Macpela"> En la cueva de Macpela</label><br><label><input type="radio" name="q16" value="En Ur de los caldeos"> En Ur de los caldeos</label><br></div><p class="feedback" id="fb16" style="display:none;"></p></div>
+<div class="question" id="q17"><p><strong>18. ¿Qué pacto hicieron Abraham y Abimelec?</strong></p><div class="options"><label><input type="radio" name="q17" value="Construyeron un altar juntos"> Construyeron un altar juntos</label><br><label><input type="radio" name="q17" value="Juraron paz y se repartieron un pozo"> Juraron paz y se repartieron un pozo</label><br><label><input type="radio" name="q17" value="Dividieron la tierra de Canaán"> Dividieron la tierra de Canaán</label><br><label><input type="radio" name="q17" value="Intercambiaron rebaños"> Intercambiaron rebaños</label><br></div><p class="feedback" id="fb17" style="display:none;"></p></div>
+<div class="question" id="q18"><p><strong>19. ¿Qué proveyó Dios en lugar de Isaac?</strong></p><div class="options"><label><input type="radio" name="q18" value="Un carnero"> Un carnero</label><br><label><input type="radio" name="q18" value="Un cordero"> Un cordero</label><br><label><input type="radio" name="q18" value="Una oveja"> Una oveja</label><br><label><input type="radio" name="q18" value="Un buey"> Un buey</label><br></div><p class="feedback" id="fb18" style="display:none;"></p></div>
+<div class="question" id="q19"><p><strong>20. ¿Dónde murió Sara?</strong></p><div class="options"><label><input type="radio" name="q19" value="Beerseba"> Beerseba</label><br><label><input type="radio" name="q19" value="Hebrón"> Hebrón</label><br><label><input type="radio" name="q19" value="Siquem"> Siquem</label><br><label><input type="radio" name="q19" value="Ur"> Ur</label><br></div><p class="feedback" id="fb19" style="display:none;"></p></div>
+<div class="question" id="q20"><p><strong>21. ¿Cuál era el vínculo familiar entre Isaac y Rebeca?</strong></p><div class="options"><label><input type="radio" name="q20" value="Tío y sobrina"> Tío y sobrina</label><br><label><input type="radio" name="q20" value="Hermanos"> Hermanos</label><br><label><input type="radio" name="q20" value="No eran parientes"> No eran parientes</label><br><label><input type="radio" name="q20" value="Primos"> Primos</label><br></div><p class="feedback" id="fb20" style="display:none;"></p></div>
+<div class="question" id="q21"><p><strong>22. ¿A quién encargó Abraham buscar esposa para Isaac?</strong></p><div class="options"><label><input type="radio" name="q21" value="A Abimelec"> A Abimelec</label><br><label><input type="radio" name="q21" value="A Lot"> A Lot</label><br><label><input type="radio" name="q21" value="A su siervo más viejo"> A su siervo más viejo</label><br><label><input type="radio" name="q21" value="A Eliezer"> A Eliezer</label><br></div><p class="feedback" id="fb21" style="display:none;"></p></div>
+<div class="question" id="q22"><p><strong>23. ¿Quién fue la esposa de Isaac?</strong></p><div class="options"><label><input type="radio" name="q22" value="Sara"> Sara</label><br><label><input type="radio" name="q22" value="Lea"> Lea</label><br><label><input type="radio" name="q22" value="Raquel"> Raquel</label><br><label><input type="radio" name="q22" value="Rebeca"> Rebeca</label><br></div><p class="feedback" id="fb22" style="display:none;"></p></div>
+<div class="question" id="q23"><p><strong>24. ¿Qué señal pidió el siervo de Abraham para reconocer a la futura esposa de Isaac?</strong></p><div class="options"><label><input type="radio" name="q23" value="Que cantara un salmo"> Que cantara un salmo</label><br><label><input type="radio" name="q23" value="Que dijera su nombre"> Que dijera su nombre</label><br><label><input type="radio" name="q23" value="Que llorara"> Que llorara</label><br><label><input type="radio" name="q23" value="Que ofreciera agua a él y a sus camellos"> Que ofreciera agua a él y a sus camellos</label><br></div><p class="feedback" id="fb23" style="display:none;"></p></div>
+<div class="question" id="q24"><p><strong>25. ¿Qué significa el nombre Isaac?</strong></p><div class="options"><label><input type="radio" name="q24" value="Amor"> Amor</label><br><label><input type="radio" name="q24" value="Promesa"> Promesa</label><br><label><input type="radio" name="q24" value="Risa"> Risa</label><br><label><input type="radio" name="q24" value="Milagro"> Milagro</label><br></div><p class="feedback" id="fb24" style="display:none;"></p></div>
+<div class="question" id="q25"><p><strong>26. ¿Qué hizo Abraham con los hijos de sus concubinas?</strong></p><div class="options"><label><input type="radio" name="q25" value="Los hizo siervos de Isaac"> Los hizo siervos de Isaac</label><br><label><input type="radio" name="q25" value="Los bendijo con tierras"> Los bendijo con tierras</label><br><label><input type="radio" name="q25" value="Les dio dones y los envió al oriente"> Les dio dones y los envió al oriente</label><br><label><input type="radio" name="q25" value="Les dio el sacerdocio"> Les dio el sacerdocio</label><br></div><p class="feedback" id="fb25" style="display:none;"></p></div>
+<div class="question" id="q26"><p><strong>27. ¿Cómo respondió Rebeca al pedido de casarse con Isaac?</strong></p><div class="options"><label><input type="radio" name="q26" value="Pidió esperar"> Pidió esperar</label><br><label><input type="radio" name="q26" value="Aceptó de inmediato"> Aceptó de inmediato</label><br><label><input type="radio" name="q26" value="Consultó a su madre"> Consultó a su madre</label><br><label><input type="radio" name="q26" value="Lloró"> Lloró</label><br></div><p class="feedback" id="fb26" style="display:none;"></p></div>
+<div class="question" id="q27"><p><strong>28. ¿Qué edad tenía Abraham cuando nació Isaac?</strong></p><div class="options"><label><input type="radio" name="q27" value="90"> 90</label><br><label><input type="radio" name="q27" value="100"> 100</label><br><label><input type="radio" name="q27" value="120"> 120</label><br><label><input type="radio" name="q27" value="110"> 110</label><br></div><p class="feedback" id="fb27" style="display:none;"></p></div>
+<div class="question" id="q28"><p><strong>29. ¿Cuántos hijos tuvo Abraham con Cetura?</strong></p><div class="options"><label><input type="radio" name="q28" value="Dos"> Dos</label><br><label><input type="radio" name="q28" value="Uno"> Uno</label><br><label><input type="radio" name="q28" value="Seis"> Seis</label><br><label><input type="radio" name="q28" value="Doce"> Doce</label><br></div><p class="feedback" id="fb28" style="display:none;"></p></div>
+<div class="question" id="q29"><p><strong>30. ¿Cuántos años vivió Abraham?</strong></p><div class="options"><label><input type="radio" name="q29" value="120"> 120</label><br><label><input type="radio" name="q29" value="100"> 100</label><br><label><input type="radio" name="q29" value="200"> 200</label><br><label><input type="radio" name="q29" value="175"> 175</label><br></div><p class="feedback" id="fb29" style="display:none;"></p></div>
+
+</form>
+
+<div style="text-align:center;">
+  <button onclick="submitQuiz()">✅ Enviar respuestas</button>
+</div>
+
+<div id="results"></div>
+
+<div id="options" style="display:none; text-align:center;">
+  <button onclick="resetQuiz()">🔁 Volver a intentar este tema</button>
+  <button onclick="window.top.location.reload()">📚 Elegir otro tema</button>
+</div>
+
+<script>
+const correctAnswers = {"q0": "Isaac e Ismael", "q1": "Obedeci\u00f3 de inmediato", "q2": "Que se quedara en su tierra", "q3": "Ismael se burl\u00f3 de Isaac", "q4": "Que sacrificara a Isaac", "q5": "Le mostr\u00f3 un pozo", "q6": "En el desierto de Par\u00e1n", "q7": "La llev\u00f3 a la tienda de su madre", "q8": "Jehov\u00e1 Jireh", "q9": "Beerseba", "q10": "Isaac", "q11": "En el campo mientras oraba", "q12": "Su bendici\u00f3n y descendencia", "q13": "Advirti\u00f3 a Abimelec en un sue\u00f1o", "q14": "Abimelec", "q15": "\u00bfD\u00f3nde est\u00e1 el cordero?", "q16": "En la cueva de Macpela", "q17": "Juraron paz y se repartieron un pozo", "q18": "Un carnero", "q19": "Hebr\u00f3n", "q20": "Primos", "q21": "A su siervo m\u00e1s viejo", "q22": "Rebeca", "q23": "Que ofreciera agua a \u00e9l y a sus camellos", "q24": "Risa", "q25": "Les dio dones y los envi\u00f3 al oriente", "q26": "Acept\u00f3 de inmediato", "q27": "100", "q28": "Seis", "q29": "175"};
+
+function submitQuiz() {
+  let score = 0;
+  let total = Object.keys(correctAnswers).length;
+  for (let i = 0; i < total; i++) {
+    let radios = document.getElementsByName("q" + i);
+    let userAnswer = null;
+    for (let radio of radios) {
+      if (radio.checked) {
+        userAnswer = radio.value;
+        break;
+      }
+    }
+    let feedback = document.getElementById("fb" + i);
+    if (userAnswer === correctAnswers["q" + i]) {
+      score++;
+      feedback.textContent = "✔️ Correcto";
+      feedback.style.color = "green";
+    } else {
+      feedback.textContent = "❌ Incorrecto. Respuesta correcta: " + correctAnswers["q" + i];
+      feedback.style.color = "red";
+    }
+    feedback.style.display = "block";
+  }
+  const porcentaje = ((score / total) * 100).toFixed(2);
+  const student = document.getElementById("studentName").value || "Estudiante";
+  document.getElementById("results").innerHTML = `${student}, obtuviste ${score} de ${total} respuestas correctas (${porcentaje}%)`;
+  document.getElementById("options").style.display = "block";
+  window.parent.postMessage({ tema: "Tema 8 – Abraham y Abimelec / Isaac e Ismael", nota: porcentaje }, "*");
+}
+
+function resetQuiz() {
+  const total = Object.keys(correctAnswers).length;
+  for (let i = 0; i < total; i++) {
+    const radios = document.getElementsByName("q" + i);
+    for (let radio of radios) {
+      radio.checked = false;
+    }
+    document.getElementById("fb" + i).style.display = "none";
+  }
+  document.getElementById("results").innerHTML = "";
+  document.getElementById("options").style.display = "none";
+}
+</script>
+
+</body>
+</html>
