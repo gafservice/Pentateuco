@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación del Pentateuco – Tema 11: Regreso a Canaán y encuentro con Esaú</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    h1, h2 { text-align: center; }
+    .question { background: #fff; border-radius: 8px; padding: 15px; margin: 10px 0; box-shadow: 0 0 5px #ccc; }
+    .options { margin-left: 20px; }
+    .feedback { font-weight: bold; margin-top: 5px; }
+    #results { margin-top: 30px; font-size: 18px; text-align: center; }
+    button { padding: 10px 15px; font-size: 16px; margin: 10px; }
+  </style>
+</head>
+<body>
+
+<h1>Evaluación del Pentateuco</h1>
+<h2>Tema 11: Regreso a Canaán y encuentro con Esaú (Génesis 31–33)</h2>
+
+<p><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre" style="width: 300px;"></p>
+
+<form id="quizForm">
+<div class="question" id="q0"><p><strong>1. ¿Cómo reaccionó Esaú ante el encuentro con Jacob?</strong></p><div class="options"><label><input type="radio" name="q0" value="Lloró de tristeza"> Lloró de tristeza</label><br><label><input type="radio" name="q0" value="Lo ignoró"> Lo ignoró</label><br><label><input type="radio" name="q0" value="Lo golpeó"> Lo golpeó</label><br><label><input type="radio" name="q0" value="Corrió a abrazarlo"> Corrió a abrazarlo</label><br></div><p class="feedback" id="fb0" style="display:none;"></p></div>
+<div class="question" id="q1"><p><strong>2. ¿Qué lugar marcó el pacto entre Labán y Jacob?</strong></p><div class="options"><label><input type="radio" name="q1" value="Siquem"> Siquem</label><br><label><input type="radio" name="q1" value="Mizpa"> Mizpa</label><br><label><input type="radio" name="q1" value="Betel"> Betel</label><br><label><input type="radio" name="q1" value="Galaad"> Galaad</label><br></div><p class="feedback" id="fb1" style="display:none;"></p></div>
+<div class="question" id="q2"><p><strong>3. ¿Qué hizo Jacob para apaciguar la ira de Esaú?</strong></p><div class="options"><label><input type="radio" name="q2" value="Envió mensajeros"> Envió mensajeros</label><br><label><input type="radio" name="q2" value="Se postró ante él desde lejos"> Se postró ante él desde lejos</label><br><label><input type="radio" name="q2" value="Le escribió una carta"> Le escribió una carta</label><br><label><input type="radio" name="q2" value="Le envió muchos regalos"> Le envió muchos regalos</label><br></div><p class="feedback" id="fb2" style="display:none;"></p></div>
+<div class="question" id="q3"><p><strong>4. ¿Cómo reaccionó Labán al saber que Jacob había huido?</strong></p><div class="options"><label><input type="radio" name="q3" value="Le envió un emisario"> Le envió un emisario</label><br><label><input type="radio" name="q3" value="Lo persiguió"> Lo persiguió</label><br><label><input type="radio" name="q3" value="Lloró"> Lloró</label><br><label><input type="radio" name="q3" value="Lo bendijo"> Lo bendijo</label><br></div><p class="feedback" id="fb3" style="display:none;"></p></div>
+<div class="question" id="q4"><p><strong>5. ¿Por qué Jacob decidió abandonar la casa de Labán?</strong></p><div class="options"><label><input type="radio" name="q4" value="Dios se lo ordenó"> Dios se lo ordenó</label><br><label><input type="radio" name="q4" value="Raquel lo expulsó"> Raquel lo expulsó</label><br><label><input type="radio" name="q4" value="Esaú lo llamó"> Esaú lo llamó</label><br><label><input type="radio" name="q4" value="Labán se lo pidió"> Labán se lo pidió</label><br></div><p class="feedback" id="fb4" style="display:none;"></p></div>
+<div class="question" id="q5"><p><strong>6. ¿Qué actitud mostró Jacob al ver a Esaú? (variante)</strong></p><div class="options"><label><input type="radio" name="q5" value="Corrió a abrazarlo"> Corrió a abrazarlo</label><br><label><input type="radio" name="q5" value="Se escondió tras Raquel"> Se escondió tras Raquel</label><br><label><input type="radio" name="q5" value="Se inclinó siete veces"> Se inclinó siete veces</label><br><label><input type="radio" name="q5" value="Envió a sus hijos"> Envió a sus hijos</label><br></div><p class="feedback" id="fb5" style="display:none;"></p></div>
+<div class="question" id="q6"><p><strong>7. ¿Cómo organizó Jacob su familia y bienes antes del encuentro con Esaú? (variante) (variante)</strong></p><div class="options"><label><input type="radio" name="q6" value="Los mandó primero"> Los mandó primero</label><br><label><input type="radio" name="q6" value="Los dividió en dos campamentos"> Los dividió en dos campamentos</label><br><label><input type="radio" name="q6" value="Los dejó atrás"> Los dejó atrás</label><br><label><input type="radio" name="q6" value="Los escondió"> Los escondió</label><br></div><p class="feedback" id="fb6" style="display:none;"></p></div>
+<div class="question" id="q7"><p><strong>8. ¿Cómo se justificó Raquel para que Labán no encontrara los ídolos robados?</strong></p><div class="options"><label><input type="radio" name="q7" value="Los enterró"> Los enterró</label><br><label><input type="radio" name="q7" value="Dijo que tenía la costumbre de las mujeres"> Dijo que tenía la costumbre de las mujeres</label><br><label><input type="radio" name="q7" value="Los devolvió antes"> Los devolvió antes</label><br><label><input type="radio" name="q7" value="Dijo que eran suyos"> Dijo que eran suyos</label><br></div><p class="feedback" id="fb7" style="display:none;"></p></div>
+<div class="question" id="q8"><p><strong>9. ¿Aceptó Esaú los regalos de Jacob al principio?</strong></p><div class="options"><label><input type="radio" name="q8" value="Sí, de inmediato"> Sí, de inmediato</label><br><label><input type="radio" name="q8" value="No, los destruyó"> No, los destruyó</label><br><label><input type="radio" name="q8" value="Los ignoró completamente"> Los ignoró completamente</label><br><label><input type="radio" name="q8" value="No, pero luego los tomó"> No, pero luego los tomó</label><br></div><p class="feedback" id="fb8" style="display:none;"></p></div>
+<div class="question" id="q9"><p><strong>10. ¿Por qué Jacob no aceptó viajar junto a Esaú?</strong></p><div class="options"><label><input type="radio" name="q9" value="Tenía niños y rebaños lentos"> Tenía niños y rebaños lentos</label><br><label><input type="radio" name="q9" value="Temía un ataque"> Temía un ataque</label><br><label><input type="radio" name="q9" value="Dios se lo prohibió"> Dios se lo prohibió</label><br><label><input type="radio" name="q9" value="Tenía que ir a Betel"> Tenía que ir a Betel</label><br></div><p class="feedback" id="fb9" style="display:none;"></p></div>
+<div class="question" id="q10"><p><strong>11. ¿Cómo organizó Jacob su familia y bienes antes del encuentro con Esaú?</strong></p><div class="options"><label><input type="radio" name="q10" value="Los dejó atrás"> Los dejó atrás</label><br><label><input type="radio" name="q10" value="Los dividió en dos campamentos"> Los dividió en dos campamentos</label><br><label><input type="radio" name="q10" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q10" value="Los mandó primero"> Los mandó primero</label><br></div><p class="feedback" id="fb10" style="display:none;"></p></div>
+<div class="question" id="q11"><p><strong>12. ¿Qué hizo Jacob al enterarse de que Esaú venía con 400 hombres?</strong></p><div class="options"><label><input type="radio" name="q11" value="Envió espías a esconderse"> Envió espías a esconderse</label><br><label><input type="radio" name="q11" value="Huyó más lejos"> Huyó más lejos</label><br><label><input type="radio" name="q11" value="Celebró"> Celebró</label><br><label><input type="radio" name="q11" value="Tuvo temor y angustia"> Tuvo temor y angustia</label><br></div><p class="feedback" id="fb11" style="display:none;"></p></div>
+<div class="question" id="q12"><p><strong>13. ¿Cómo organizó Jacob su familia y bienes antes del encuentro con Esaú? (variante) (variante) (variante)</strong></p><div class="options"><label><input type="radio" name="q12" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q12" value="Los mandó primero"> Los mandó primero</label><br><label><input type="radio" name="q12" value="Los dejó atrás"> Los dejó atrás</label><br><label><input type="radio" name="q12" value="Los dividió en dos campamentos"> Los dividió en dos campamentos</label><br></div><p class="feedback" id="fb12" style="display:none;"></p></div>
+<div class="question" id="q13"><p><strong>14. ¿Cómo reaccionó Esaú ante el encuentro con Jacob? (variante)</strong></p><div class="options"><label><input type="radio" name="q13" value="Lo golpeó"> Lo golpeó</label><br><label><input type="radio" name="q13" value="Lloró de tristeza"> Lloró de tristeza</label><br><label><input type="radio" name="q13" value="Corrió a abrazarlo"> Corrió a abrazarlo</label><br><label><input type="radio" name="q13" value="Lo ignoró"> Lo ignoró</label><br></div><p class="feedback" id="fb13" style="display:none;"></p></div>
+<div class="question" id="q14"><p><strong>15. ¿Qué parte de su cuerpo fue tocada por el ángel durante la lucha?</strong></p><div class="options"><label><input type="radio" name="q14" value="Brazo"> Brazo</label><br><label><input type="radio" name="q14" value="Pierna"> Pierna</label><br><label><input type="radio" name="q14" value="Cadera"> Cadera</label><br><label><input type="radio" name="q14" value="Costado"> Costado</label><br></div><p class="feedback" id="fb14" style="display:none;"></p></div>
+<div class="question" id="q15"><p><strong>16. ¿Qué dijo Jacob que veía en el rostro de Esaú?</strong></p><div class="options"><label><input type="radio" name="q15" value="El reflejo de su culpa"> El reflejo de su culpa</label><br><label><input type="radio" name="q15" value="El rostro de Dios"> El rostro de Dios</label><br><label><input type="radio" name="q15" value="La justicia divina"> La justicia divina</label><br><label><input type="radio" name="q15" value="La herencia de Isaac"> La herencia de Isaac</label><br></div><p class="feedback" id="fb15" style="display:none;"></p></div>
+<div class="question" id="q16"><p><strong>17. ¿Dónde se estableció Jacob después del encuentro con Esaú?</strong></p><div class="options"><label><input type="radio" name="q16" value="Beerseba"> Beerseba</label><br><label><input type="radio" name="q16" value="Siquem"> Siquem</label><br><label><input type="radio" name="q16" value="Hebrón"> Hebrón</label><br><label><input type="radio" name="q16" value="Betel"> Betel</label><br></div><p class="feedback" id="fb16" style="display:none;"></p></div>
+<div class="question" id="q17"><p><strong>18. ¿Qué hizo Jacob la noche antes de encontrarse con Esaú?</strong></p><div class="options"><label><input type="radio" name="q17" value="Ayunó"> Ayunó</label><br><label><input type="radio" name="q17" value="Construyó un altar"> Construyó un altar</label><br><label><input type="radio" name="q17" value="Envió presentes"> Envió presentes</label><br><label><input type="radio" name="q17" value="Luchó con un ángel"> Luchó con un ángel</label><br></div><p class="feedback" id="fb17" style="display:none;"></p></div>
+<div class="question" id="q18"><p><strong>19. ¿Cómo organizó Jacob su familia y bienes antes del encuentro con Esaú? (variante)</strong></p><div class="options"><label><input type="radio" name="q18" value="Los dejó atrás"> Los dejó atrás</label><br><label><input type="radio" name="q18" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q18" value="Los mandó primero"> Los mandó primero</label><br><label><input type="radio" name="q18" value="Los dividió en dos campamentos"> Los dividió en dos campamentos</label><br></div><p class="feedback" id="fb18" style="display:none;"></p></div>
+<div class="question" id="q19"><p><strong>20. ¿Qué actitud mostró Jacob al ver a Esaú?</strong></p><div class="options"><label><input type="radio" name="q19" value="Corrió a abrazarlo"> Corrió a abrazarlo</label><br><label><input type="radio" name="q19" value="Se inclinó siete veces"> Se inclinó siete veces</label><br><label><input type="radio" name="q19" value="Se escondió tras Raquel"> Se escondió tras Raquel</label><br><label><input type="radio" name="q19" value="Envió a sus hijos"> Envió a sus hijos</label><br></div><p class="feedback" id="fb19" style="display:none;"></p></div>
+<div class="question" id="q20"><p><strong>21. ¿Qué significó el nombre Mizpa en ese contexto?</strong></p><div class="options"><label><input type="radio" name="q20" value="Tierra de bendición"> Tierra de bendición</label><br><label><input type="radio" name="q20" value="Atalaya del Señor"> Atalaya del Señor</label><br><label><input type="radio" name="q20" value="Monte del pacto"> Monte del pacto</label><br><label><input type="radio" name="q20" value="Lamento de los patriarcas"> Lamento de los patriarcas</label><br></div><p class="feedback" id="fb20" style="display:none;"></p></div>
+<div class="question" id="q21"><p><strong>22. ¿Por qué Jacob decidió abandonar la casa de Labán? (variante)</strong></p><div class="options"><label><input type="radio" name="q21" value="Labán se lo pidió"> Labán se lo pidió</label><br><label><input type="radio" name="q21" value="Esaú lo llamó"> Esaú lo llamó</label><br><label><input type="radio" name="q21" value="Dios se lo ordenó"> Dios se lo ordenó</label><br><label><input type="radio" name="q21" value="Raquel lo expulsó"> Raquel lo expulsó</label><br></div><p class="feedback" id="fb21" style="display:none;"></p></div>
+<div class="question" id="q22"><p><strong>23. ¿Qué hizo Raquel sin que Jacob lo supiera al salir de casa de Labán? (variante)</strong></p><div class="options"><label><input type="radio" name="q22" value="Liberó ganado ajeno"> Liberó ganado ajeno</label><br><label><input type="radio" name="q22" value="Robó los ídolos de su padre"> Robó los ídolos de su padre</label><br><label><input type="radio" name="q22" value="Escribió una carta a Esaú"> Escribió una carta a Esaú</label><br><label><input type="radio" name="q22" value="Escondió comida"> Escondió comida</label><br></div><p class="feedback" id="fb22" style="display:none;"></p></div>
+<div class="question" id="q23"><p><strong>24. ¿Qué significa el nombre Israel?</strong></p><div class="options"><label><input type="radio" name="q23" value="Amigo de Dios"> Amigo de Dios</label><br><label><input type="radio" name="q23" value="El que lucha con Dios"> El que lucha con Dios</label><br><label><input type="radio" name="q23" value="El elegido"> El elegido</label><br><label><input type="radio" name="q23" value="Siervo del Altísimo"> Siervo del Altísimo</label><br></div><p class="feedback" id="fb23" style="display:none;"></p></div>
+<div class="question" id="q24"><p><strong>25. ¿Qué hizo Raquel sin que Jacob lo supiera al salir de casa de Labán?</strong></p><div class="options"><label><input type="radio" name="q24" value="Robó los ídolos de su padre"> Robó los ídolos de su padre</label><br><label><input type="radio" name="q24" value="Liberó ganado ajeno"> Liberó ganado ajeno</label><br><label><input type="radio" name="q24" value="Escondió comida"> Escondió comida</label><br><label><input type="radio" name="q24" value="Escribió una carta a Esaú"> Escribió una carta a Esaú</label><br></div><p class="feedback" id="fb24" style="display:none;"></p></div>
+<div class="question" id="q25"><p><strong>26. ¿Cómo organizó Jacob su familia y bienes antes del encuentro con Esaú? (variante)</strong></p><div class="options"><label><input type="radio" name="q25" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q25" value="Los dividió en dos campamentos"> Los dividió en dos campamentos</label><br><label><input type="radio" name="q25" value="Los dejó atrás"> Los dejó atrás</label><br><label><input type="radio" name="q25" value="Los mandó primero"> Los mandó primero</label><br></div><p class="feedback" id="fb25" style="display:none;"></p></div>
+<div class="question" id="q26"><p><strong>27. ¿Dónde se estableció Jacob después del encuentro con Esaú? (variante)</strong></p><div class="options"><label><input type="radio" name="q26" value="Hebrón"> Hebrón</label><br><label><input type="radio" name="q26" value="Siquem"> Siquem</label><br><label><input type="radio" name="q26" value="Beerseba"> Beerseba</label><br><label><input type="radio" name="q26" value="Betel"> Betel</label><br></div><p class="feedback" id="fb26" style="display:none;"></p></div>
+<div class="question" id="q27"><p><strong>28. ¿Qué nombre nuevo recibió Jacob después del encuentro con el ángel?</strong></p><div class="options"><label><input type="radio" name="q27" value="Josafat"> Josafat</label><br><label><input type="radio" name="q27" value="Jehová-nisí"> Jehová-nisí</label><br><label><input type="radio" name="q27" value="Israel"> Israel</label><br><label><input type="radio" name="q27" value="Betel"> Betel</label><br></div><p class="feedback" id="fb27" style="display:none;"></p></div>
+<div class="question" id="q28"><p><strong>29. ¿Cómo organizó Jacob su familia y bienes antes del encuentro con Esaú? (variante) (variante)</strong></p><div class="options"><label><input type="radio" name="q28" value="Los mandó primero"> Los mandó primero</label><br><label><input type="radio" name="q28" value="Los dividió en dos campamentos"> Los dividió en dos campamentos</label><br><label><input type="radio" name="q28" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q28" value="Los dejó atrás"> Los dejó atrás</label><br></div><p class="feedback" id="fb28" style="display:none;"></p></div>
+<div class="question" id="q29"><p><strong>30. ¿Qué pacto hicieron Jacob y Labán al despedirse?</strong></p><div class="options"><label><input type="radio" name="q29" value="Que no se harían daño"> Que no se harían daño</label><br><label><input type="radio" name="q29" value="Que intercambiarían hijos"> Que intercambiarían hijos</label><br><label><input type="radio" name="q29" value="Que compartirían ganado"> Que compartirían ganado</label><br><label><input type="radio" name="q29" value="Que se escribirían cartas"> Que se escribirían cartas</label><br></div><p class="feedback" id="fb29" style="display:none;"></p></div>
+
+</form>
+
+<div style="text-align:center;">
+  <button onclick="submitQuiz()">✅ Enviar respuestas</button>
+</div>
+
+<div id="results"></div>
+
+<div id="options" style="display:none; text-align:center;">
+  <button onclick="resetQuiz()">🔁 Volver a intentar este tema</button>
+  <button onclick="window.top.location.reload()">📚 Elegir otro tema</button>
+</div>
+
+<script>
+const correctAnswers = {"q0": "Corri\u00f3 a abrazarlo", "q1": "Mizpa", "q2": "Le envi\u00f3 muchos regalos", "q3": "Lo persigui\u00f3", "q4": "Dios se lo orden\u00f3", "q5": "Se inclin\u00f3 siete veces", "q6": "Los dividi\u00f3 en dos campamentos", "q7": "Dijo que ten\u00eda la costumbre de las mujeres", "q8": "No, pero luego los tom\u00f3", "q9": "Ten\u00eda ni\u00f1os y reba\u00f1os lentos", "q10": "Los dividi\u00f3 en dos campamentos", "q11": "Tuvo temor y angustia", "q12": "Los dividi\u00f3 en dos campamentos", "q13": "Corri\u00f3 a abrazarlo", "q14": "Cadera", "q15": "El rostro de Dios", "q16": "Siquem", "q17": "Luch\u00f3 con un \u00e1ngel", "q18": "Los dividi\u00f3 en dos campamentos", "q19": "Se inclin\u00f3 siete veces", "q20": "Atalaya del Se\u00f1or", "q21": "Dios se lo orden\u00f3", "q22": "Rob\u00f3 los \u00eddolos de su padre", "q23": "El que lucha con Dios", "q24": "Rob\u00f3 los \u00eddolos de su padre", "q25": "Los dividi\u00f3 en dos campamentos", "q26": "Siquem", "q27": "Israel", "q28": "Los dividi\u00f3 en dos campamentos", "q29": "Que no se har\u00edan da\u00f1o"};
+
+function submitQuiz() {
+  let score = 0;
+  let total = Object.keys(correctAnswers).length;
+  for (let i = 0; i < total; i++) {
+    let radios = document.getElementsByName("q" + i);
+    let userAnswer = null;
+    for (let radio of radios) {
+      if (radio.checked) {
+        userAnswer = radio.value;
+        break;
+      }
+    }
+    let feedback = document.getElementById("fb" + i);
+    if (userAnswer === correctAnswers["q" + i]) {
+      score++;
+      feedback.textContent = "✔️ Correcto";
+      feedback.style.color = "green";
+    } else {
+      feedback.textContent = "❌ Incorrecto. Respuesta correcta: " + correctAnswers["q" + i];
+      feedback.style.color = "red";
+    }
+    feedback.style.display = "block";
+  }
+  const porcentaje = ((score / total) * 100).toFixed(2);
+  const student = document.getElementById("studentName").value || "Estudiante";
+  document.getElementById("results").innerHTML = `${student}, obtuviste ${score} de ${total} respuestas correctas (${porcentaje}%)`;
+  document.getElementById("options").style.display = "block";
+  window.parent.postMessage({ tema: "Tema 11 – Regreso a Canaán y encuentro con Esaú", nota: porcentaje }, "*");
+}
+
+function resetQuiz() {
+  const total = Object.keys(correctAnswers).length;
+  for (let i = 0; i < total; i++) {
+    const radios = document.getElementsByName("q" + i);
+    for (let radio of radios) {
+      radio.checked = false;
+    }
+    document.getElementById("fb" + i).style.display = "none";
+  }
+  document.getElementById("results").innerHTML = "";
+  document.getElementById("options").style.display = "none";
+}
+</script>
+
+</body>
+</html>
