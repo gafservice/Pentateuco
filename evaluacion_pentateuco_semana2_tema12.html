@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación del Pentateuco – Tema 12: José y sus hermanos</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    h1, h2 { text-align: center; }
+    .question { background: #fff; border-radius: 8px; padding: 15px; margin: 10px 0; box-shadow: 0 0 5px #ccc; }
+    .options { margin-left: 20px; }
+    .feedback { font-weight: bold; margin-top: 5px; }
+    #results { margin-top: 30px; font-size: 18px; text-align: center; }
+    button { padding: 10px 15px; font-size: 16px; margin: 10px; }
+  </style>
+</head>
+<body>
+
+<h1>Evaluación del Pentateuco</h1>
+<h2>Tema 12: José y sus hermanos (Génesis 37, 39–45)</h2>
+
+<p><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre" style="width: 300px;"></p>
+
+<form id="quizForm">
+<div class="question" id="q0"><p><strong>1. ¿Cómo fue recibida la familia de Jacob por el faraón?</strong></p><div class="options"><label><input type="radio" name="q0" value="Con agrado y provisiones"> Con agrado y provisiones</label><br><label><input type="radio" name="q0" value="Con distancia"> Con distancia</label><br><label><input type="radio" name="q0" value="Con desconfianza"> Con desconfianza</label><br><label><input type="radio" name="q0" value="Con castigo"> Con castigo</label><br></div><p class="feedback" id="fb0" style="display:none;"></p></div>
+<div class="question" id="q1"><p><strong>2. ¿Qué les dijo José para consolarlos?</strong></p><div class="options"><label><input type="radio" name="q1" value="Dios me envió delante de ustedes"> Dios me envió delante de ustedes</label><br><label><input type="radio" name="q1" value="Faraón los protegerá"> Faraón los protegerá</label><br><label><input type="radio" name="q1" value="Todo fue por el hambre"> Todo fue por el hambre</label><br><label><input type="radio" name="q1" value="Yo los castigaré"> Yo los castigaré</label><br></div><p class="feedback" id="fb1" style="display:none;"></p></div>
+<div class="question" id="q2"><p><strong>3. ¿Cuál fue el último deseo de Jacob antes de morir?</strong></p><div class="options"><label><input type="radio" name="q2" value="Bendecir a Faraón"> Bendecir a Faraón</label><br><label><input type="radio" name="q2" value="Ser embalsamado"> Ser embalsamado</label><br><label><input type="radio" name="q2" value="Ser enterrado con sus padres"> Ser enterrado con sus padres</label><br><label><input type="radio" name="q2" value="Ver el mar"> Ver el mar</label><br></div><p class="feedback" id="fb2" style="display:none;"></p></div>
+<div class="question" id="q3"><p><strong>4. ¿Qué dones tenía José que le ayudaron en la cárcel?</strong></p><div class="options"><label><input type="radio" name="q3" value="Hablar varios idiomas"> Hablar varios idiomas</label><br><label><input type="radio" name="q3" value="Interpretar sueños"> Interpretar sueños</label><br><label><input type="radio" name="q3" value="Sanar enfermos"> Sanar enfermos</label><br><label><input type="radio" name="q3" value="Dominar el fuego"> Dominar el fuego</label><br></div><p class="feedback" id="fb3" style="display:none;"></p></div>
+<div class="question" id="q4"><p><strong>5. ¿Qué soñó José cuando era joven que provocó la envidia de sus hermanos?</strong></p><div class="options"><label><input type="radio" name="q4" value="Ser rey de Egipto"> Ser rey de Egipto</label><br><label><input type="radio" name="q4" value="La destrucción de Canaán"> La destrucción de Canaán</label><br><label><input type="radio" name="q4" value="Manojos que se inclinaban ante el suyo"> Manojos que se inclinaban ante el suyo</label><br><label><input type="radio" name="q4" value="Caminar sobre el mar"> Caminar sobre el mar</label><br></div><p class="feedback" id="fb4" style="display:none;"></p></div>
+<div class="question" id="q5"><p><strong>6. ¿Qué plan idearon los hermanos de José inicialmente?</strong></p><div class="options"><label><input type="radio" name="q5" value="Matarlo"> Matarlo</label><br><label><input type="radio" name="q5" value="Adoptarlo como jefe"> Adoptarlo como jefe</label><br><label><input type="radio" name="q5" value="Venderlo"> Venderlo</label><br><label><input type="radio" name="q5" value="Esconderlo en el campo"> Esconderlo en el campo</label><br></div><p class="feedback" id="fb5" style="display:none;"></p></div>
+<div class="question" id="q6"><p><strong>7. ¿Cuál fue la interpretación del sueño del faraón?</strong></p><div class="options"><label><input type="radio" name="q6" value="5 años de exilio"> 5 años de exilio</label><br><label><input type="radio" name="q6" value="7 años de abundancia y 7 de hambre"> 7 años de abundancia y 7 de hambre</label><br><label><input type="radio" name="q6" value="10 años de guerra"> 10 años de guerra</label><br><label><input type="radio" name="q6" value="7 días de peste"> 7 días de peste</label><br></div><p class="feedback" id="fb6" style="display:none;"></p></div>
+<div class="question" id="q7"><p><strong>8. ¿Qué promesa pidió José a los hebreos antes de morir?</strong></p><div class="options"><label><input type="radio" name="q7" value="Servir en Egipto"> Servir en Egipto</label><br><label><input type="radio" name="q7" value="Cuidar de Faraón"> Cuidar de Faraón</label><br><label><input type="radio" name="q7" value="Guardar su copa"> Guardar su copa</label><br><label><input type="radio" name="q7" value="Llevar sus huesos a Canaán"> Llevar sus huesos a Canaán</label><br></div><p class="feedback" id="fb7" style="display:none;"></p></div>
+<div class="question" id="q8"><p><strong>9. ¿Qué les pidió José a sus hermanos que dijeran al faraón sobre su oficio?</strong></p><div class="options"><label><input type="radio" name="q8" value="Que eran egipcios"> Que eran egipcios</label><br><label><input type="radio" name="q8" value="Que eran pastores"> Que eran pastores</label><br><label><input type="radio" name="q8" value="Que eran constructores"> Que eran constructores</label><br><label><input type="radio" name="q8" value="Que eran carpinteros"> Que eran carpinteros</label><br></div><p class="feedback" id="fb8" style="display:none;"></p></div>
+<div class="question" id="q9"><p><strong>10. ¿Qué acto espiritual importante realizó Jacob en Egipto?</strong></p><div class="options"><label><input type="radio" name="q9" value="Sacrificó un cordero"> Sacrificó un cordero</label><br><label><input type="radio" name="q9" value="Ayunó 7 días"> Ayunó 7 días</label><br><label><input type="radio" name="q9" value="Construyó un altar"> Construyó un altar</label><br><label><input type="radio" name="q9" value="Bendijo al faraón"> Bendijo al faraón</label><br></div><p class="feedback" id="fb9" style="display:none;"></p></div>
+<div class="question" id="q10"><p><strong>11. ¿Qué hicieron finalmente con José?</strong></p><div class="options"><label><input type="radio" name="q10" value="Lo devolvieron a su padre"> Lo devolvieron a su padre</label><br><label><input type="radio" name="q10" value="Lo escondieron"> Lo escondieron</label><br><label><input type="radio" name="q10" value="Lo vendieron como esclavo"> Lo vendieron como esclavo</label><br><label><input type="radio" name="q10" value="Lo dejaron libre"> Lo dejaron libre</label><br></div><p class="feedback" id="fb10" style="display:none;"></p></div>
+<div class="question" id="q11"><p><strong>12. ¿Qué sueño interpretó José en prisión?</strong></p><div class="options"><label><input type="radio" name="q11" value="El de su hermano Rubén"> El de su hermano Rubén</label><br><label><input type="radio" name="q11" value="El del faraón"> El del faraón</label><br><label><input type="radio" name="q11" value="El del copero y panadero"> El del copero y panadero</label><br><label><input type="radio" name="q11" value="El de su padre Jacob"> El de su padre Jacob</label><br></div><p class="feedback" id="fb11" style="display:none;"></p></div>
+<div class="question" id="q12"><p><strong>13. ¿Qué región de Egipto se les asignó a los hermanos de José?</strong></p><div class="options"><label><input type="radio" name="q12" value="Ramesés"> Ramesés</label><br><label><input type="radio" name="q12" value="Gosén"> Gosén</label><br><label><input type="radio" name="q12" value="Memfis"> Memfis</label><br><label><input type="radio" name="q12" value="Sinaí"> Sinaí</label><br></div><p class="feedback" id="fb12" style="display:none;"></p></div>
+<div class="question" id="q13"><p><strong>14. ¿Qué enseñanza central destaca el autor sobre la historia de José?</strong></p><div class="options"><label><input type="radio" name="q13" value="Dios dirige incluso en la adversidad"> Dios dirige incluso en la adversidad</label><br><label><input type="radio" name="q13" value="José era perfecto"> José era perfecto</label><br><label><input type="radio" name="q13" value="La política egipcia era justa"> La política egipcia era justa</label><br><label><input type="radio" name="q13" value="Los sueños siempre se cumplen"> Los sueños siempre se cumplen</label><br></div><p class="feedback" id="fb13" style="display:none;"></p></div>
+<div class="question" id="q14"><p><strong>15. ¿Qué acusación hizo José cuando sus hermanos llegaron por alimento?</strong></p><div class="options"><label><input type="radio" name="q14" value="De idolatría"> De idolatría</label><br><label><input type="radio" name="q14" value="De robo"> De robo</label><br><label><input type="radio" name="q14" value="De abandono familiar"> De abandono familiar</label><br><label><input type="radio" name="q14" value="Los acusó de espías"> Los acusó de espías</label><br></div><p class="feedback" id="fb14" style="display:none;"></p></div>
+<div class="question" id="q15"><p><strong>16. ¿Qué le pasó a José tras la acusación de la esposa de Potifar?</strong></p><div class="options"><label><input type="radio" name="q15" value="Fue a la cárcel"> Fue a la cárcel</label><br><label><input type="radio" name="q15" value="Fue ejecutado"> Fue ejecutado</label><br><label><input type="radio" name="q15" value="Fue ascendido"> Fue ascendido</label><br><label><input type="radio" name="q15" value="Fue desterrado"> Fue desterrado</label><br></div><p class="feedback" id="fb15" style="display:none;"></p></div>
+<div class="question" id="q16"><p><strong>17. ¿Quién intervino para que no mataran a José?</strong></p><div class="options"><label><input type="radio" name="q16" value="Leví"> Leví</label><br><label><input type="radio" name="q16" value="Rubén"> Rubén</label><br><label><input type="radio" name="q16" value="Judá"> Judá</label><br><label><input type="radio" name="q16" value="Simeón"> Simeón</label><br></div><p class="feedback" id="fb16" style="display:none;"></p></div>
+<div class="question" id="q17"><p><strong>18. ¿A quién retuvo José mientras los otros regresaban por Benjamín?</strong></p><div class="options"><label><input type="radio" name="q17" value="Simeón"> Simeón</label><br><label><input type="radio" name="q17" value="Leví"> Leví</label><br><label><input type="radio" name="q17" value="Judá"> Judá</label><br><label><input type="radio" name="q17" value="Rubén"> Rubén</label><br></div><p class="feedback" id="fb17" style="display:none;"></p></div>
+<div class="question" id="q18"><p><strong>19. ¿Qué prenda especial le dio Jacob a José?</strong></p><div class="options"><label><input type="radio" name="q18" value="Una corona de pastor"> Una corona de pastor</label><br><label><input type="radio" name="q18" value="Un anillo real"> Un anillo real</label><br><label><input type="radio" name="q18" value="Una túnica de diversos colores"> Una túnica de diversos colores</label><br><label><input type="radio" name="q18" value="Un bastón de mando"> Un bastón de mando</label><br></div><p class="feedback" id="fb18" style="display:none;"></p></div>
+<div class="question" id="q19"><p><strong>20. ¿Qué puso José en el costal de Benjamín?</strong></p><div class="options"><label><input type="radio" name="q19" value="Trigo envenenado"> Trigo envenenado</label><br><label><input type="radio" name="q19" value="Un sello real"> Un sello real</label><br><label><input type="radio" name="q19" value="Dinero falso"> Dinero falso</label><br><label><input type="radio" name="q19" value="Su copa de plata"> Su copa de plata</label><br></div><p class="feedback" id="fb19" style="display:none;"></p></div>
+<div class="question" id="q20"><p><strong>21. ¿Quién fue el responsable de que los hermanos fueran a Egipto?</strong></p><div class="options"><label><input type="radio" name="q20" value="Dios en un sueño"> Dios en un sueño</label><br><label><input type="radio" name="q20" value="Jacob"> Jacob</label><br><label><input type="radio" name="q20" value="Simeón"> Simeón</label><br><label><input type="radio" name="q20" value="El hambre"> El hambre</label><br></div><p class="feedback" id="fb20" style="display:none;"></p></div>
+<div class="question" id="q21"><p><strong>22. ¿Cómo se sintió José al ver a Benjamín?</strong></p><div class="options"><label><input type="radio" name="q21" value="Lo ignoró"> Lo ignoró</label><br><label><input type="radio" name="q21" value="Se enojó"> Se enojó</label><br><label><input type="radio" name="q21" value="Lloró en privado"> Lloró en privado</label><br><label><input type="radio" name="q21" value="Lo rechazó"> Lo rechazó</label><br></div><p class="feedback" id="fb21" style="display:none;"></p></div>
+<div class="question" id="q22"><p><strong>23. ¿Qué posición obtuvo José después de interpretar los sueños?</strong></p><div class="options"><label><input type="radio" name="q22" value="Embajador hebreo"> Embajador hebreo</label><br><label><input type="radio" name="q22" value="Capitán del ejército"> Capitán del ejército</label><br><label><input type="radio" name="q22" value="Sacerdote"> Sacerdote</label><br><label><input type="radio" name="q22" value="Gobernador de Egipto"> Gobernador de Egipto</label><br></div><p class="feedback" id="fb22" style="display:none;"></p></div>
+<div class="question" id="q23"><p><strong>24. ¿Qué soñó el faraón que solo José pudo interpretar?</strong></p><div class="options"><label><input type="radio" name="q23" value="10 montañas y 10 ríos"> 10 montañas y 10 ríos</label><br><label><input type="radio" name="q23" value="Un gran diluvio"> Un gran diluvio</label><br><label><input type="radio" name="q23" value="5 estrellas y 5 soles"> 5 estrellas y 5 soles</label><br><label><input type="radio" name="q23" value="7 vacas y 7 espigas"> 7 vacas y 7 espigas</label><br></div><p class="feedback" id="fb23" style="display:none;"></p></div>
+<div class="question" id="q24"><p><strong>25. ¿Qué ofreció Judá a cambio de Benjamín?</strong></p><div class="options"><label><input type="radio" name="q24" value="Dar oro"> Dar oro</label><br><label><input type="radio" name="q24" value="Ir a prisión"> Ir a prisión</label><br><label><input type="radio" name="q24" value="Morir"> Morir</label><br><label><input type="radio" name="q24" value="Ser su esclavo"> Ser su esclavo</label><br></div><p class="feedback" id="fb24" style="display:none;"></p></div>
+<div class="question" id="q25"><p><strong>26. ¿Cómo reaccionaron los hermanos cuando José se dio a conocer?</strong></p><div class="options"><label><input type="radio" name="q25" value="Lloraron de alegría"> Lloraron de alegría</label><br><label><input type="radio" name="q25" value="Se sorprendieron y temieron"> Se sorprendieron y temieron</label><br><label><input type="radio" name="q25" value="Huyeron"> Huyeron</label><br><label><input type="radio" name="q25" value="Celebraron"> Celebraron</label><br></div><p class="feedback" id="fb25" style="display:none;"></p></div>
+<div class="question" id="q26"><p><strong>27. ¿A quién fue vendido José?</strong></p><div class="options"><label><input type="radio" name="q26" value="Egipcios"> Egipcios</label><br><label><input type="radio" name="q26" value="Ismaelitas"> Ismaelitas</label><br><label><input type="radio" name="q26" value="Madianitas"> Madianitas</label><br><label><input type="radio" name="q26" value="Amorreos"> Amorreos</label><br></div><p class="feedback" id="fb26" style="display:none;"></p></div>
+<div class="question" id="q27"><p><strong>28. ¿Qué hizo la esposa de Potifar contra José?</strong></p><div class="options"><label><input type="radio" name="q27" value="Lo acusó falsamente"> Lo acusó falsamente</label><br><label><input type="radio" name="q27" value="Lo premió"> Lo premió</label><br><label><input type="radio" name="q27" value="Lo perdonó"> Lo perdonó</label><br><label><input type="radio" name="q27" value="Le entregó riquezas"> Le entregó riquezas</label><br></div><p class="feedback" id="fb27" style="display:none;"></p></div>
+<div class="question" id="q28"><p><strong>29. ¿Cuántos años vivió Jacob en Egipto antes de morir?</strong></p><div class="options"><label><input type="radio" name="q28" value="10 años"> 10 años</label><br><label><input type="radio" name="q28" value="17 años"> 17 años</label><br><label><input type="radio" name="q28" value="20 años"> 20 años</label><br><label><input type="radio" name="q28" value="7 años"> 7 años</label><br></div><p class="feedback" id="fb28" style="display:none;"></p></div>
+
+</form>
+
+<div style="text-align:center;">
+  <button onclick="submitQuiz()">✅ Enviar respuestas</button>
+</div>
+
+<div id="results"></div>
+
+<div id="options" style="display:none; text-align:center;">
+  <button onclick="resetQuiz()">🔁 Volver a intentar este tema</button>
+  <button onclick="window.top.location.reload()">📚 Elegir otro tema</button>
+</div>
+
+<script>
+const correctAnswers = {"q0": "Con agrado y provisiones", "q1": "Dios me envi\u00f3 delante de ustedes", "q2": "Ser enterrado con sus padres", "q3": "Interpretar sue\u00f1os", "q4": "Manojos que se inclinaban ante el suyo", "q5": "Matarlo", "q6": "7 a\u00f1os de abundancia y 7 de hambre", "q7": "Llevar sus huesos a Cana\u00e1n", "q8": "Que eran pastores", "q9": "Bendijo al fara\u00f3n", "q10": "Lo vendieron como esclavo", "q11": "El del copero y panadero", "q12": "Gos\u00e9n", "q13": "Dios dirige incluso en la adversidad", "q14": "Los acus\u00f3 de esp\u00edas", "q15": "Fue a la c\u00e1rcel", "q16": "Rub\u00e9n", "q17": "Sime\u00f3n", "q18": "Una t\u00fanica de diversos colores", "q19": "Su copa de plata", "q20": "El hambre", "q21": "Llor\u00f3 en privado", "q22": "Gobernador de Egipto", "q23": "7 vacas y 7 espigas", "q24": "Ser su esclavo", "q25": "Se sorprendieron y temieron", "q26": "Ismaelitas", "q27": "Lo acus\u00f3 falsamente", "q28": "17 a\u00f1os"};
+
+function submitQuiz() {
+  let score = 0;
+  let total = Object.keys(correctAnswers).length;
+  for (let i = 0; i < total; i++) {
+    let radios = document.getElementsByName("q" + i);
+    let userAnswer = null;
+    for (let radio of radios) {
+      if (radio.checked) {
+        userAnswer = radio.value;
+        break;
+      }
+    }
+    let feedback = document.getElementById("fb" + i);
+    if (userAnswer === correctAnswers["q" + i]) {
+      score++;
+      feedback.textContent = "✔️ Correcto";
+      feedback.style.color = "green";
+    } else {
+      feedback.textContent = "❌ Incorrecto. Respuesta correcta: " + correctAnswers["q" + i];
+      feedback.style.color = "red";
+    }
+    feedback.style.display = "block";
+  }
+  const porcentaje = ((score / total) * 100).toFixed(2);
+  const student = document.getElementById("studentName").value || "Estudiante";
+  document.getElementById("results").innerHTML = `${student}, obtuviste ${score} de ${total} respuestas correctas (${porcentaje}%)`;
+  document.getElementById("options").style.display = "block";
+  window.parent.postMessage({ tema: "Tema 12 – José y sus hermanos", nota: porcentaje }, "*");
+}
+
+function resetQuiz() {
+  const total = Object.keys(correctAnswers).length;
+  for (let i = 0; i < total; i++) {
+    const radios = document.getElementsByName("q" + i);
+    for (let radio of radios) {
+      radio.checked = false;
+    }
+    document.getElementById("fb" + i).style.display = "none";
+  }
+  document.getElementById("results").innerHTML = "";
+  document.getElementById("options").style.display = "none";
+}
+</script>
+
+</body>
+</html>
