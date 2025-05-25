@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación del Pentateuco – Tema 9: Jacob y Esaú / Las bendiciones</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    h1, h2 { text-align: center; }
+    .question { background: #fff; border-radius: 8px; padding: 15px; margin: 10px 0; box-shadow: 0 0 5px #ccc; }
+    .options { margin-left: 20px; }
+    .feedback { font-weight: bold; margin-top: 5px; }
+    #results { margin-top: 30px; font-size: 18px; text-align: center; }
+    button { padding: 10px 15px; font-size: 16px; margin: 10px; }
+  </style>
+</head>
+<body>
+
+<h1>Evaluación del Pentateuco</h1>
+<h2>Tema 9: Jacob y Esaú / Las bendiciones (Génesis 25:19–28:22)</h2>
+
+<p><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre" style="width: 300px;"></p>
+
+<form id="quizForm">
+<div class="question" id="q0"><p><strong>1. ¿Qué oficio tenía Esaú?</strong></p><div class="options"><label><input type="radio" name="q0" value="Pastor"> Pastor</label><br><label><input type="radio" name="q0" value="Sacerdote"> Sacerdote</label><br><label><input type="radio" name="q0" value="Carpintero"> Carpintero</label><br><label><input type="radio" name="q0" value="Cazador"> Cazador</label><br></div><p class="feedback" id="fb0" style="display:none;"></p></div>
+<div class="question" id="q1"><p><strong>2. ¿Qué nombre le dio Jacob al lugar del sueño?</strong></p><div class="options"><label><input type="radio" name="q1" value="Moriah"> Moriah</label><br><label><input type="radio" name="q1" value="Betel"> Betel</label><br><label><input type="radio" name="q1" value="Jericó"> Jericó</label><br><label><input type="radio" name="q1" value="Gilgal"> Gilgal</label><br></div><p class="feedback" id="fb1" style="display:none;"></p></div>
+<div class="question" id="q2"><p><strong>3. ¿Qué tipo de comida preparó Rebeca para Isaac?</strong></p><div class="options"><label><input type="radio" name="q2" value="De cabrito"> De cabrito</label><br><label><input type="radio" name="q2" value="De cordero"> De cordero</label><br><label><input type="radio" name="q2" value="De res"> De res</label><br><label><input type="radio" name="q2" value="De paloma"> De paloma</label><br></div><p class="feedback" id="fb2" style="display:none;"></p></div>
+<div class="question" id="q3"><p><strong>4. ¿Qué vendió Esaú a Jacob por un plato de lentejas?</strong></p><div class="options"><label><input type="radio" name="q3" value="Su ropa"> Su ropa</label><br><label><input type="radio" name="q3" value="Su arco"> Su arco</label><br><label><input type="radio" name="q3" value="Su bendición"> Su bendición</label><br><label><input type="radio" name="q3" value="Su primogenitura"> Su primogenitura</label><br></div><p class="feedback" id="fb3" style="display:none;"></p></div>
+<div class="question" id="q4"><p><strong>5. ¿Qué visión tuvo Jacob en el camino?</strong></p><div class="options"><label><input type="radio" name="q4" value="Una escalera que subía al cielo"> Una escalera que subía al cielo</label><br><label><input type="radio" name="q4" value="Un ángel que lo guiaba"> Un ángel que lo guiaba</label><br><label><input type="radio" name="q4" value="Un río de leche y miel"> Un río de leche y miel</label><br><label><input type="radio" name="q4" value="Un fuego que no se apagaba"> Un fuego que no se apagaba</label><br></div><p class="feedback" id="fb4" style="display:none;"></p></div>
+<div class="question" id="q5"><p><strong>6. ¿Quién ideó el plan para que Jacob recibiera la bendición de Isaac?</strong></p><div class="options"><label><input type="radio" name="q5" value="Lea"> Lea</label><br><label><input type="radio" name="q5" value="Raquel"> Raquel</label><br><label><input type="radio" name="q5" value="Rebeca"> Rebeca</label><br><label><input type="radio" name="q5" value="Jacob"> Jacob</label><br></div><p class="feedback" id="fb5" style="display:none;"></p></div>
+<div class="question" id="q6"><p><strong>7. ¿Qué reacción tuvo Isaac cuando descubrió el engaño?</strong></p><div class="options"><label><input type="radio" name="q6" value="Gritó"> Gritó</label><br><label><input type="radio" name="q6" value="Tembló muy fuertemente"> Tembló muy fuertemente</label><br><label><input type="radio" name="q6" value="Se desmayó"> Se desmayó</label><br><label><input type="radio" name="q6" value="Lloró"> Lloró</label><br></div><p class="feedback" id="fb6" style="display:none;"></p></div>
+<div class="question" id="q7"><p><strong>8. ¿Adónde envió Rebeca a Jacob para protegerlo de Esaú?</strong></p><div class="options"><label><input type="radio" name="q7" value="A casa de Labán"> A casa de Labán</label><br><label><input type="radio" name="q7" value="A Egipto"> A Egipto</label><br><label><input type="radio" name="q7" value="A Beerseba"> A Beerseba</label><br><label><input type="radio" name="q7" value="A Betel"> A Betel</label><br></div><p class="feedback" id="fb7" style="display:none;"></p></div>
+<div class="question" id="q8"><p><strong>9. ¿Qué sensación usó Isaac para identificar a su hijo?</strong></p><div class="options"><label><input type="radio" name="q8" value="Tacto"> Tacto</label><br><label><input type="radio" name="q8" value="Olfato"> Olfato</label><br><label><input type="radio" name="q8" value="Vista"> Vista</label><br><label><input type="radio" name="q8" value="Oído"> Oído</label><br></div><p class="feedback" id="fb8" style="display:none;"></p></div>
+<div class="question" id="q9"><p><strong>10. ¿Qué bendición le dio Isaac finalmente a Esaú?</strong></p><div class="options"><label><input type="radio" name="q9" value="Dominarás a Jacob"> Dominarás a Jacob</label><br><label><input type="radio" name="q9" value="Vivirás de tu espada"> Vivirás de tu espada</label><br><label><input type="radio" name="q9" value="Serás sacerdote"> Serás sacerdote</label><br><label><input type="radio" name="q9" value="Tendrás más hijos"> Tendrás más hijos</label><br></div><p class="feedback" id="fb9" style="display:none;"></p></div>
+<div class="question" id="q10"><p><strong>11. ¿Cómo reaccionó Jacob después de la visión en Betel?</strong></p><div class="options"><label><input type="radio" name="q10" value="Lloró"> Lloró</label><br><label><input type="radio" name="q10" value="Temió y adoró"> Temió y adoró</label><br><label><input type="radio" name="q10" value="Se durmió"> Se durmió</label><br><label><input type="radio" name="q10" value="Huyó"> Huyó</label><br></div><p class="feedback" id="fb10" style="display:none;"></p></div>
+<div class="question" id="q11"><p><strong>12. ¿Qué oficio tenía Jacob según la Biblia?</strong></p><div class="options"><label><input type="radio" name="q11" value="Hombre quieto, que habitaba en tiendas"> Hombre quieto, que habitaba en tiendas</label><br><label><input type="radio" name="q11" value="Comerciante"> Comerciante</label><br><label><input type="radio" name="q11" value="Sacerdote"> Sacerdote</label><br><label><input type="radio" name="q11" value="Cazador como Esaú"> Cazador como Esaú</label><br></div><p class="feedback" id="fb11" style="display:none;"></p></div>
+<div class="question" id="q12"><p><strong>13. ¿Quiénes fueron los padres de Jacob y Esaú?</strong></p><div class="options"><label><input type="radio" name="q12" value="Isaac y Rebeca"> Isaac y Rebeca</label><br><label><input type="radio" name="q12" value="Abraham y Sara"> Abraham y Sara</label><br><label><input type="radio" name="q12" value="Jacob y Lea"> Jacob y Lea</label><br><label><input type="radio" name="q12" value="Isaac y Raquel"> Isaac y Raquel</label><br></div><p class="feedback" id="fb12" style="display:none;"></p></div>
+<div class="question" id="q13"><p><strong>14. ¿Qué vio Jacob en la escalera?</strong></p><div class="options"><label><input type="radio" name="q13" value="Esaú con su ejército"> Esaú con su ejército</label><br><label><input type="radio" name="q13" value="Dios descendiendo"> Dios descendiendo</label><br><label><input type="radio" name="q13" value="Su madre llamándolo"> Su madre llamándolo</label><br><label><input type="radio" name="q13" value="Ángeles que subían y bajaban"> Ángeles que subían y bajaban</label><br></div><p class="feedback" id="fb13" style="display:none;"></p></div>
+<div class="question" id="q14"><p><strong>15. ¿Qué instrumento utilizó Jacob para engañar a Isaac y obtener la bendición?</strong></p><div class="options"><label><input type="radio" name="q14" value="Un bastón"> Un bastón</label><br><label><input type="radio" name="q14" value="Piel de cabrito"> Piel de cabrito</label><br><label><input type="radio" name="q14" value="Una túnica"> Una túnica</label><br><label><input type="radio" name="q14" value="Un cinturón"> Un cinturón</label><br></div><p class="feedback" id="fb14" style="display:none;"></p></div>
+<div class="question" id="q15"><p><strong>16. ¿Qué representó la escalera en el sueño de Jacob según el libro?</strong></p><div class="options"><label><input type="radio" name="q15" value="Camino de huida"> Camino de huida</label><br><label><input type="radio" name="q15" value="Comunicación entre el cielo y la tierra"> Comunicación entre el cielo y la tierra</label><br><label><input type="radio" name="q15" value="Ruta de los patriarcas"> Ruta de los patriarcas</label><br><label><input type="radio" name="q15" value="Simbolismo de castigo"> Simbolismo de castigo</label><br></div><p class="feedback" id="fb15" style="display:none;"></p></div>
+<div class="question" id="q16"><p><strong>17. ¿Quién era Labán?</strong></p><div class="options"><label><input type="radio" name="q16" value="Esposo de Raquel"> Esposo de Raquel</label><br><label><input type="radio" name="q16" value="Hermano de Rebeca"> Hermano de Rebeca</label><br><label><input type="radio" name="q16" value="Amigo de Esaú"> Amigo de Esaú</label><br><label><input type="radio" name="q16" value="Hijo de Isaac"> Hijo de Isaac</label><br></div><p class="feedback" id="fb16" style="display:none;"></p></div>
+<div class="question" id="q17"><p><strong>18. ¿Qué estaba haciendo Jacob al momento de nacer?</strong></p><div class="options"><label><input type="radio" name="q17" value="Oraba"> Oraba</label><br><label><input type="radio" name="q17" value="Dormía"> Dormía</label><br><label><input type="radio" name="q17" value="Lloraba"> Lloraba</label><br><label><input type="radio" name="q17" value="Sujetaba el talón de Esaú"> Sujetaba el talón de Esaú</label><br></div><p class="feedback" id="fb17" style="display:none;"></p></div>
+<div class="question" id="q18"><p><strong>19. ¿A qué ciudad cercana a Betel llegó Jacob cuando huía?</strong></p><div class="options"><label><input type="radio" name="q18" value="Haran"> Haran</label><br><label><input type="radio" name="q18" value="Hebrón"> Hebrón</label><br><label><input type="radio" name="q18" value="Siquem"> Siquem</label><br><label><input type="radio" name="q18" value="Ur"> Ur</label><br></div><p class="feedback" id="fb18" style="display:none;"></p></div>
+<div class="question" id="q19"><p><strong>20. ¿Cuál de los gemelos nació primero?</strong></p><div class="options"><label><input type="radio" name="q19" value="Isaac"> Isaac</label><br><label><input type="radio" name="q19" value="Esaú"> Esaú</label><br><label><input type="radio" name="q19" value="Rubén"> Rubén</label><br><label><input type="radio" name="q19" value="Jacob"> Jacob</label><br></div><p class="feedback" id="fb19" style="display:none;"></p></div>
+<div class="question" id="q20"><p><strong>21. ¿Qué dijo Rebeca para justificar el envío de Jacob?</strong></p><div class="options"><label><input type="radio" name="q20" value="Soñó con su partida"> Soñó con su partida</label><br><label><input type="radio" name="q20" value="Deseaba paz"> Deseaba paz</label><br><label><input type="radio" name="q20" value="No quería que se casara con una hitita"> No quería que se casara con una hitita</label><br><label><input type="radio" name="q20" value="Temía por su vida"> Temía por su vida</label><br></div><p class="feedback" id="fb20" style="display:none;"></p></div>
+<div class="question" id="q21"><p><strong>22. ¿Qué prometió Jacob a Dios si lo guardaba en su camino?</strong></p><div class="options"><label><input type="radio" name="q21" value="Construir un altar"> Construir un altar</label><br><label><input type="radio" name="q21" value="Ayuno eterno"> Ayuno eterno</label><br><label><input type="radio" name="q21" value="Diezmo de todo lo que recibiera"> Diezmo de todo lo que recibiera</label><br><label><input type="radio" name="q21" value="Una ofrenda diaria"> Una ofrenda diaria</label><br></div><p class="feedback" id="fb21" style="display:none;"></p></div>
+<div class="question" id="q22"><p><strong>23. ¿Cómo consideró Esaú su primogenitura?</strong></p><div class="options"><label><input type="radio" name="q22" value="Sin importancia"> Sin importancia</label><br><label><input type="radio" name="q22" value="Un derecho divino"> Un derecho divino</label><br><label><input type="radio" name="q22" value="Un privilegio"> Un privilegio</label><br><label><input type="radio" name="q22" value="Una carga"> Una carga</label><br></div><p class="feedback" id="fb22" style="display:none;"></p></div>
+<div class="question" id="q23"><p><strong>24. ¿Qué pensó Esaú cuando descubrió que Jacob había tomado su bendición?</strong></p><div class="options"><label><input type="radio" name="q23" value="Le dio otra bendición"> Le dio otra bendición</label><br><label><input type="radio" name="q23" value="Lo perdonó"> Lo perdonó</label><br><label><input type="radio" name="q23" value="Quiso matarlo"> Quiso matarlo</label><br><label><input type="radio" name="q23" value="Oró por él"> Oró por él</label><br></div><p class="feedback" id="fb23" style="display:none;"></p></div>
+<div class="question" id="q24"><p><strong>25. ¿Qué bendición dio Isaac a Jacob creyendo que era Esaú?</strong></p><div class="options"><label><input type="radio" name="q24" value="Largas tierras"> Largas tierras</label><br><label><input type="radio" name="q24" value="Muchos ganados"> Muchos ganados</label><br><label><input type="radio" name="q24" value="Sacerdocio eterno"> Sacerdocio eterno</label><br><label><input type="radio" name="q24" value="Dominio sobre naciones y hermanos"> Dominio sobre naciones y hermanos</label><br></div><p class="feedback" id="fb24" style="display:none;"></p></div>
+<div class="question" id="q25"><p><strong>26. ¿Qué promesa le hizo Dios a Jacob en el sueño de Betel?</strong></p><div class="options"><label><input type="radio" name="q25" value="Harás un templo"> Harás un templo</label><br><label><input type="radio" name="q25" value="Estaré contigo y te bendeciré"> Estaré contigo y te bendeciré</label><br><label><input type="radio" name="q25" value="Te daré una espada"> Te daré una espada</label><br><label><input type="radio" name="q25" value="Volverás a Egipto"> Volverás a Egipto</label><br></div><p class="feedback" id="fb25" style="display:none;"></p></div>
+<div class="question" id="q26"><p><strong>27. ¿Qué le dio Rebeca a Jacob para que suplantara a Esaú?</strong></p><div class="options"><label><input type="radio" name="q26" value="Un manto sagrado"> Un manto sagrado</label><br><label><input type="radio" name="q26" value="Ropa de Esaú y pieles"> Ropa de Esaú y pieles</label><br><label><input type="radio" name="q26" value="Un báculo"> Un báculo</label><br><label><input type="radio" name="q26" value="Un anillo"> Un anillo</label><br></div><p class="feedback" id="fb26" style="display:none;"></p></div>
+<div class="question" id="q27"><p><strong>28. ¿Qué prefería comer Isaac, lo cual influía en su afecto por Esaú?</strong></p><div class="options"><label><input type="radio" name="q27" value="El pan sin levadura"> El pan sin levadura</label><br><label><input type="radio" name="q27" value="La fruta"> La fruta</label><br><label><input type="radio" name="q27" value="La caza"> La caza</label><br><label><input type="radio" name="q27" value="El cordero"> El cordero</label><br></div><p class="feedback" id="fb27" style="display:none;"></p></div>
+<div class="question" id="q28"><p><strong>29. ¿Cómo se describía físicamente a Esaú al nacer?</strong></p><div class="options"><label><input type="radio" name="q28" value="Alto y fuerte"> Alto y fuerte</label><br><label><input type="radio" name="q28" value="Rubio y con rizos"> Rubio y con rizos</label><br><label><input type="radio" name="q28" value="Débil y pequeño"> Débil y pequeño</label><br><label><input type="radio" name="q28" value="Rojo y velludo"> Rojo y velludo</label><br></div><p class="feedback" id="fb28" style="display:none;"></p></div>
+
+</form>
+
+<div style="text-align:center;">
+  <button onclick="submitQuiz()">✅ Enviar respuestas</button>
+</div>
+
+<div id="results"></div>
+
+<div id="options" style="display:none; text-align:center;">
+  <button onclick="resetQuiz()">🔁 Volver a intentar este tema</button>
+  <button onclick="window.top.location.reload()">📚 Elegir otro tema</button>
+</div>
+
+<script>
+const correctAnswers = {"q0": "Cazador", "q1": "Betel", "q2": "De cabrito", "q3": "Su primogenitura", "q4": "Una escalera que sub\u00eda al cielo", "q5": "Rebeca", "q6": "Tembl\u00f3 muy fuertemente", "q7": "A casa de Lab\u00e1n", "q8": "Tacto", "q9": "Vivir\u00e1s de tu espada", "q10": "Temi\u00f3 y ador\u00f3", "q11": "Hombre quieto, que habitaba en tiendas", "q12": "Isaac y Rebeca", "q13": "\u00c1ngeles que sub\u00edan y bajaban", "q14": "Piel de cabrito", "q15": "Comunicaci\u00f3n entre el cielo y la tierra", "q16": "Hermano de Rebeca", "q17": "Sujetaba el tal\u00f3n de Esa\u00fa", "q18": "Haran", "q19": "Esa\u00fa", "q20": "No quer\u00eda que se casara con una hitita", "q21": "Diezmo de todo lo que recibiera", "q22": "Sin importancia", "q23": "Quiso matarlo", "q24": "Dominio sobre naciones y hermanos", "q25": "Estar\u00e9 contigo y te bendecir\u00e9", "q26": "Ropa de Esa\u00fa y pieles", "q27": "La caza", "q28": "Rojo y velludo"};
+
+function submitQuiz() {
+  let score = 0;
+  let total = Object.keys(correctAnswers).length;
+  for (let i = 0; i < total; i++) {
+    let radios = document.getElementsByName("q" + i);
+    let userAnswer = null;
+    for (let radio of radios) {
+      if (radio.checked) {
+        userAnswer = radio.value;
+        break;
+      }
+    }
+    let feedback = document.getElementById("fb" + i);
+    if (userAnswer === correctAnswers["q" + i]) {
+      score++;
+      feedback.textContent = "✔️ Correcto";
+      feedback.style.color = "green";
+    } else {
+      feedback.textContent = "❌ Incorrecto. Respuesta correcta: " + correctAnswers["q" + i];
+      feedback.style.color = "red";
+    }
+    feedback.style.display = "block";
+  }
+  const porcentaje = ((score / total) * 100).toFixed(2);
+  const student = document.getElementById("studentName").value || "Estudiante";
+  document.getElementById("results").innerHTML = `${student}, obtuviste ${score} de ${total} respuestas correctas (${porcentaje}%)`;
+  document.getElementById("options").style.display = "block";
+  window.parent.postMessage({ tema: "Tema 9 – Jacob y Esaú / Las bendiciones", nota: porcentaje }, "*");
+}
+
+function resetQuiz() {
+  const total = Object.keys(correctAnswers).length;
+  for (let i = 0; i < total; i++) {
+    const radios = document.getElementsByName("q" + i);
+    for (let radio of radios) {
+      radio.checked = false;
+    }
+    document.getElementById("fb" + i).style.display = "none";
+  }
+  document.getElementById("results").innerHTML = "";
+  document.getElementById("options").style.display = "none";
+}
+</script>
+
+</body>
+</html>
