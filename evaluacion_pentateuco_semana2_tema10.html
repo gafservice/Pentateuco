@@ -2,65 +2,116 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Evaluación Pentateuco - Tema 10</title>
-    <script>
-        function revisarFormulario() {
-            let total = 0;
-            let correctas = {
-                p1: "b", p2: "a", p3: "c", p4: "b", p5: "c",
-                p6: "a", p7: "b", p8: "c", p9: "a", p10: "b",
-                p11: "c", p12: "a", p13: "b", p14: "c", p15: "a",
-                p16: "b", p17: "c", p18: "a", p19: "b", p20: "c",
-                p21: "a", p22: "b", p23: "c", p24: "a", p25: "b",
-                p26: "c", p27: "a", p28: "b", p29: "c", p30: "a"
-            };
-            for (let i = 1; i <= 30; i++) {
-                let opciones = document.getElementsByName("p" + i);
-                for (let opcion of opciones) {
-                    if (opcion.checked && opcion.value === correctas["p" + i]) {
-                        total++;
-                    }
-                }
-            }
-            let nota = (total / 30) * 100;
-            let resultado = "Obtuviste " + total + " respuestas correctas de 30. Nota: " + nota.toFixed(2) + "%\n";
-            resultado += nota >= 80 ? "¡Felicidades! Has aprobado." : "Debes repetir el cuestionario para alcanzar al menos el 80%.";
-            alert(resultado);
-            document.getElementById("volver").style.display = "block";
-        }
-    </script>
+  <meta charset="UTF-8">
+  <title>Evaluación del Pentateuco – Tema 10: Jacob en casa de Labán</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    h1, h2 { text-align: center; }
+    .question { background: #fff; border-radius: 8px; padding: 15px; margin: 10px 0; box-shadow: 0 0 5px #ccc; }
+    .options { margin-left: 20px; }
+    .feedback { font-weight: bold; margin-top: 5px; }
+    #results { margin-top: 30px; font-size: 18px; text-align: center; }
+    button { padding: 10px 15px; font-size: 16px; margin: 10px; }
+  </style>
 </head>
 <body>
-    <h2>Evaluación Pentateuco - Tema 10: Jacob en casa de Labán</h2>
-    <form id="formulario">
-        <p>1. ¿Qué rasgo compartían Jacob y Labán?</p>
-        <label><input type="radio" name="p1" value="a">Generosidad</label><br>
-        <label><input type="radio" name="p1" value="b">Astucia</label><br>
-        <label><input type="radio" name="p1" value="c">Piedad</label><br><br>
 
-        <p>2. ¿Cómo consiguió Jacob a Raquel como esposa?</p>
-        <label><input type="radio" name="p2" value="a">Trabajando catorce años</label><br>
-        <label><input type="radio" name="p2" value="b">Pagando una dote</label><br>
-        <label><input type="radio" name="p2" value="c">Siendo bendecido por su padre</label><br><br>
+<h1>Evaluación del Pentateuco</h1>
+<h2>Tema 10: Jacob en casa de Labán (Génesis 29–30)</h2>
 
-        <p>3. ¿Qué enseñanza saca Jacob al ser engañado por Labán?</p>
-        <label><input type="radio" name="p3" value="a">Rechaza a Raquel</label><br>
-        <label><input type="radio" name="p3" value="b">Se va de la casa de Labán</label><br>
-        <label><input type="radio" name="p3" value="c">Reconoce la justicia divina</label><br><br>
+<p><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre" style="width: 300px;"></p>
 
-        <!-- OMITIDO: Las preguntas 4-30 para brevedad, se completan en versión final -->
+<form id="quizForm">
+<div class="question" id="q0"><p><strong>1. ¿Qué hizo Raquel con los ídolos de Labán?</strong></p><div class="options"><label><input type="radio" name="q0" value="Los vendió"> Los vendió</label><br><label><input type="radio" name="q0" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q0" value="Los destruyó"> Los destruyó</label><br></div><p class="feedback" id="fb0" style="display:none;"></p></div>
+<div class="question" id="q1"><p><strong>2. ¿Qué rasgo compartían Jacob y Labán?</strong></p><div class="options"><label><input type="radio" name="q1" value="Generosidad"> Generosidad</label><br><label><input type="radio" name="q1" value="Astucia"> Astucia</label><br><label><input type="radio" name="q1" value="Piedad"> Piedad</label><br></div><p class="feedback" id="fb1" style="display:none;"></p></div>
+<div class="question" id="q2"><p><strong>3. ¿Qué rasgo compartían Jacob y Labán?</strong></p><div class="options"><label><input type="radio" name="q2" value="Piedad"> Piedad</label><br><label><input type="radio" name="q2" value="Generosidad"> Generosidad</label><br><label><input type="radio" name="q2" value="Astucia"> Astucia</label><br></div><p class="feedback" id="fb2" style="display:none;"></p></div>
+<div class="question" id="q3"><p><strong>4. ¿Qué hizo Raquel con los ídolos de Labán?</strong></p><div class="options"><label><input type="radio" name="q3" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q3" value="Los destruyó"> Los destruyó</label><br><label><input type="radio" name="q3" value="Los vendió"> Los vendió</label><br></div><p class="feedback" id="fb3" style="display:none;"></p></div>
+<div class="question" id="q4"><p><strong>5. ¿Qué rasgo compartían Jacob y Labán?</strong></p><div class="options"><label><input type="radio" name="q4" value="Piedad"> Piedad</label><br><label><input type="radio" name="q4" value="Astucia"> Astucia</label><br><label><input type="radio" name="q4" value="Generosidad"> Generosidad</label><br></div><p class="feedback" id="fb4" style="display:none;"></p></div>
+<div class="question" id="q5"><p><strong>6. ¿Qué hizo Raquel con los ídolos de Labán?</strong></p><div class="options"><label><input type="radio" name="q5" value="Los destruyó"> Los destruyó</label><br><label><input type="radio" name="q5" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q5" value="Los vendió"> Los vendió</label><br></div><p class="feedback" id="fb5" style="display:none;"></p></div>
+<div class="question" id="q6"><p><strong>7. ¿Qué hizo Raquel con los ídolos de Labán?</strong></p><div class="options"><label><input type="radio" name="q6" value="Los vendió"> Los vendió</label><br><label><input type="radio" name="q6" value="Los destruyó"> Los destruyó</label><br><label><input type="radio" name="q6" value="Los escondió"> Los escondió</label><br></div><p class="feedback" id="fb6" style="display:none;"></p></div>
+<div class="question" id="q7"><p><strong>8. ¿Qué hizo Raquel con los ídolos de Labán?</strong></p><div class="options"><label><input type="radio" name="q7" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q7" value="Los vendió"> Los vendió</label><br><label><input type="radio" name="q7" value="Los destruyó"> Los destruyó</label><br></div><p class="feedback" id="fb7" style="display:none;"></p></div>
+<div class="question" id="q8"><p><strong>9. ¿Cómo consiguió Jacob a Raquel como esposa?</strong></p><div class="options"><label><input type="radio" name="q8" value="Trabajando catorce años"> Trabajando catorce años</label><br><label><input type="radio" name="q8" value="Siendo bendecido por su padre"> Siendo bendecido por su padre</label><br><label><input type="radio" name="q8" value="Pagando una dote"> Pagando una dote</label><br></div><p class="feedback" id="fb8" style="display:none;"></p></div>
+<div class="question" id="q9"><p><strong>10. ¿Qué hizo Raquel con los ídolos de Labán?</strong></p><div class="options"><label><input type="radio" name="q9" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q9" value="Los destruyó"> Los destruyó</label><br><label><input type="radio" name="q9" value="Los vendió"> Los vendió</label><br></div><p class="feedback" id="fb9" style="display:none;"></p></div>
+<div class="question" id="q10"><p><strong>11. ¿Qué hizo Raquel con los ídolos de Labán?</strong></p><div class="options"><label><input type="radio" name="q10" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q10" value="Los vendió"> Los vendió</label><br><label><input type="radio" name="q10" value="Los destruyó"> Los destruyó</label><br></div><p class="feedback" id="fb10" style="display:none;"></p></div>
+<div class="question" id="q11"><p><strong>12. ¿Qué rasgo compartían Jacob y Labán?</strong></p><div class="options"><label><input type="radio" name="q11" value="Astucia"> Astucia</label><br><label><input type="radio" name="q11" value="Generosidad"> Generosidad</label><br><label><input type="radio" name="q11" value="Piedad"> Piedad</label><br></div><p class="feedback" id="fb11" style="display:none;"></p></div>
+<div class="question" id="q12"><p><strong>13. ¿Qué rasgo compartían Jacob y Labán?</strong></p><div class="options"><label><input type="radio" name="q12" value="Generosidad"> Generosidad</label><br><label><input type="radio" name="q12" value="Astucia"> Astucia</label><br><label><input type="radio" name="q12" value="Piedad"> Piedad</label><br></div><p class="feedback" id="fb12" style="display:none;"></p></div>
+<div class="question" id="q13"><p><strong>14. ¿Qué hizo Raquel con los ídolos de Labán?</strong></p><div class="options"><label><input type="radio" name="q13" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q13" value="Los vendió"> Los vendió</label><br><label><input type="radio" name="q13" value="Los destruyó"> Los destruyó</label><br></div><p class="feedback" id="fb13" style="display:none;"></p></div>
+<div class="question" id="q14"><p><strong>15. ¿Qué rasgo compartían Jacob y Labán?</strong></p><div class="options"><label><input type="radio" name="q14" value="Piedad"> Piedad</label><br><label><input type="radio" name="q14" value="Astucia"> Astucia</label><br><label><input type="radio" name="q14" value="Generosidad"> Generosidad</label><br></div><p class="feedback" id="fb14" style="display:none;"></p></div>
+<div class="question" id="q15"><p><strong>16. ¿Qué hizo Raquel con los ídolos de Labán?</strong></p><div class="options"><label><input type="radio" name="q15" value="Los vendió"> Los vendió</label><br><label><input type="radio" name="q15" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q15" value="Los destruyó"> Los destruyó</label><br></div><p class="feedback" id="fb15" style="display:none;"></p></div>
+<div class="question" id="q16"><p><strong>17. ¿Qué bendición trajo Jacob a la casa de Labán?</strong></p><div class="options"><label><input type="radio" name="q16" value="La bendición de Jehová"> La bendición de Jehová</label><br><label><input type="radio" name="q16" value="Las ovejas moteadas"> Las ovejas moteadas</label><br><label><input type="radio" name="q16" value="La riqueza de Raquel"> La riqueza de Raquel</label><br></div><p class="feedback" id="fb16" style="display:none;"></p></div>
+<div class="question" id="q17"><p><strong>18. ¿Qué rasgo compartían Jacob y Labán?</strong></p><div class="options"><label><input type="radio" name="q17" value="Piedad"> Piedad</label><br><label><input type="radio" name="q17" value="Astucia"> Astucia</label><br><label><input type="radio" name="q17" value="Generosidad"> Generosidad</label><br></div><p class="feedback" id="fb17" style="display:none;"></p></div>
+<div class="question" id="q18"><p><strong>19. ¿Cómo consiguió Jacob a Raquel como esposa?</strong></p><div class="options"><label><input type="radio" name="q18" value="Pagando una dote"> Pagando una dote</label><br><label><input type="radio" name="q18" value="Trabajando catorce años"> Trabajando catorce años</label><br><label><input type="radio" name="q18" value="Siendo bendecido por su padre"> Siendo bendecido por su padre</label><br></div><p class="feedback" id="fb18" style="display:none;"></p></div>
+<div class="question" id="q19"><p><strong>20. ¿Qué enseñanza saca Jacob al ser engañado por Labán?</strong></p><div class="options"><label><input type="radio" name="q19" value="Rechaza a Raquel"> Rechaza a Raquel</label><br><label><input type="radio" name="q19" value="Reconoce la justicia divina"> Reconoce la justicia divina</label><br><label><input type="radio" name="q19" value="Se va de la casa de Labán"> Se va de la casa de Labán</label><br></div><p class="feedback" id="fb19" style="display:none;"></p></div>
+<div class="question" id="q20"><p><strong>21. ¿Cómo consiguió Jacob a Raquel como esposa?</strong></p><div class="options"><label><input type="radio" name="q20" value="Pagando una dote"> Pagando una dote</label><br><label><input type="radio" name="q20" value="Siendo bendecido por su padre"> Siendo bendecido por su padre</label><br><label><input type="radio" name="q20" value="Trabajando catorce años"> Trabajando catorce años</label><br></div><p class="feedback" id="fb20" style="display:none;"></p></div>
+<div class="question" id="q21"><p><strong>22. ¿Qué hizo Raquel con los ídolos de Labán?</strong></p><div class="options"><label><input type="radio" name="q21" value="Los vendió"> Los vendió</label><br><label><input type="radio" name="q21" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q21" value="Los destruyó"> Los destruyó</label><br></div><p class="feedback" id="fb21" style="display:none;"></p></div>
+<div class="question" id="q22"><p><strong>23. ¿Qué rasgo compartían Jacob y Labán?</strong></p><div class="options"><label><input type="radio" name="q22" value="Astucia"> Astucia</label><br><label><input type="radio" name="q22" value="Piedad"> Piedad</label><br><label><input type="radio" name="q22" value="Generosidad"> Generosidad</label><br></div><p class="feedback" id="fb22" style="display:none;"></p></div>
+<div class="question" id="q23"><p><strong>24. ¿Qué hizo Raquel con los ídolos de Labán?</strong></p><div class="options"><label><input type="radio" name="q23" value="Los vendió"> Los vendió</label><br><label><input type="radio" name="q23" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q23" value="Los destruyó"> Los destruyó</label><br></div><p class="feedback" id="fb23" style="display:none;"></p></div>
+<div class="question" id="q24"><p><strong>25. ¿Qué rasgo compartían Jacob y Labán?</strong></p><div class="options"><label><input type="radio" name="q24" value="Piedad"> Piedad</label><br><label><input type="radio" name="q24" value="Astucia"> Astucia</label><br><label><input type="radio" name="q24" value="Generosidad"> Generosidad</label><br></div><p class="feedback" id="fb24" style="display:none;"></p></div>
+<div class="question" id="q25"><p><strong>26. ¿Qué rasgo compartían Jacob y Labán?</strong></p><div class="options"><label><input type="radio" name="q25" value="Piedad"> Piedad</label><br><label><input type="radio" name="q25" value="Astucia"> Astucia</label><br><label><input type="radio" name="q25" value="Generosidad"> Generosidad</label><br></div><p class="feedback" id="fb25" style="display:none;"></p></div>
+<div class="question" id="q26"><p><strong>27. ¿Qué rasgo compartían Jacob y Labán?</strong></p><div class="options"><label><input type="radio" name="q26" value="Piedad"> Piedad</label><br><label><input type="radio" name="q26" value="Astucia"> Astucia</label><br><label><input type="radio" name="q26" value="Generosidad"> Generosidad</label><br></div><p class="feedback" id="fb26" style="display:none;"></p></div>
+<div class="question" id="q27"><p><strong>28. ¿Qué enseñanza saca Jacob al ser engañado por Labán?</strong></p><div class="options"><label><input type="radio" name="q27" value="Rechaza a Raquel"> Rechaza a Raquel</label><br><label><input type="radio" name="q27" value="Se va de la casa de Labán"> Se va de la casa de Labán</label><br><label><input type="radio" name="q27" value="Reconoce la justicia divina"> Reconoce la justicia divina</label><br></div><p class="feedback" id="fb27" style="display:none;"></p></div>
+<div class="question" id="q28"><p><strong>29. ¿Qué rasgo compartían Jacob y Labán?</strong></p><div class="options"><label><input type="radio" name="q28" value="Astucia"> Astucia</label><br><label><input type="radio" name="q28" value="Generosidad"> Generosidad</label><br><label><input type="radio" name="q28" value="Piedad"> Piedad</label><br></div><p class="feedback" id="fb28" style="display:none;"></p></div>
+<div class="question" id="q29"><p><strong>30. ¿Qué hizo Raquel con los ídolos de Labán?</strong></p><div class="options"><label><input type="radio" name="q29" value="Los destruyó"> Los destruyó</label><br><label><input type="radio" name="q29" value="Los escondió"> Los escondió</label><br><label><input type="radio" name="q29" value="Los vendió"> Los vendió</label><br></div><p class="feedback" id="fb29" style="display:none;"></p></div>
 
-        <p>30. ¿Qué bendición trajo Jacob a la casa de Labán?</p>
-        <label><input type="radio" name="p30" value="a">La bendición de Jehová</label><br>
-        <label><input type="radio" name="p30" value="b">La riqueza de Raquel</label><br>
-        <label><input type="radio" name="p30" value="c">Las ovejas moteadas</label><br><br>
+</form>
 
-        <button type="button" onclick="revisarFormulario()">Enviar respuestas</button>
-    </form>
+<div style="text-align:center;">
+  <button onclick="submitQuiz()">✅ Enviar respuestas</button>
+</div>
 
-    <div id="volver" style="display:none; margin-top: 20px;">
-        <a href="index_semana2_global.html">Evaluar otro tema</a>
-    </div>
+<div id="results"></div>
+
+<div id="options" style="display:none; text-align:center;">
+  <button onclick="resetQuiz()">🔁 Volver a intentar este tema</button>
+  <button onclick="window.top.location.reload()">📚 Elegir otro tema</button>
+</div>
+
+<script>
+const correctAnswers = {"q0": "Los escondi\u00f3", "q1": "Astucia", "q2": "Astucia", "q3": "Los escondi\u00f3", "q4": "Astucia", "q5": "Los escondi\u00f3", "q6": "Los escondi\u00f3", "q7": "Los escondi\u00f3", "q8": "Trabajando catorce a\u00f1os", "q9": "Los escondi\u00f3", "q10": "Los escondi\u00f3", "q11": "Astucia", "q12": "Astucia", "q13": "Los escondi\u00f3", "q14": "Astucia", "q15": "Los escondi\u00f3", "q16": "La bendici\u00f3n de Jehov\u00e1", "q17": "Astucia", "q18": "Trabajando catorce a\u00f1os", "q19": "Reconoce la justicia divina", "q20": "Trabajando catorce a\u00f1os", "q21": "Los escondi\u00f3", "q22": "Astucia", "q23": "Los escondi\u00f3", "q24": "Astucia", "q25": "Astucia", "q26": "Astucia", "q27": "Reconoce la justicia divina", "q28": "Astucia", "q29": "Los escondi\u00f3"};
+
+function submitQuiz() {
+  let score = 0;
+  let total = Object.keys(correctAnswers).length;
+  for (let i = 0; i < total; i++) {
+    let radios = document.getElementsByName("q" + i);
+    let userAnswer = null;
+    for (let radio of radios) {
+      if (radio.checked) {
+        userAnswer = radio.value;
+        break;
+      }
+    }
+    let feedback = document.getElementById("fb" + i);
+    if (userAnswer === correctAnswers["q" + i]) {
+      score++;
+      feedback.textContent = "✔️ Correcto";
+      feedback.style.color = "green";
+    } else {
+      feedback.textContent = "❌ Incorrecto. Respuesta correcta: " + correctAnswers["q" + i];
+      feedback.style.color = "red";
+    }
+    feedback.style.display = "block";
+  }
+  const porcentaje = ((score / total) * 100).toFixed(2);
+  const student = document.getElementById("studentName").value || "Estudiante";
+  document.getElementById("results").innerHTML = `${student}, obtuviste ${score} de ${total} respuestas correctas (${porcentaje}%)`;
+  document.getElementById("options").style.display = "block";
+  window.parent.postMessage({ tema: "Tema 10 – Jacob en casa de Labán", nota: porcentaje }, "*");
+}
+
+function resetQuiz() {
+  const total = Object.keys(correctAnswers).length;
+  for (let i = 0; i < total; i++) {
+    const radios = document.getElementsByName("q" + i);
+    for (let radio of radios) {
+      radio.checked = false;
+    }
+    document.getElementById("fb" + i).style.display = "none";
+  }
+  document.getElementById("results").innerHTML = "";
+  document.getElementById("options").style.display = "none";
+}
+</script>
+
 </body>
 </html>
