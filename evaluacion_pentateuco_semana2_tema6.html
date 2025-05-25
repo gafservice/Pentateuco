@@ -3,82 +3,115 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Evaluación: Abraham (30 preguntas)</title>
+  <title>Evaluación del Pentateuco – Tema 6: Abraham</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; }
-    .intro { background: #e0f7fa; padding: 15px; border-left: 6px solid #00796b; margin-bottom: 20px; }
-    .question { background: #fff; padding: 15px; margin-bottom: 15px; border-radius: 6px; box-shadow: 0 0 5px #ccc; }
-    button { padding: 10px 20px; margin-top: 20px; font-size: 16px; }
-    #resultado { margin-top: 30px; font-weight: bold; font-size: 18px; }
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; }
+    h1, h2 { text-align: center; }
+    .question { background: #fff; padding: 15px; margin: 10px 0; border-radius: 8px; box-shadow: 0 0 5px #ccc; }
+    .options { margin-left: 20px; }
+    .feedback { color: #006400; }
+    button { padding: 10px 15px; margin: 10px 5px; font-size: 16px; }
   </style>
 </head>
 <body>
 
-<div class="intro">
-  <h2>📘 Evaluación: Abraham (Génesis 12–25)</h2>
-  <p><strong>Lectura recomendada:</strong> Génesis 12–25 y páginas 48 a 58 del libro <i>El Pentateuco</i> de Pablo Hoff.</p>
-  <p><em>“Abraham creyó a Dios, y le fue contado por justicia.” (Gén. 15:6)</em></p>
+<h1>Evaluación del Pentateuco</h1>
+<h2>Tema 6: Abraham (Génesis 12–25)</h2>
+
+<p><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre" style="width: 300px;"></p>
+<form id="quizForm">
+<div class="question" id="q0"><p>1. ¿De dónde salió Abraham cuando fue llamado por Dios?</p><div class="options"><label><input type="radio" name="q0" value="Babilonia"> Babilonia</label><br><label><input type="radio" name="q0" value="Haran"> Haran</label><br><label><input type="radio" name="q0" value="Ur de los caldeos"> Ur de los caldeos</label><br><label><input type="radio" name="q0" value="Canaán"> Canaán</label><br></div><p class="feedback" id="fb0" style="display:none;"></p></div>
+<div class="question" id="q1"><p>2. ¿Qué promesa le hizo Dios a Abraham al separarse de Lot?</p><div class="options"><label><input type="radio" name="q1" value="Tendrás hijos gemelos"> Tendrás hijos gemelos</label><br><label><input type="radio" name="q1" value="Toda la tierra será tuya"> Toda la tierra será tuya</label><br><label><input type="radio" name="q1" value="Serás un sacerdote"> Serás un sacerdote</label><br><label><input type="radio" name="q1" value="Tendrás riquezas"> Tendrás riquezas</label><br></div><p class="feedback" id="fb1" style="display:none;"></p></div>
+<div class="question" id="q2"><p>3. ¿Cuál fue la señal del pacto entre Dios y Abraham?</p><div class="options"><label><input type="radio" name="q2" value="Un altar"> Un altar</label><br><label><input type="radio" name="q2" value="Circuncisión"> Circuncisión</label><br><label><input type="radio" name="q2" value="Arco iris"> Arco iris</label><br><label><input type="radio" name="q2" value="Una visión"> Una visión</label><br></div><p class="feedback" id="fb2" style="display:none;"></p></div>
+<div class="question" id="q3"><p>4. ¿Qué relación tenía Lot con Abraham?</p><div class="options"><label><input type="radio" name="q3" value="Primo"> Primo</label><br><label><input type="radio" name="q3" value="Sobrino"> Sobrino</label><br><label><input type="radio" name="q3" value="Hijo"> Hijo</label><br><label><input type="radio" name="q3" value="Esclavo"> Esclavo</label><br></div><p class="feedback" id="fb3" style="display:none;"></p></div>
+<div class="question" id="q4"><p>5. ¿Qué le prometió Dios a Abraham en Génesis 15?</p><div class="options"><label><input type="radio" name="q4" value="Una ciudad fortificada"> Una ciudad fortificada</label><br><label><input type="radio" name="q4" value="Una esposa nueva"> Una esposa nueva</label><br><label><input type="radio" name="q4" value="Un hijo propio"> Un hijo propio</label><br><label><input type="radio" name="q4" value="Un arca"> Un arca</label><br></div><p class="feedback" id="fb4" style="display:none;"></p></div>
+<div class="question" id="q5"><p>6. ¿Cómo respondió Abraham cuando Dios lo llamó?</p><div class="options"><label><input type="radio" name="q5" value="Después iré"> Después iré</label><br><label><input type="radio" name="q5" value="Heme aquí"> Heme aquí</label><br><label><input type="radio" name="q5" value="No puedo"> No puedo</label><br><label><input type="radio" name="q5" value="¿Quién eres tú?"> ¿Quién eres tú?</label><br></div><p class="feedback" id="fb5" style="display:none;"></p></div>
+<div class="question" id="q6"><p>7. ¿Qué significado tiene el nombre 'Isaac'?</p><div class="options"><label><input type="radio" name="q6" value="Esperanza"> Esperanza</label><br><label><input type="radio" name="q6" value="Risa"> Risa</label><br><label><input type="radio" name="q6" value="Paz"> Paz</label><br><label><input type="radio" name="q6" value="Fuerza"> Fuerza</label><br></div><p class="feedback" id="fb6" style="display:none;"></p></div>
+<div class="question" id="q7"><p>8. ¿Quién era el rey-sacerdote que bendijo a Abraham?</p><div class="options"><label><input type="radio" name="q7" value="Nabucodonosor"> Nabucodonosor</label><br><label><input type="radio" name="q7" value="Melquisedec"> Melquisedec</label><br><label><input type="radio" name="q7" value="Abimelec"> Abimelec</label><br><label><input type="radio" name="q7" value="Faraón"> Faraón</label><br></div><p class="feedback" id="fb7" style="display:none;"></p></div>
+<div class="question" id="q8"><p>9. ¿Cómo se llamaba originalmente Abraham?</p><div class="options"><label><input type="radio" name="q8" value="Abram"> Abram</label><br><label><input type="radio" name="q8" value="Sar"> Sar</label><br><label><input type="radio" name="q8" value="Lot"> Lot</label><br><label><input type="radio" name="q8" value="Abimelec"> Abimelec</label><br></div><p class="feedback" id="fb8" style="display:none;"></p></div>
+<div class="question" id="q9"><p>10. ¿A qué tierra llevó Dios a Abraham?</p><div class="options"><label><input type="radio" name="q9" value="Betel"> Betel</label><br><label><input type="radio" name="q9" value="Siria"> Siria</label><br><label><input type="radio" name="q9" value="Canaán"> Canaán</label><br><label><input type="radio" name="q9" value="Egipto"> Egipto</label><br></div><p class="feedback" id="fb9" style="display:none;"></p></div>
+<div class="question" id="q10"><p>11. ¿Cómo protegió Abraham a Sara en Egipto?</p><div class="options"><label><input type="radio" name="q10" value="Mintió sobre su origen"> Mintió sobre su origen</label><br><label><input type="radio" name="q10" value="Se escondió"> Se escondió</label><br><label><input type="radio" name="q10" value="Ofreció sacrificios"> Ofreció sacrificios</label><br><label><input type="radio" name="q10" value="Dijo que era su hermana"> Dijo que era su hermana</label><br></div><p class="feedback" id="fb10" style="display:none;"></p></div>
+<div class="question" id="q11"><p>12. ¿Cómo se llamaba la esposa de Abraham?</p><div class="options"><label><input type="radio" name="q11" value="Lea"> Lea</label><br><label><input type="radio" name="q11" value="Raquel"> Raquel</label><br><label><input type="radio" name="q11" value="Sara"> Sara</label><br><label><input type="radio" name="q11" value="Agar"> Agar</label><br></div><p class="feedback" id="fb11" style="display:none;"></p></div>
+<div class="question" id="q12"><p>13. ¿Cómo respondió Dios a la fe de Abraham?</p><div class="options"><label><input type="radio" name="q12" value="Lo ignoró"> Lo ignoró</label><br><label><input type="radio" name="q12" value="Lo desterró"> Lo desterró</label><br><label><input type="radio" name="q12" value="Lo justificó"> Lo justificó</label><br><label><input type="radio" name="q12" value="Lo reprendió"> Lo reprendió</label><br></div><p class="feedback" id="fb12" style="display:none;"></p></div>
+<div class="question" id="q13"><p>14. ¿Quién fue la esposa de Isaac?</p><div class="options"><label><input type="radio" name="q13" value="Agar"> Agar</label><br><label><input type="radio" name="q13" value="Raquel"> Raquel</label><br><label><input type="radio" name="q13" value="Rebeca"> Rebeca</label><br><label><input type="radio" name="q13" value="Sara"> Sara</label><br></div><p class="feedback" id="fb13" style="display:none;"></p></div>
+<div class="question" id="q14"><p>15. ¿Qué hizo el siervo de Abraham para encontrar esposa a Isaac?</p><div class="options"><label><input type="radio" name="q14" value="Fue a Sodoma"> Fue a Sodoma</label><br><label><input type="radio" name="q14" value="Oró a Dios"> Oró a Dios</label><br><label><input type="radio" name="q14" value="Fue a Egipto"> Fue a Egipto</label><br><label><input type="radio" name="q14" value="Consultó a Sara"> Consultó a Sara</label><br></div><p class="feedback" id="fb14" style="display:none;"></p></div>
+<div class="question" id="q15"><p>16. ¿Qué hizo Abraham con Lot cuando sus ganados crecieron?</p><div class="options"><label><input type="radio" name="q15" value="Se separó de él"> Se separó de él</label><br><label><input type="radio" name="q15" value="Luchó con él"> Luchó con él</label><br><label><input type="radio" name="q15" value="Le pidió que se fuera"> Le pidió que se fuera</label><br><label><input type="radio" name="q15" value="Le dio un rebaño"> Le dio un rebaño</label><br></div><p class="feedback" id="fb15" style="display:none;"></p></div>
+<div class="question" id="q16"><p>17. ¿Qué sacrificio hizo Abraham en Génesis 15?</p><div class="options"><label><input type="radio" name="q16" value="Partió animales"> Partió animales</label><br><label><input type="radio" name="q16" value="Sacrificó un cordero"> Sacrificó un cordero</label><br><label><input type="radio" name="q16" value="Quemó incienso"> Quemó incienso</label><br><label><input type="radio" name="q16" value="Dio diezmos"> Dio diezmos</label><br></div><p class="feedback" id="fb16" style="display:none;"></p></div>
+<div class="question" id="q17"><p>18. ¿Por qué descendió Abraham a Egipto?</p><div class="options"><label><input type="radio" name="q17" value="Por una guerra"> Por una guerra</label><br><label><input type="radio" name="q17" value="Hubo hambre en Canaán"> Hubo hambre en Canaán</label><br><label><input type="radio" name="q17" value="Para buscar a Lot"> Para buscar a Lot</label><br><label><input type="radio" name="q17" value="Por mandato de Dios"> Por mandato de Dios</label><br></div><p class="feedback" id="fb17" style="display:none;"></p></div>
+<div class="question" id="q18"><p>19. ¿Qué proveyó Dios en lugar de Isaac?</p><div class="options"><label><input type="radio" name="q18" value="Un cordero"> Un cordero</label><br><label><input type="radio" name="q18" value="Un buey"> Un buey</label><br><label><input type="radio" name="q18" value="Una oveja"> Una oveja</label><br><label><input type="radio" name="q18" value="Un carnero"> Un carnero</label><br></div><p class="feedback" id="fb18" style="display:none;"></p></div>
+<div class="question" id="q19"><p>20. ¿Qué hizo Sara cuando Dios prometió un hijo?</p><div class="options"><label><input type="radio" name="q19" value="Oró"> Oró</label><br><label><input type="radio" name="q19" value="Lloró"> Lloró</label><br><label><input type="radio" name="q19" value="Ayunó"> Ayunó</label><br><label><input type="radio" name="q19" value="Rió"> Rió</label><br></div><p class="feedback" id="fb19" style="display:none;"></p></div>
+<div class="question" id="q20"><p>21. ¿Qué actitud mostró Abraham hacia la voluntad de Dios?</p><div class="options"><label><input type="radio" name="q20" value="Obediencia"> Obediencia</label><br><label><input type="radio" name="q20" value="Indiferencia"> Indiferencia</label><br><label><input type="radio" name="q20" value="Rebeldía"> Rebeldía</label><br><label><input type="radio" name="q20" value="Duda"> Duda</label><br></div><p class="feedback" id="fb20" style="display:none;"></p></div>
+<div class="question" id="q21"><p>22. ¿Dónde fue a vivir Lot después de separarse de Abraham?</p><div class="options"><label><input type="radio" name="q21" value="Betel"> Betel</label><br><label><input type="radio" name="q21" value="Egipto"> Egipto</label><br><label><input type="radio" name="q21" value="Hebrón"> Hebrón</label><br><label><input type="radio" name="q21" value="Sodoma"> Sodoma</label><br></div><p class="feedback" id="fb21" style="display:none;"></p></div>
+<div class="question" id="q22"><p>23. ¿Dónde sepultó Abraham a Sara?</p><div class="options"><label><input type="radio" name="q22" value="Cueva de Macpela"> Cueva de Macpela</label><br><label><input type="radio" name="q22" value="Sodoma"> Sodoma</label><br><label><input type="radio" name="q22" value="Ur"> Ur</label><br><label><input type="radio" name="q22" value="Betel"> Betel</label><br></div><p class="feedback" id="fb22" style="display:none;"></p></div>
+<div class="question" id="q23"><p>24. ¿Cuántos años tenía Abraham cuando nació Isaac?</p><div class="options"><label><input type="radio" name="q23" value="120"> 120</label><br><label><input type="radio" name="q23" value="75"> 75</label><br><label><input type="radio" name="q23" value="90"> 90</label><br><label><input type="radio" name="q23" value="100"> 100</label><br></div><p class="feedback" id="fb23" style="display:none;"></p></div>
+<div class="question" id="q24"><p>25. ¿Cómo se llamaba el hijo de Abraham con Agar?</p><div class="options"><label><input type="radio" name="q24" value="Lot"> Lot</label><br><label><input type="radio" name="q24" value="Esaú"> Esaú</label><br><label><input type="radio" name="q24" value="Ismael"> Ismael</label><br><label><input type="radio" name="q24" value="Isaac"> Isaac</label><br></div><p class="feedback" id="fb24" style="display:none;"></p></div>
+<div class="question" id="q25"><p>26. ¿Qué le pidió Dios a Abraham como prueba de fe?</p><div class="options"><label><input type="radio" name="q25" value="Sacrificar a Isaac"> Sacrificar a Isaac</label><br><label><input type="radio" name="q25" value="Entrar en Egipto"> Entrar en Egipto</label><br><label><input type="radio" name="q25" value="Construir un templo"> Construir un templo</label><br><label><input type="radio" name="q25" value="Matar a Lot"> Matar a Lot</label><br></div><p class="feedback" id="fb25" style="display:none;"></p></div>
+<div class="question" id="q26"><p>27. ¿Qué pidió Abraham para el esposo de su nuera?</p><div class="options"><label><input type="radio" name="q26" value="Que fuera de su familia"> Que fuera de su familia</label><br><label><input type="radio" name="q26" value="Que fuera sacerdote"> Que fuera sacerdote</label><br><label><input type="radio" name="q26" value="Que fuera rico"> Que fuera rico</label><br><label><input type="radio" name="q26" value="Que fuera de Egipto"> Que fuera de Egipto</label><br></div><p class="feedback" id="fb26" style="display:none;"></p></div>
+<div class="question" id="q27"><p>28. ¿Cuál fue la actitud de Abraham hacia Lot?</p><div class="options"><label><input type="radio" name="q27" value="Lo ignoró"> Lo ignoró</label><br><label><input type="radio" name="q27" value="Dejó que eligiera primero"> Dejó que eligiera primero</label><br><label><input type="radio" name="q27" value="Le dio órdenes"> Le dio órdenes</label><br><label><input type="radio" name="q27" value="Lo expulsó"> Lo expulsó</label><br></div><p class="feedback" id="fb27" style="display:none;"></p></div>
+<div class="question" id="q28"><p>29. ¿Qué ciudad fue destruida durante la vida de Abraham?</p><div class="options"><label><input type="radio" name="q28" value="Nínive"> Nínive</label><br><label><input type="radio" name="q28" value="Sodoma"> Sodoma</label><br><label><input type="radio" name="q28" value="Babel"> Babel</label><br><label><input type="radio" name="q28" value="Jericó"> Jericó</label><br></div><p class="feedback" id="fb28" style="display:none;"></p></div>
+<div class="question" id="q29"><p>30. ¿Qué hizo Abraham cuando llegó a Canaán?</p><div class="options"><label><input type="radio" name="q29" value="Construyó una torre"> Construyó una torre</label><br><label><input type="radio" name="q29" value="Edificó una ciudad"> Edificó una ciudad</label><br><label><input type="radio" name="q29" value="Mató un animal"> Mató un animal</label><br><label><input type="radio" name="q29" value="Levantó un altar"> Levantó un altar</label><br></div><p class="feedback" id="fb29" style="display:none;"></p></div>
+
+</form>
+<div style="text-align:center;">
+  <button onclick="submitQuiz()">✅ Enviar respuestas</button>
 </div>
 
-<form id="quizForm">
-<div class="question"><p><b>1. ¿Cómo se llamaba originalmente Abraham?</b></p><label><input type="radio" name="q0" value="Sar"> Sar</label><br><label><input type="radio" name="q0" value="Lot"> Lot</label><br><label><input type="radio" name="q0" value="Abram"> Abram</label><br><label><input type="radio" name="q0" value="Abimelec"> Abimelec</label><br></div>
-<div class="question"><p><b>2. ¿De dónde salió Abraham cuando fue llamado por Dios?</b></p><label><input type="radio" name="q1" value="Babilonia"> Babilonia</label><br><label><input type="radio" name="q1" value="Ur de los caldeos"> Ur de los caldeos</label><br><label><input type="radio" name="q1" value="Canaán"> Canaán</label><br><label><input type="radio" name="q1" value="Haran"> Haran</label><br></div>
-<div class="question"><p><b>3. ¿A qué tierra llevó Dios a Abraham?</b></p><label><input type="radio" name="q2" value="Canaán"> Canaán</label><br><label><input type="radio" name="q2" value="Betel"> Betel</label><br><label><input type="radio" name="q2" value="Siria"> Siria</label><br><label><input type="radio" name="q2" value="Egipto"> Egipto</label><br></div>
-<div class="question"><p><b>4. ¿Cómo se llamaba la esposa de Abraham?</b></p><label><input type="radio" name="q3" value="Lea"> Lea</label><br><label><input type="radio" name="q3" value="Raquel"> Raquel</label><br><label><input type="radio" name="q3" value="Sara"> Sara</label><br><label><input type="radio" name="q3" value="Agar"> Agar</label><br></div>
-<div class="question"><p><b>5. ¿Qué relación tenía Lot con Abraham?</b></p><label><input type="radio" name="q4" value="Primo"> Primo</label><br><label><input type="radio" name="q4" value="Esclavo"> Esclavo</label><br><label><input type="radio" name="q4" value="Hijo"> Hijo</label><br><label><input type="radio" name="q4" value="Sobrino"> Sobrino</label><br></div>
-<div class="question"><p><b>6. ¿Qué hizo Abraham cuando llegó a Canaán?</b></p><label><input type="radio" name="q5" value="Levantó un altar"> Levantó un altar</label><br><label><input type="radio" name="q5" value="Construyó una torre"> Construyó una torre</label><br><label><input type="radio" name="q5" value="Edificó una ciudad"> Edificó una ciudad</label><br><label><input type="radio" name="q5" value="Mató un animal"> Mató un animal</label><br></div>
-<div class="question"><p><b>7. ¿Por qué descendió Abraham a Egipto?</b></p><label><input type="radio" name="q6" value="Por mandato de Dios"> Por mandato de Dios</label><br><label><input type="radio" name="q6" value="Para buscar a Lot"> Para buscar a Lot</label><br><label><input type="radio" name="q6" value="Por una guerra"> Por una guerra</label><br><label><input type="radio" name="q6" value="Hubo hambre en Canaán"> Hubo hambre en Canaán</label><br></div>
-<div class="question"><p><b>8. ¿Cómo protegió Abraham a Sara en Egipto?</b></p><label><input type="radio" name="q7" value="Dijo que era su hermana"> Dijo que era su hermana</label><br><label><input type="radio" name="q7" value="Ofreció sacrificios"> Ofreció sacrificios</label><br><label><input type="radio" name="q7" value="Mintió sobre su origen"> Mintió sobre su origen</label><br><label><input type="radio" name="q7" value="Se escondió"> Se escondió</label><br></div>
-<div class="question"><p><b>9. ¿Qué hizo Abraham con Lot cuando sus ganados crecieron?</b></p><label><input type="radio" name="q8" value="Se separó de él"> Se separó de él</label><br><label><input type="radio" name="q8" value="Le pidió que se fuera"> Le pidió que se fuera</label><br><label><input type="radio" name="q8" value="Luchó con él"> Luchó con él</label><br><label><input type="radio" name="q8" value="Le dio un rebaño"> Le dio un rebaño</label><br></div>
-<div class="question"><p><b>10. ¿Dónde fue a vivir Lot después de separarse de Abraham?</b></p><label><input type="radio" name="q9" value="Betel"> Betel</label><br><label><input type="radio" name="q9" value="Sodoma"> Sodoma</label><br><label><input type="radio" name="q9" value="Egipto"> Egipto</label><br><label><input type="radio" name="q9" value="Hebrón"> Hebrón</label><br></div>
-<div class="question"><p><b>11. ¿Qué promesa le hizo Dios a Abraham al separarse de Lot?</b></p><label><input type="radio" name="q10" value="Tendrás hijos gemelos"> Tendrás hijos gemelos</label><br><label><input type="radio" name="q10" value="Serás un sacerdote"> Serás un sacerdote</label><br><label><input type="radio" name="q10" value="Tendrás riquezas"> Tendrás riquezas</label><br><label><input type="radio" name="q10" value="Toda la tierra será tuya"> Toda la tierra será tuya</label><br></div>
-<div class="question"><p><b>12. ¿Quién era el rey-sacerdote que bendijo a Abraham?</b></p><label><input type="radio" name="q11" value="Melquisedec"> Melquisedec</label><br><label><input type="radio" name="q11" value="Abimelec"> Abimelec</label><br><label><input type="radio" name="q11" value="Faraón"> Faraón</label><br><label><input type="radio" name="q11" value="Nabucodonosor"> Nabucodonosor</label><br></div>
-<div class="question"><p><b>13. ¿Qué le prometió Dios a Abraham en Génesis 15?</b></p><label><input type="radio" name="q12" value="Una esposa nueva"> Una esposa nueva</label><br><label><input type="radio" name="q12" value="Un hijo propio"> Un hijo propio</label><br><label><input type="radio" name="q12" value="Un arca"> Un arca</label><br><label><input type="radio" name="q12" value="Una ciudad fortificada"> Una ciudad fortificada</label><br></div>
-<div class="question"><p><b>14. ¿Qué sacrificio hizo Abraham en Génesis 15?</b></p><label><input type="radio" name="q13" value="Sacrificó un cordero"> Sacrificó un cordero</label><br><label><input type="radio" name="q13" value="Partió animales"> Partió animales</label><br><label><input type="radio" name="q13" value="Dio diezmos"> Dio diezmos</label><br><label><input type="radio" name="q13" value="Quemó incienso"> Quemó incienso</label><br></div>
-<div class="question"><p><b>15. ¿Cuál fue la señal del pacto entre Dios y Abraham?</b></p><label><input type="radio" name="q14" value="Arco iris"> Arco iris</label><br><label><input type="radio" name="q14" value="Una visión"> Una visión</label><br><label><input type="radio" name="q14" value="Un altar"> Un altar</label><br><label><input type="radio" name="q14" value="Circuncisión"> Circuncisión</label><br></div>
-<div class="question"><p><b>16. ¿Cuántos años tenía Abraham cuando nació Isaac?</b></p><label><input type="radio" name="q15" value="120"> 120</label><br><label><input type="radio" name="q15" value="100"> 100</label><br><label><input type="radio" name="q15" value="75"> 75</label><br><label><input type="radio" name="q15" value="90"> 90</label><br></div>
-<div class="question"><p><b>17. ¿Cómo se llamaba el hijo de Abraham con Agar?</b></p><label><input type="radio" name="q16" value="Esaú"> Esaú</label><br><label><input type="radio" name="q16" value="Isaac"> Isaac</label><br><label><input type="radio" name="q16" value="Lot"> Lot</label><br><label><input type="radio" name="q16" value="Ismael"> Ismael</label><br></div>
-<div class="question"><p><b>18. ¿Qué hizo Sara cuando Dios prometió un hijo?</b></p><label><input type="radio" name="q17" value="Rió"> Rió</label><br><label><input type="radio" name="q17" value="Oró"> Oró</label><br><label><input type="radio" name="q17" value="Lloró"> Lloró</label><br><label><input type="radio" name="q17" value="Ayunó"> Ayunó</label><br></div>
-<div class="question"><p><b>19. ¿Qué ciudad fue destruida durante la vida de Abraham?</b></p><label><input type="radio" name="q18" value="Sodoma"> Sodoma</label><br><label><input type="radio" name="q18" value="Babel"> Babel</label><br><label><input type="radio" name="q18" value="Jericó"> Jericó</label><br><label><input type="radio" name="q18" value="Nínive"> Nínive</label><br></div>
-<div class="question"><p><b>20. ¿Qué le pidió Dios a Abraham como prueba de fe?</b></p><label><input type="radio" name="q19" value="Construir un templo"> Construir un templo</label><br><label><input type="radio" name="q19" value="Entrar en Egipto"> Entrar en Egipto</label><br><label><input type="radio" name="q19" value="Matar a Lot"> Matar a Lot</label><br><label><input type="radio" name="q19" value="Sacrificar a Isaac"> Sacrificar a Isaac</label><br></div>
-<div class="question"><p><b>21. ¿Qué proveyó Dios en lugar de Isaac?</b></p><label><input type="radio" name="q20" value="Una oveja"> Una oveja</label><br><label><input type="radio" name="q20" value="Un carnero"> Un carnero</label><br><label><input type="radio" name="q20" value="Un cordero"> Un cordero</label><br><label><input type="radio" name="q20" value="Un buey"> Un buey</label><br></div>
-<div class="question"><p><b>22. ¿Cómo respondió Abraham cuando Dios lo llamó?</b></p><label><input type="radio" name="q21" value="Heme aquí"> Heme aquí</label><br><label><input type="radio" name="q21" value="¿Quién eres tú?"> ¿Quién eres tú?</label><br><label><input type="radio" name="q21" value="Después iré"> Después iré</label><br><label><input type="radio" name="q21" value="No puedo"> No puedo</label><br></div>
-<div class="question"><p><b>23. ¿Dónde sepultó Abraham a Sara?</b></p><label><input type="radio" name="q22" value="Ur"> Ur</label><br><label><input type="radio" name="q22" value="Sodoma"> Sodoma</label><br><label><input type="radio" name="q22" value="Cueva de Macpela"> Cueva de Macpela</label><br><label><input type="radio" name="q22" value="Betel"> Betel</label><br></div>
-<div class="question"><p><b>24. ¿Qué pidió Abraham para el esposo de su nuera?</b></p><label><input type="radio" name="q23" value="Que fuera sacerdote"> Que fuera sacerdote</label><br><label><input type="radio" name="q23" value="Que fuera de Egipto"> Que fuera de Egipto</label><br><label><input type="radio" name="q23" value="Que fuera de su familia"> Que fuera de su familia</label><br><label><input type="radio" name="q23" value="Que fuera rico"> Que fuera rico</label><br></div>
-<div class="question"><p><b>25. ¿Qué hizo el siervo de Abraham para encontrar esposa a Isaac?</b></p><label><input type="radio" name="q24" value="Fue a Sodoma"> Fue a Sodoma</label><br><label><input type="radio" name="q24" value="Oró a Dios"> Oró a Dios</label><br><label><input type="radio" name="q24" value="Fue a Egipto"> Fue a Egipto</label><br><label><input type="radio" name="q24" value="Consultó a Sara"> Consultó a Sara</label><br></div>
-<div class="question"><p><b>26. ¿Quién fue la esposa de Isaac?</b></p><label><input type="radio" name="q25" value="Sara"> Sara</label><br><label><input type="radio" name="q25" value="Raquel"> Raquel</label><br><label><input type="radio" name="q25" value="Agar"> Agar</label><br><label><input type="radio" name="q25" value="Rebeca"> Rebeca</label><br></div>
-<div class="question"><p><b>27. ¿Qué actitud mostró Abraham hacia la voluntad de Dios?</b></p><label><input type="radio" name="q26" value="Obediencia"> Obediencia</label><br><label><input type="radio" name="q26" value="Duda"> Duda</label><br><label><input type="radio" name="q26" value="Rebeldía"> Rebeldía</label><br><label><input type="radio" name="q26" value="Indiferencia"> Indiferencia</label><br></div>
-<div class="question"><p><b>28. ¿Cómo respondió Dios a la fe de Abraham?</b></p><label><input type="radio" name="q27" value="Lo justificó"> Lo justificó</label><br><label><input type="radio" name="q27" value="Lo desterró"> Lo desterró</label><br><label><input type="radio" name="q27" value="Lo ignoró"> Lo ignoró</label><br><label><input type="radio" name="q27" value="Lo reprendió"> Lo reprendió</label><br></div>
-<div class="question"><p><b>29. ¿Qué significado tiene el nombre 'Isaac'?</b></p><label><input type="radio" name="q28" value="Paz"> Paz</label><br><label><input type="radio" name="q28" value="Fuerza"> Fuerza</label><br><label><input type="radio" name="q28" value="Risa"> Risa</label><br><label><input type="radio" name="q28" value="Esperanza"> Esperanza</label><br></div>
-<div class="question"><p><b>30. ¿Cuál fue la actitud de Abraham hacia Lot?</b></p><label><input type="radio" name="q29" value="Dejó que eligiera primero"> Dejó que eligiera primero</label><br><label><input type="radio" name="q29" value="Lo expulsó"> Lo expulsó</label><br><label><input type="radio" name="q29" value="Le dio órdenes"> Le dio órdenes</label><br><label><input type="radio" name="q29" value="Lo ignoró"> Lo ignoró</label><br></div>
-
-  <button type="button" onclick="calificar()">Enviar respuestas</button>
-</form>
-
-<div id="resultado"></div>
-
-<div style="text-align:center; margin-top: 30px;">
-  <button onclick="window.location.href='index_semana2_global.html'">Evaluar otro tema</button>
+<div id="results" style="text-align:center; font-weight:bold; margin-top: 20px;"></div>
+<div id="options" style="display:none; text-align:center; margin-top: 20px;">
+  <button onclick="resetQuiz()">🔁 Volver a intentar este tema</button>
+  <button onclick="window.top.location.reload()">📚 Elegir otro tema</button>
 </div>
 
 <script>
-  const respuestas = ["Abram", "Ur de los caldeos", "Canaán", "Sara", "Sobrino", "Levantó un altar", "Hubo hambre en Canaán", "Dijo que era su hermana", "Se separó de él", "Sodoma", "Toda la tierra será tuya", "Melquisedec", "Un hijo propio", "Partió animales", "Circuncisión", "100", "Ismael", "Rió", "Sodoma", "Sacrificar a Isaac", "Un carnero", "Heme aquí", "Cueva de Macpela", "Que fuera de su familia", "Oró a Dios", "Rebeca", "Obediencia", "Lo justificó", "Risa", "Dejó que eligiera primero"];
-  function calificar() {
-    let correctas = 0;
-    for (let i = 0; i < respuestas.length; i++) {
-      let opciones = document.getElementsByName("q" + i);
-      for (const opt of opciones) {
-        if (opt.checked && opt.value === respuestas[i]) {
-          correctas++;
-        }
+const correctAnswers = {"q0": "Ur de los caldeos", "q1": "Toda la tierra será tuya", "q2": "Circuncisión", "q3": "Sobrino", "q4": "Un hijo propio", "q5": "Heme aquí", "q6": "Risa", "q7": "Melquisedec", "q8": "Abram", "q9": "Canaán", "q10": "Dijo que era su hermana", "q11": "Sara", "q12": "Lo justificó", "q13": "Rebeca", "q14": "Oró a Dios", "q15": "Se separó de él", "q16": "Partió animales", "q17": "Hubo hambre en Canaán", "q18": "Un carnero", "q19": "Rió", "q20": "Obediencia", "q21": "Sodoma", "q22": "Cueva de Macpela", "q23": "100", "q24": "Ismael", "q25": "Sacrificar a Isaac", "q26": "Que fuera de su familia", "q27": "Dejó que eligiera primero", "q28": "Sodoma", "q29": "Levantó un altar"};
+
+function submitQuiz() {
+  let score = 0;
+  let total = Object.keys(correctAnswers).length;
+
+  for (let i = 0; i < total; i++) {
+    let radios = document.getElementsByName("q" + i);
+    let userAnswer = null;
+    for (let radio of radios) {
+      if (radio.checked) {
+        userAnswer = radio.value;
+        break;
       }
     }
-    let total = respuestas.length;
-    let nota = ((correctas / total) * 100).toFixed(2);
-    let mensaje = nota >= 80 ? "✅ ¡Aprobado!" : "❌ Requiere repaso";
-    document.getElementById("resultado").innerHTML =
-      "Obtuviste <strong>" + correctas + "/" + total + "</strong> respuestas correctas (" + nota + "%) – " + mensaje;
+
+    let feedback = document.getElementById("fb" + i);
+    if (userAnswer === correctAnswers["q" + i]) {
+      score++;
+      feedback.textContent = "✔️ Correcto";
+      feedback.style.color = "green";
+    } else {
+      feedback.textContent = "❌ Incorrecto. Respuesta correcta: " + correctAnswers["q" + i];
+      feedback.style.color = "red";
+    }
+    feedback.style.display = "block";
   }
+
+  const porcentaje = ((score / total) * 100).toFixed(2);
+  const student = document.getElementById("studentName").value || "Estudiante";
+  document.getElementById("results").innerHTML = `${student}, obtuviste ${score} de ${total} respuestas correctas (${porcentaje}%)`;
+  document.getElementById("options").style.display = "block";
+
+  window.parent.postMessage({ tema: "Tema 6 – Abraham", nota: porcentaje }, "*");
+}
+
+function resetQuiz() {
+  const total = Object.keys(correctAnswers).length;
+  for (let i = 0; i < total; i++) {
+    const radios = document.getElementsByName("q" + i);
+    for (let radio of radios) {
+      radio.checked = false;
+    }
+    const feedback = document.getElementById("fb" + i);
+    feedback.style.display = "none";
+  }
+  document.getElementById("results").innerHTML = "";
+  document.getElementById("options").style.display = "none";
+}
 </script>
 
 </body>
