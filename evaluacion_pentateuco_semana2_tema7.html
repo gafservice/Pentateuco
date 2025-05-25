@@ -1,1 +1,117 @@
-Preparado. Lista para descarga completa inmediata.
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación del Pentateuco – Tema 7: Agar e Ismael</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f0f0; padding: 20px; }
+    h1, h2 { text-align: center; }
+    .question { background: #fff; border-radius: 8px; padding: 15px; margin-bottom: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    .options { margin-left: 20px; }
+    .feedback { font-weight: bold; margin-top: 5px; }
+    #results { margin-top: 30px; font-size: 18px; text-align: center; }
+    button { padding: 10px 15px; font-size: 16px; margin: 10px; }
+  </style>
+</head>
+<body>
+
+<h1>Evaluación del Pentateuco</h1>
+<h2>Tema 7: Agar e Ismael (Génesis 17–18)</h2>
+
+<p><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre" style="width: 300px;"></p>
+
+<form id="quizForm">
+<div class="question" id="q0"><p><strong>1. ¿Qué nombre le dio Dios a Abraham al renovar el pacto?</strong></p><div class="options"><label><input type="radio" name="q0" value="Guía del pueblo"> Guía del pueblo</label><br><label><input type="radio" name="q0" value="Siervo fiel"> Siervo fiel</label><br><label><input type="radio" name="q0" value="Padre de muchedumbre"> Padre de muchedumbre</label><br><label><input type="radio" name="q0" value="Profeta eterno"> Profeta eterno</label><br></div><p class="feedback" id="fb0" style="display:none;"></p></div>
+<div class="question" id="q1"><p><strong>2. ¿Qué relación tenía Ismael con Agar?</strong></p><div class="options"><label><input type="radio" name="q1" value="Hermano"> Hermano</label><br><label><input type="radio" name="q1" value="Esposo"> Esposo</label><br><label><input type="radio" name="q1" value="Siervo"> Siervo</label><br><label><input type="radio" name="q1" value="Hijo"> Hijo</label><br></div><p class="feedback" id="fb1" style="display:none;"></p></div>
+<div class="question" id="q2"><p><strong>3. ¿Qué preguntaron los visitantes respecto a Sara?</strong></p><div class="options"><label><input type="radio" name="q2" value="¿Dónde está Sara?"> ¿Dónde está Sara?</label><br><label><input type="radio" name="q2" value="¿Está en la tienda?"> ¿Está en la tienda?</label><br><label><input type="radio" name="q2" value="¿Quién es tu esposa?"> ¿Quién es tu esposa?</label><br><label><input type="radio" name="q2" value="¿Cuántos años tiene?"> ¿Cuántos años tiene?</label><br></div><p class="feedback" id="fb2" style="display:none;"></p></div>
+<div class="question" id="q3"><p><strong>4. ¿Qué dijo Dios sobre Ismael?</strong></p><div class="options"><label><input type="radio" name="q3" value="Lo llevaría a Egipto"> Lo llevaría a Egipto</label><br><label><input type="radio" name="q3" value="Lo haría sacerdote"> Lo haría sacerdote</label><br><label><input type="radio" name="q3" value="Lo desecharía"> Lo desecharía</label><br><label><input type="radio" name="q3" value="También lo bendeciría"> También lo bendeciría</label><br></div><p class="feedback" id="fb3" style="display:none;"></p></div>
+<div class="question" id="q4"><p><strong>5. ¿Cuál fue la señal del pacto entre Dios y Abraham?</strong></p><div class="options"><label><input type="radio" name="q4" value="El fuego"> El fuego</label><br><label><input type="radio" name="q4" value="La nube"> La nube</label><br><label><input type="radio" name="q4" value="La circuncisión"> La circuncisión</label><br><label><input type="radio" name="q4" value="El arco iris"> El arco iris</label><br></div><p class="feedback" id="fb4" style="display:none;"></p></div>
+<div class="question" id="q5"><p><strong>6. ¿Cómo se llamaría la esposa de Abraham después del pacto?</strong></p><div class="options"><label><input type="radio" name="q5" value="Rebeca"> Rebeca</label><br><label><input type="radio" name="q5" value="Sara"> Sara</label><br><label><input type="radio" name="q5" value="Milca"> Milca</label><br><label><input type="radio" name="q5" value="Agar"> Agar</label><br></div><p class="feedback" id="fb5" style="display:none;"></p></div>
+<div class="question" id="q6"><p><strong>7. ¿Por qué es importante la señal de la circuncisión?</strong></p><div class="options"><label><input type="radio" name="q6" value="Era parte de la ley de Moisés"> Era parte de la ley de Moisés</label><br><label><input type="radio" name="q6" value="Era el sello del pacto con Dios"> Era el sello del pacto con Dios</label><br><label><input type="radio" name="q6" value="Era una señal de limpieza"> Era una señal de limpieza</label><br><label><input type="radio" name="q6" value="Era una tradición cultural"> Era una tradición cultural</label><br></div><p class="feedback" id="fb6" style="display:none;"></p></div>
+<div class="question" id="q7"><p><strong>8. ¿Qué relación tenía Ismael con Agar?</strong></p><div class="options"><label><input type="radio" name="q7" value="Hermano"> Hermano</label><br><label><input type="radio" name="q7" value="Siervo"> Siervo</label><br><label><input type="radio" name="q7" value="Esposo"> Esposo</label><br><label><input type="radio" name="q7" value="Hijo"> Hijo</label><br></div><p class="feedback" id="fb7" style="display:none;"></p></div>
+<div class="question" id="q8"><p><strong>9. ¿Qué motivo dio Dios para que Sara tuviera un hijo a pesar de su vejez?</strong></p><div class="options"><label><input type="radio" name="q8" value="Porque Abraham lo pidió"> Porque Abraham lo pidió</label><br><label><input type="radio" name="q8" value="Porque Sara era fiel"> Porque Sara era fiel</label><br><label><input type="radio" name="q8" value="Porque era el tiempo justo"> Porque era el tiempo justo</label><br><label><input type="radio" name="q8" value="¿Hay algo imposible para Dios?"> ¿Hay algo imposible para Dios?</label><br></div><p class="feedback" id="fb8" style="display:none;"></p></div>
+<div class="question" id="q9"><p><strong>10. ¿Qué nombre recibiría el hijo prometido a Abraham y Sara?</strong></p><div class="options"><label><input type="radio" name="q9" value="Ismael"> Ismael</label><br><label><input type="radio" name="q9" value="Esaú"> Esaú</label><br><label><input type="radio" name="q9" value="Jacob"> Jacob</label><br><label><input type="radio" name="q9" value="Isaac"> Isaac</label><br></div><p class="feedback" id="fb9" style="display:none;"></p></div>
+<div class="question" id="q10"><p><strong>11. ¿Cómo respondió Sara al oír que tendría un hijo?</strong></p><div class="options"><label><input type="radio" name="q10" value="Gritó"> Gritó</label><br><label><input type="radio" name="q10" value="Lloró"> Lloró</label><br><label><input type="radio" name="q10" value="Se rió"> Se rió</label><br><label><input type="radio" name="q10" value="Calló"> Calló</label><br></div><p class="feedback" id="fb10" style="display:none;"></p></div>
+<div class="question" id="q11"><p><strong>12. ¿Qué hizo Sara cuando fue confrontada por reírse?</strong></p><div class="options"><label><input type="radio" name="q11" value="Se escondió"> Se escondió</label><br><label><input type="radio" name="q11" value="Pidió perdón"> Pidió perdón</label><br><label><input type="radio" name="q11" value="Negó haberse reído"> Negó haberse reído</label><br><label><input type="radio" name="q11" value="Confesó su falta"> Confesó su falta</label><br></div><p class="feedback" id="fb11" style="display:none;"></p></div>
+<div class="question" id="q12"><p><strong>13. ¿Qué edad tenía Ismael cuando fue circuncidado?</strong></p><div class="options"><label><input type="radio" name="q12" value="7 años"> 7 años</label><br><label><input type="radio" name="q12" value="18 años"> 18 años</label><br><label><input type="radio" name="q12" value="8 días"> 8 días</label><br><label><input type="radio" name="q12" value="13 años"> 13 años</label><br></div><p class="feedback" id="fb12" style="display:none;"></p></div>
+<div class="question" id="q13"><p><strong>14. ¿Cuál fue la instrucción clave que Dios le dio a Abraham en Génesis 17:1?</strong></p><div class="options"><label><input type="radio" name="q13" value="Sé perfecto"> Sé perfecto</label><br><label><input type="radio" name="q13" value="Construye un altar"> Construye un altar</label><br><label><input type="radio" name="q13" value="Ofrécele a Isaac"> Ofrécele a Isaac</label><br><label><input type="radio" name="q13" value="Ve a Egipto"> Ve a Egipto</label><br></div><p class="feedback" id="fb13" style="display:none;"></p></div>
+<div class="question" id="q14"><p><strong>15. ¿Qué relación tenía Ismael con Agar?</strong></p><div class="options"><label><input type="radio" name="q14" value="Siervo"> Siervo</label><br><label><input type="radio" name="q14" value="Hermano"> Hermano</label><br><label><input type="radio" name="q14" value="Hijo"> Hijo</label><br><label><input type="radio" name="q14" value="Esposo"> Esposo</label><br></div><p class="feedback" id="fb14" style="display:none;"></p></div>
+<div class="question" id="q15"><p><strong>16. ¿Qué hizo Sara cuando fue confrontada por reírse?</strong></p><div class="options"><label><input type="radio" name="q15" value="Negó haberse reído"> Negó haberse reído</label><br><label><input type="radio" name="q15" value="Pidió perdón"> Pidió perdón</label><br><label><input type="radio" name="q15" value="Se escondió"> Se escondió</label><br><label><input type="radio" name="q15" value="Confesó su falta"> Confesó su falta</label><br></div><p class="feedback" id="fb15" style="display:none;"></p></div>
+<div class="question" id="q16"><p><strong>17. ¿Qué nombre le cambió Dios a Sarai?</strong></p><div class="options"><label><input type="radio" name="q16" value="Sara"> Sara</label><br><label><input type="radio" name="q16" value="Lea"> Lea</label><br><label><input type="radio" name="q16" value="Rebeca"> Rebeca</label><br><label><input type="radio" name="q16" value="Milca"> Milca</label><br></div><p class="feedback" id="fb16" style="display:none;"></p></div>
+<div class="question" id="q17"><p><strong>18. ¿Qué nombre le cambió Dios a Sarai?</strong></p><div class="options"><label><input type="radio" name="q17" value="Sara"> Sara</label><br><label><input type="radio" name="q17" value="Rebeca"> Rebeca</label><br><label><input type="radio" name="q17" value="Lea"> Lea</label><br><label><input type="radio" name="q17" value="Milca"> Milca</label><br></div><p class="feedback" id="fb17" style="display:none;"></p></div>
+<div class="question" id="q18"><p><strong>19. ¿Qué hizo Abraham inmediatamente después de recibir las instrucciones sobre la circuncisión?</strong></p><div class="options"><label><input type="radio" name="q18" value="Circuncidó a todos los varones de su casa"> Circuncidó a todos los varones de su casa</label><br><label><input type="radio" name="q18" value="Construyó un altar"> Construyó un altar</label><br><label><input type="radio" name="q18" value="Oró"> Oró</label><br><label><input type="radio" name="q18" value="Consultó a Sara"> Consultó a Sara</label><br></div><p class="feedback" id="fb18" style="display:none;"></p></div>
+<div class="question" id="q19"><p><strong>20. ¿Por qué es importante la señal de la circuncisión?</strong></p><div class="options"><label><input type="radio" name="q19" value="Era una señal de limpieza"> Era una señal de limpieza</label><br><label><input type="radio" name="q19" value="Era parte de la ley de Moisés"> Era parte de la ley de Moisés</label><br><label><input type="radio" name="q19" value="Era una tradición cultural"> Era una tradición cultural</label><br><label><input type="radio" name="q19" value="Era el sello del pacto con Dios"> Era el sello del pacto con Dios</label><br></div><p class="feedback" id="fb19" style="display:none;"></p></div>
+<div class="question" id="q20"><p><strong>21. ¿Qué nombre recibiría el hijo prometido a Abraham y Sara?</strong></p><div class="options"><label><input type="radio" name="q20" value="Jacob"> Jacob</label><br><label><input type="radio" name="q20" value="Esaú"> Esaú</label><br><label><input type="radio" name="q20" value="Isaac"> Isaac</label><br><label><input type="radio" name="q20" value="Ismael"> Ismael</label><br></div><p class="feedback" id="fb20" style="display:none;"></p></div>
+<div class="question" id="q21"><p><strong>22. ¿Qué edad tenía Abraham cuando Dios se le apareció en Génesis 17?</strong></p><div class="options"><label><input type="radio" name="q21" value="100"> 100</label><br><label><input type="radio" name="q21" value="85"> 85</label><br><label><input type="radio" name="q21" value="90"> 90</label><br><label><input type="radio" name="q21" value="99"> 99</label><br></div><p class="feedback" id="fb21" style="display:none;"></p></div>
+<div class="question" id="q22"><p><strong>23. ¿Qué hizo Abraham inmediatamente después de recibir las instrucciones sobre la circuncisión?</strong></p><div class="options"><label><input type="radio" name="q22" value="Construyó un altar"> Construyó un altar</label><br><label><input type="radio" name="q22" value="Consultó a Sara"> Consultó a Sara</label><br><label><input type="radio" name="q22" value="Circuncidó a todos los varones de su casa"> Circuncidó a todos los varones de su casa</label><br><label><input type="radio" name="q22" value="Oró"> Oró</label><br></div><p class="feedback" id="fb22" style="display:none;"></p></div>
+<div class="question" id="q23"><p><strong>24. ¿Cómo se llamaría la esposa de Abraham después del pacto?</strong></p><div class="options"><label><input type="radio" name="q23" value="Agar"> Agar</label><br><label><input type="radio" name="q23" value="Sara"> Sara</label><br><label><input type="radio" name="q23" value="Milca"> Milca</label><br><label><input type="radio" name="q23" value="Rebeca"> Rebeca</label><br></div><p class="feedback" id="fb23" style="display:none;"></p></div>
+<div class="question" id="q24"><p><strong>25. ¿Qué significa el nombre 'Isaac'?</strong></p><div class="options"><label><input type="radio" name="q24" value="Bendición"> Bendición</label><br><label><input type="radio" name="q24" value="Fe"> Fe</label><br><label><input type="radio" name="q24" value="Obediencia"> Obediencia</label><br><label><input type="radio" name="q24" value="Risa"> Risa</label><br></div><p class="feedback" id="fb24" style="display:none;"></p></div>
+<div class="question" id="q25"><p><strong>26. ¿Dónde estaba Abraham cuando recibió a los tres visitantes?</strong></p><div class="options"><label><input type="radio" name="q25" value="En Betel"> En Betel</label><br><label><input type="radio" name="q25" value="En el altar"> En el altar</label><br><label><input type="radio" name="q25" value="A la puerta de su tienda"> A la puerta de su tienda</label><br><label><input type="radio" name="q25" value="En Hebrón"> En Hebrón</label><br></div><p class="feedback" id="fb25" style="display:none;"></p></div>
+<div class="question" id="q26"><p><strong>27. ¿Qué motivo dio Dios para que Sara tuviera un hijo a pesar de su vejez?</strong></p><div class="options"><label><input type="radio" name="q26" value="¿Hay algo imposible para Dios?"> ¿Hay algo imposible para Dios?</label><br><label><input type="radio" name="q26" value="Porque Sara era fiel"> Porque Sara era fiel</label><br><label><input type="radio" name="q26" value="Porque Abraham lo pidió"> Porque Abraham lo pidió</label><br><label><input type="radio" name="q26" value="Porque era el tiempo justo"> Porque era el tiempo justo</label><br></div><p class="feedback" id="fb26" style="display:none;"></p></div>
+<div class="question" id="q27"><p><strong>28. ¿Qué significa el nombre 'Isaac'?</strong></p><div class="options"><label><input type="radio" name="q27" value="Fe"> Fe</label><br><label><input type="radio" name="q27" value="Bendición"> Bendición</label><br><label><input type="radio" name="q27" value="Risa"> Risa</label><br><label><input type="radio" name="q27" value="Obediencia"> Obediencia</label><br></div><p class="feedback" id="fb27" style="display:none;"></p></div>
+<div class="question" id="q28"><p><strong>29. ¿Quiénes fueron los tres visitantes que llegaron a Abraham en Génesis 18?</strong></p><div class="options"><label><input type="radio" name="q28" value="Ángeles con Lot"> Ángeles con Lot</label><br><label><input type="radio" name="q28" value="Tres profetas"> Tres profetas</label><br><label><input type="radio" name="q28" value="Mensajeros del faraón"> Mensajeros del faraón</label><br><label><input type="radio" name="q28" value="Tres varones enviados por Dios"> Tres varones enviados por Dios</label><br></div><p class="feedback" id="fb28" style="display:none;"></p></div>
+<div class="question" id="q29"><p><strong>30. ¿Qué hizo Abraham para recibir a los visitantes?</strong></p><div class="options"><label><input type="radio" name="q29" value="Construyó una tienda"> Construyó una tienda</label><br><label><input type="radio" name="q29" value="Les dio vino"> Les dio vino</label><br><label><input type="radio" name="q29" value="Pidió ayuda a Sara"> Pidió ayuda a Sara</label><br><label><input type="radio" name="q29" value="Les lavó los pies y les preparó comida"> Les lavó los pies y les preparó comida</label><br></div><p class="feedback" id="fb29" style="display:none;"></p></div>
+
+</form>
+
+<div style="text-align:center;">
+  <button onclick="submitQuiz()">✅ Enviar respuestas</button>
+</div>
+
+<div id="results"></div>
+
+<div id="options" style="display:none; text-align:center;">
+  <button onclick="resetQuiz()">🔁 Volver a intentar este tema</button>
+  <button onclick="window.top.location.reload()">📚 Elegir otro tema</button>
+</div>
+
+<script>
+const correctAnswers = {"q0": "Padre de muchedumbre", "q1": "Hijo", "q2": "¿Dónde está Sara?", "q3": "También lo bendeciría", "q4": "La circuncisión", "q5": "Sara", "q6": "Era el sello del pacto con Dios", "q7": "Hijo", "q8": "¿Hay algo imposible para Dios?", "q9": "Isaac", "q10": "Se rió", "q11": "Negó haberse reído", "q12": "13 años", "q13": "Sé perfecto", "q14": "Hijo", "q15": "Negó haberse reído", "q16": "Sara", "q17": "Sara", "q18": "Circuncidó a todos los varones de su casa", "q19": "Era el sello del pacto con Dios", "q20": "Isaac", "q21": "99", "q22": "Circuncidó a todos los varones de su casa", "q23": "Sara", "q24": "Risa", "q25": "A la puerta de su tienda", "q26": "¿Hay algo imposible para Dios?", "q27": "Risa", "q28": "Tres varones enviados por Dios", "q29": "Les lavó los pies y les preparó comida"};
+
+function submitQuiz() {
+  let score = 0;
+  let total = Object.keys(correctAnswers).length;
+  for (let i = 0; i < total; i++) {
+    let radios = document.getElementsByName("q" + i);
+    let userAnswer = null;
+    for (let radio of radios) {
+      if (radio.checked) {
+        userAnswer = radio.value;
+        break;
+      }
+    }
+    let feedback = document.getElementById("fb" + i);
+    if (userAnswer === correctAnswers["q" + i]) {
+      score++;
+      feedback.textContent = "✔️ Correcto";
+      feedback.style.color = "green";
+    } else {
+      feedback.textContent = "❌ Incorrecto. Respuesta correcta: " + correctAnswers["q" + i];
+      feedback.style.color = "red";
+    }
+    feedback.style.display = "block";
+  }
+  const porcentaje = ((score / total) * 100).toFixed(2);
+  const student = document.getElementById("studentName").value || "Estudiante";
+  document.getElementById("results").innerHTML = `${student}, obtuviste ${score} de ${total} respuestas correctas (${porcentaje}%)`;
+  document.getElementById("options").style.display = "block";
+  window.parent.postMessage({ tema: "Tema 7 – Agar e Ismael", nota: porcentaje }, "*");
+}
+
+function resetQuiz() {
+  const total = Object.keys(correctAnswers).length;
+  for (let i = 0; i < total; i++) {
+    let radios = document.getElementsByName("q" + i);
+    for (let radio of radios) {
+      radio.checked = false;
+    }
+    document.getElementById("fb" + i).style.display = "none";
+  }
+  document.getElementById("results").innerHTML = "";
+  document.getElementById("options").style.display = "none";
+}
+</script>
+
+</body>
+</html>
