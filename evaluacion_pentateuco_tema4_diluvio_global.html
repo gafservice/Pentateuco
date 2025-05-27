@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluación Pentateuco - Tema 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: white;
+            color: black;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .question {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .feedback {
+            margin-top: 5px;
+            font-weight: bold;
+            display: none;
+        }
+        #results {
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            white-space: pre-line;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Evaluación del Pentateuco</h1>
+    <h2>Tema 4: El Diluvio – Génesis 5 al 9</h2>
+    <p style="text-align:center;"><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre"></p>
+    <form id="quizForm">
+
+        <div class="question" id="q1">
+            <p>1. ¿Qué personaje del capítulo 5 fue trasladado sin ver muerte?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="Noé"> Noé</label><label><input type="radio" name="q1" value="Enoc"> Enoc</label><label><input type="radio" name="q1" value="Lamec"> Lamec</label><label><input type="radio" name="q1" value="Adán"> Adán</label>
+            </div>
+            <p class="feedback" id="fb1" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q2">
+            <p>2. ¿Qué significa 'caminar con Dios'?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="Tener una rutina religiosa"> Tener una rutina religiosa</label><label><input type="radio" name="q2" value="Tener comunión íntima y obediente con Dios"> Tener comunión íntima y obediente con Dios</label><label><input type="radio" name="q2" value="Viajar en procesión"> Viajar en procesión</label><label><input type="radio" name="q2" value="Evitar el pecado solamente"> Evitar el pecado solamente</label>
+            </div>
+            <p class="feedback" id="fb2" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q3">
+            <p>3. ¿Qué causó la corrupción de los setitas?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="La idolatría de los hijos de Noé"> La idolatría de los hijos de Noé</label><label><input type="radio" name="q3" value="La mezcla con las hijas de los hombres"> La mezcla con las hijas de los hombres</label><label><input type="radio" name="q3" value="El trabajo excesivo"> El trabajo excesivo</label><label><input type="radio" name="q3" value="La falta de líderes"> La falta de líderes</label>
+            </div>
+            <p class="feedback" id="fb3" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q4">
+            <p>4. ¿Qué emoción se atribuye a Dios en Génesis 6:6?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="Gozo"> Gozo</label><label><input type="radio" name="q4" value="Orgullo"> Orgullo</label><label><input type="radio" name="q4" value="Dolor"> Dolor</label><label><input type="radio" name="q4" value="Indiferencia"> Indiferencia</label>
+            </div>
+            <p class="feedback" id="fb4" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q5">
+            <p>5. ¿Qué decidió hacer Dios ante la maldad del hombre?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="Multiplicar bendiciones"> Multiplicar bendiciones</label><label><input type="radio" name="q5" value="Enviar un diluvio para destruir"> Enviar un diluvio para destruir</label><label><input type="radio" name="q5" value="Crear un nuevo Adán"> Crear un nuevo Adán</label><label><input type="radio" name="q5" value="Formar un ejército"> Formar un ejército</label>
+            </div>
+            <p class="feedback" id="fb5" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q6">
+            <p>6. ¿Por qué halló gracia Noé ante Dios?</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="Era agricultor"> Era agricultor</label><label><input type="radio" name="q6" value="Era predicador"> Era predicador</label><label><input type="radio" name="q6" value="Era justo y caminó con Dios"> Era justo y caminó con Dios</label><label><input type="radio" name="q6" value="Era descendiente de Set"> Era descendiente de Set</label>
+            </div>
+            <p class="feedback" id="fb6" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q7">
+            <p>7. ¿Qué constructo ordenó Dios a Noé edificar?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="Un templo"> Un templo</label><label><input type="radio" name="q7" value="Un altar"> Un altar</label><label><input type="radio" name="q7" value="Un arca"> Un arca</label><label><input type="radio" name="q7" value="Una torre"> Una torre</label>
+            </div>
+            <p class="feedback" id="fb7" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q8">
+            <p>8. ¿Qué actitud mostró Noé frente al mandato de Dios?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="Rechazo"> Rechazo</label><label><input type="radio" name="q8" value="Obediencia total"> Obediencia total</label><label><input type="radio" name="q8" value="Negociación"> Negociación</label><label><input type="radio" name="q8" value="Silencio"> Silencio</label>
+            </div>
+            <p class="feedback" id="fb8" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q9">
+            <p>9. ¿Qué hizo Noé al salir del arca?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="Lloró"> Lloró</label><label><input type="radio" name="q9" value="Ofreció sacrificios"> Ofreció sacrificios</label><label><input type="radio" name="q9" value="Celebró con vino"> Celebró con vino</label><label><input type="radio" name="q9" value="Dormitó"> Dormitó</label>
+            </div>
+            <p class="feedback" id="fb9" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q10">
+            <p>10. ¿Qué promesa hizo Dios después del diluvio?</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="Destruir con fuego"> Destruir con fuego</label><label><input type="radio" name="q10" value="No maldecir más la tierra"> No maldecir más la tierra</label><label><input type="radio" name="q10" value="Multiplicar el agua"> Multiplicar el agua</label><label><input type="radio" name="q10" value="Quitar el arco iris"> Quitar el arco iris</label>
+            </div>
+            <p class="feedback" id="fb10" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q11">
+            <p>11. ¿Qué representa el arco iris en este contexto?</p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="Fin del pecado"> Fin del pecado</label><label><input type="radio" name="q11" value="Nuevo pacto"> Nuevo pacto</label><label><input type="radio" name="q11" value="Futuro juicio"> Futuro juicio</label><label><input type="radio" name="q11" value="Decoración celestial"> Decoración celestial</label>
+            </div>
+            <p class="feedback" id="fb11" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q12">
+            <p>12. ¿Qué tres características describen a Noé?</p>
+            <div class="options">
+                <label><input type="radio" name="q12" value="Valiente, fuerte, líder"> Valiente, fuerte, líder</label><label><input type="radio" name="q12" value="Justo, perfecto en sus generaciones, caminó con Dios"> Justo, perfecto en sus generaciones, caminó con Dios</label><label><input type="radio" name="q12" value="Sabio, astuto, fiel"> Sabio, astuto, fiel</label><label><input type="radio" name="q12" value="Cazador, sabio, justo"> Cazador, sabio, justo</label>
+            </div>
+            <p class="feedback" id="fb12" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q13">
+            <p>13. ¿Qué error cometieron los descendientes de Set?</p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="Abandonaron Egipto"> Abandonaron Egipto</label><label><input type="radio" name="q13" value="Se aliaron con los cainitas"> Se aliaron con los cainitas</label><label><input type="radio" name="q13" value="Se corrompieron al mezclarse"> Se corrompieron al mezclarse</label><label><input type="radio" name="q13" value="Fueron nómadas"> Fueron nómadas</label>
+            </div>
+            <p class="feedback" id="fb13" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q14">
+            <p>14. ¿Cuál es el símbolo físico del pacto entre Dios y la humanidad postdiluviana?</p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="El fuego"> El fuego</label><label><input type="radio" name="q14" value="La lluvia"> La lluvia</label><label><input type="radio" name="q14" value="El arco iris"> El arco iris</label><label><input type="radio" name="q14" value="Las estrellas"> Las estrellas</label>
+            </div>
+            <p class="feedback" id="fb14" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q15">
+            <p>15. ¿Por qué Dios prohibió consumir sangre?</p>
+            <div class="options">
+                <label><input type="radio" name="q15" value="Por cultura"> Por cultura</label><label><input type="radio" name="q15" value="Porque la sangre es vida"> Porque la sangre es vida</label><label><input type="radio" name="q15" value="Por impureza"> Por impureza</label><label><input type="radio" name="q15" value="Por idolatría"> Por idolatría</label>
+            </div>
+            <p class="feedback" id="fb15" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q16">
+            <p>16. ¿Qué principio de gobierno humano estableció Dios en Génesis 9:6?</p>
+            <div class="options">
+                <label><input type="radio" name="q16" value="Pena de muerte"> Pena de muerte</label><label><input type="radio" name="q16" value="Pacto de paz"> Pacto de paz</label><label><input type="radio" name="q16" value="Ley de sacrificios"> Ley de sacrificios</label><label><input type="radio" name="q16" value="Sábado obligatorio"> Sábado obligatorio</label>
+            </div>
+            <p class="feedback" id="fb16" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q17">
+            <p>17. ¿Qué hizo Lamec al nombrar a Noé?</p>
+            <div class="options">
+                <label><input type="radio" name="q17" value="Profetizó alivio del trabajo"> Profetizó alivio del trabajo</label><label><input type="radio" name="q17" value="Maldecir a Adán"> Maldecir a Adán</label><label><input type="radio" name="q17" value="Construyó un altar"> Construyó un altar</label><label><input type="radio" name="q17" value="Lloró su pasado"> Lloró su pasado</label>
+            </div>
+            <p class="feedback" id="fb17" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q18">
+            <p>18. ¿Qué acto de Noé reveló debilidad humana?</p>
+            <div class="options">
+                <label><input type="radio" name="q18" value="Comer carne"> Comer carne</label><label><input type="radio" name="q18" value="Dormir"> Dormir</label><label><input type="radio" name="q18" value="Embriagarse"> Embriagarse</label><label><input type="radio" name="q18" value="Cantar"> Cantar</label>
+            </div>
+            <p class="feedback" id="fb18" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q19">
+            <p>19. ¿Cómo reaccionaron Sem y Jafet ante el error de su padre?</p>
+            <div class="options">
+                <label><input type="radio" name="q19" value="Lo acusaron"> Lo acusaron</label><label><input type="radio" name="q19" value="Se burlaron"> Se burlaron</label><label><input type="radio" name="q19" value="Lo cubrieron con respeto"> Lo cubrieron con respeto</label><label><input type="radio" name="q19" value="Lo ignoraron"> Lo ignoraron</label>
+            </div>
+            <p class="feedback" id="fb19" style="color:red; display:none;"></p>
+        </div>
+    
+
+        <div class="question" id="q20">
+            <p>20. ¿Qué reveló esto sobre su carácter?</p>
+            <div class="options">
+                <label><input type="radio" name="q20" value="Justicia"> Justicia</label><label><input type="radio" name="q20" value="Respeto y honra"> Respeto y honra</label><label><input type="radio" name="q20" value="Pecado"> Pecado</label><label><input type="radio" name="q20" value="Desobediencia"> Desobediencia</label>
+            </div>
+            <p class="feedback" id="fb20" style="color:red; display:none;"></p>
+        </div>
+    
+        <button type="button" onclick="submitQuiz()">Enviar respuestas</button>
+    </form>
+    <div id="results"></div>
+    <div style="text-align:center; margin-top: 20px;">
+        <button onclick="window.top.location.href='index_semana1_global.html'">Evaluar otro tema</button>
+    </div>
+    <div id="options" style="text-align:center; display:none;">
+        <button onclick="resetQuiz()">🔁 Volver a intentar este tema</button>
+    </div>
+    <script>
+        const correctAnswers = {
+            q1: "Enoc", q2: "Tener comunión íntima y obediente con Dios",
+            q3: "La mezcla con las hijas de los hombres", q4: "Dolor",
+            q5: "Enviar un diluvio para destruir", q6: "Era justo y caminó con Dios",
+            q7: "Un arca", q8: "Obediencia total", q9: "Ofreció sacrificios",
+            q10: "No maldecir más la tierra", q11: "Nuevo pacto",
+            q12: "Justo, perfecto en sus generaciones, caminó con Dios",
+            q13: "Se corrompieron al mezclarse", q14: "El arco iris",
+            q15: "Porque la sangre es vida", q16: "Pena de muerte",
+            q17: "Profetizó alivio del trabajo", q18: "Embriagarse",
+            q19: "Lo cubrieron con respeto", q20: "Respeto y honra"
+        };
+
+        function submitQuiz() {
+            let score = 0;
+            let total = Object.keys(correctAnswers).length;
+            let student = document.getElementById("studentName").value.trim() || "Estudiante";
+            for (let i = 1; i <= total; i++) {
+                const key = "q" + i;
+                const selected = document.querySelector('input[name="' + key + '"]:checked');
+                const feedback = document.getElementById("fb" + i);
+                if (selected) {
+                    if (selected.value === correctAnswers[key]) {
+                        score++;
+                        feedback.innerText = "✅ Respuesta correcta.";
+                        feedback.style.color = "green";
+                    } else {
+                        feedback.innerText = "❌ Respuesta incorrecta.";
+                        feedback.style.color = "red";
+                    }
+                } else {
+                    feedback.innerText = "❌ No respondió esta pregunta.";
+                    feedback.style.color = "red";
+                }
+                feedback.style.display = "block";
+            }
+            let percentage = (score / total) * 100;
+            let resultText = `${student}
+Nota obtenida: ${percentage.toFixed(2)}%
+Resultado: `;
+            resultText += (percentage >= 80)
+                ? "✅ ¡Has superado el 80% y has aprobado!"
+                : "❌ No alcanzaste el 80%. Puedes intentarlo de nuevo.";
+            document.getElementById("results").innerText = resultText;
+            document.getElementById("options").style.display = "block";
+            window.parent.postMessage({ tema: 4, nota: percentage }, "*");
+        }
+
+        function resetQuiz() {
+            document.getElementById("quizForm").reset();
+            document.querySelectorAll(".feedback").forEach(f => {
+                f.innerText = "";
+                f.style.display = "none";
+            });
+            document.getElementById("results").innerText = "";
+            document.getElementById("options").style.display = "none";
+        }
+    </script>
+</body>
+</html>
