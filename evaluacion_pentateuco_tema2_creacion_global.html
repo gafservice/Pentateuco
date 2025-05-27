@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluación Pentateuco - Tema 1</title>
+    
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: white;
+        color: black;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    .question {
+        margin: 20px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+    .options label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .feedback {
+        margin-top: 5px;
+        font-weight: bold;
+        display: none;
+    }
+    #results {
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 18px;
+        white-space: pre-line;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 10px auto;
+        display: block;
+    }
+</style>
+
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2 { text-align: center; }
+        .question { margin: 20px 0; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+        .options label { display: block; margin-bottom: 5px; }
+        .feedback { margin-top: 5px; font-weight: bold; display: none; }
+        #results { font-weight: bold; margin-top: 20px; text-align: center; font-size: 18px; white-space: pre-line; }
+        button { padding: 10px 20px; font-size: 16px; margin: 10px auto; display: block; }
+    </style>
+</head>
+<body>
+    <h1>Evaluación del Pentateuco</h1>
+    <h2>Tema 1: Capítulos 1 y 2 – Introducción y Autoría</h2>
+    <p style="text-align:center;"><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre"></p>
+    <form id="quizForm">
+        <div class="question" id="q1">
+<p>1. ¿Qué capítulos cubren la historia patriarcal?</p>
+<div class="options">
+<label><input type="radio" name="q1" value="1 al 11"> 1 al 11</label>
+<label><input type="radio" name="q1" value="1 al 20"> 1 al 20</label>
+<label><input type="radio" name="q1" value="30 al 50"> 30 al 50</label>
+<label><input type="radio" name="q1" value="12 al 50"> 12 al 50</label>
+</div>
+<p class="feedback" id="fb1" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q2">
+<p>2. ¿Qué significa la palabra Pentateuco?</p>
+<div class="options">
+<label><input type="radio" name="q2" value="Palabra profética"> Palabra profética</label>
+<label><input type="radio" name="q2" value="Pacto eterno"> Pacto eterno</label>
+<label><input type="radio" name="q2" value="Antiguo testamento"> Antiguo testamento</label>
+<label><input type="radio" name="q2" value="Libro en cinco tomos"> Libro en cinco tomos</label>
+</div>
+<p class="feedback" id="fb2" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q3">
+<p>3. ¿Qué es la teoría documentaria?</p>
+<div class="options">
+<label><input type="radio" name="q3" value="Que el Pentateuco proviene de múltiples fuentes"> Que el Pentateuco proviene de múltiples fuentes</label>
+<label><input type="radio" name="q3" value="Que Moisés copió textos egipcios"> Que Moisés copió textos egipcios</label>
+<label><input type="radio" name="q3" value="Que Moisés escribió todo en una noche"> Que Moisés escribió todo en una noche</label>
+<label><input type="radio" name="q3" value="Que el texto fue revelado en sueños"> Que el texto fue revelado en sueños</label>
+</div>
+<p class="feedback" id="fb3" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q4">
+<p>4. ¿Qué tipo de revelación ofrece la Biblia?</p>
+<div class="options">
+<label><input type="radio" name="q4" value="Una visión de los cielos"> Una visión de los cielos</label>
+<label><input type="radio" name="q4" value="Una dada solo a los patriarcas"> Una dada solo a los patriarcas</label>
+<label><input type="radio" name="q4" value="Una progresiva a lo largo de la historia del pueblo de Dios"> Una progresiva a lo largo de la historia del pueblo de Dios</label>
+<label><input type="radio" name="q4" value="Una parábola continua"> Una parábola continua</label>
+</div>
+<p class="feedback" id="fb4" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q5">
+<p>5. ¿Qué otro nombre recibe el Pentateuco?</p>
+<div class="options">
+<label><input type="radio" name="q5" value="Talmud"> Talmud</label>
+<label><input type="radio" name="q5" value="Torá"> Torá</label>
+<label><input type="radio" name="q5" value="Mishná"> Mishná</label>
+<label><input type="radio" name="q5" value="Neviim"> Neviim</label>
+</div>
+<p class="feedback" id="fb5" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q6">
+<p>6. ¿Qué capítulos cubren la historia primitiva en Génesis?</p>
+<div class="options">
+<label><input type="radio" name="q6" value="1 al 12"> 1 al 12</label>
+<label><input type="radio" name="q6" value="1 al 11"> 1 al 11</label>
+<label><input type="radio" name="q6" value="12 al 50"> 12 al 50</label>
+<label><input type="radio" name="q6" value="5 al 20"> 5 al 20</label>
+</div>
+<p class="feedback" id="fb6" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q7">
+<p>7. ¿Qué es la media luna fértil?</p>
+<div class="options">
+<label><input type="radio" name="q7" value="Un tipo de agricultura"> Un tipo de agricultura</label>
+<label><input type="radio" name="q7" value="Una constelación"> Una constelación</label>
+<label><input type="radio" name="q7" value="Una región desde el Golfo Pérsico hasta Palestina rica en agricultura"> Una región desde el Golfo Pérsico hasta Palestina rica en agricultura</label>
+<label><input type="radio" name="q7" value="Una diosa sumeria"> Una diosa sumeria</label>
+</div>
+<p class="feedback" id="fb7" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q8">
+<p>8. ¿Cuál es uno de los argumentos que prueban que Moisés es el autor del Pentateuco?</p>
+<div class="options">
+<label><input type="radio" name="q8" value="Estuvo presente en la creación"> Estuvo presente en la creación</label>
+<label><input type="radio" name="q8" value="El A.T. y el N.T. lo citan como autor"> El A.T. y el N.T. lo citan como autor</label>
+<label><input type="radio" name="q8" value="Fue mencionado por Pablo en sus epístolas"> Fue mencionado por Pablo en sus epístolas</label>
+<label><input type="radio" name="q8" value="Fue testigo ocular de la cruz"> Fue testigo ocular de la cruz</label>
+</div>
+<p class="feedback" id="fb8" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q9">
+<p>9. ¿Cuál es la estructura general del Génesis?</p>
+<div class="options">
+<label><input type="radio" name="q9" value="Tres libros distintos"> Tres libros distintos</label>
+<label><input type="radio" name="q9" value="Una lista cronológica sin sentido"> Una lista cronológica sin sentido</label>
+<label><input type="radio" name="q9" value="Solo relatos mitológicos"> Solo relatos mitológicos</label>
+<label><input type="radio" name="q9" value="Dos secciones: historia primitiva y patriarcal"> Dos secciones: historia primitiva y patriarcal</label>
+</div>
+<p class="feedback" id="fb9" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q10">
+<p>10. ¿Cuál es la característica fundamental que distingue a la Biblia de otros libros sagrados?</p>
+<div class="options">
+<label><input type="radio" name="q10" value="Es una revelación progresiva dada a un pueblo"> Es una revelación progresiva dada a un pueblo</label>
+<label><input type="radio" name="q10" value="Contiene historias mitológicas"> Contiene historias mitológicas</label>
+<label><input type="radio" name="q10" value="Fue dictada a un solo profeta"> Fue dictada a un solo profeta</label>
+<label><input type="radio" name="q10" value="Fue escrita por muchos autores sin inspiración"> Fue escrita por muchos autores sin inspiración</label>
+</div>
+<p class="feedback" id="fb10" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q11">
+<p>11. ¿Qué debilidad tiene la teoría documentaria?</p>
+<div class="options">
+<label><input type="radio" name="q11" value="Prueba su autoría múltiple"> Prueba su autoría múltiple</label>
+<label><input type="radio" name="q11" value="Subestima la coherencia interna"> Subestima la coherencia interna</label>
+<label><input type="radio" name="q11" value="Demuestra que Moisés viajó mucho"> Demuestra que Moisés viajó mucho</label>
+<label><input type="radio" name="q11" value="Confirma la inspiración divina"> Confirma la inspiración divina</label>
+</div>
+<p class="feedback" id="fb11" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q12">
+<p>12. ¿Qué significa el nombre Yahveh o Jehová?</p>
+<div class="options">
+<label><input type="radio" name="q12" value="Creador del mundo"> Creador del mundo</label>
+<label><input type="radio" name="q12" value="Dios de guerra"> Dios de guerra</label>
+<label><input type="radio" name="q12" value="Dios Altísimo"> Dios Altísimo</label>
+<label><input type="radio" name="q12" value="Yo Soy el que Soy"> Yo Soy el que Soy</label>
+</div>
+<p class="feedback" id="fb12" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q13">
+<p>13. ¿Cuál es el enfoque principal del Pentateuco?</p>
+<div class="options">
+<label><input type="radio" name="q13" value="Espiritual y redentor"> Espiritual y redentor</label>
+<label><input type="radio" name="q13" value="Cronológico"> Cronológico</label>
+<label><input type="radio" name="q13" value="Astronómico"> Astronómico</label>
+<label><input type="radio" name="q13" value="Científico"> Científico</label>
+</div>
+<p class="feedback" id="fb13" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q14">
+<p>14. ¿Qué significa el nombre Génesis?</p>
+<div class="options">
+<label><input type="radio" name="q14" value="Nación santa"> Nación santa</label>
+<label><input type="radio" name="q14" value="Descendencia"> Descendencia</label>
+<label><input type="radio" name="q14" value="Sabiduría"> Sabiduría</label>
+<label><input type="radio" name="q14" value="Nacimiento o principio"> Nacimiento o principio</label>
+</div>
+<p class="feedback" id="fb14" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q15">
+<p>15. ¿Cuál es el tema de la Biblia?</p>
+<div class="options">
+<label><input type="radio" name="q15" value="La historia del pueblo judío"> La historia del pueblo judío</label>
+<label><input type="radio" name="q15" value="La ley y sus mandamientos"> La ley y sus mandamientos</label>
+<label><input type="radio" name="q15" value="La redención del hombre"> La redención del hombre</label>
+<label><input type="radio" name="q15" value="La creación del universo"> La creación del universo</label>
+</div>
+<p class="feedback" id="fb15" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q16">
+<p>16. ¿Qué importancia tiene Palestina según el libro?</p>
+<div class="options">
+<label><input type="radio" name="q16" value="Era un lugar sin valor estratégico"> Era un lugar sin valor estratégico</label>
+<label><input type="radio" name="q16" value="Tenía ubicación estratégica entre grandes civilizaciones"> Tenía ubicación estratégica entre grandes civilizaciones</label>
+<label><input type="radio" name="q16" value="Era la ciudad más rica"> Era la ciudad más rica</label>
+<label><input type="radio" name="q16" value="Era centro religioso del Islam"> Era centro religioso del Islam</label>
+</div>
+<p class="feedback" id="fb16" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q17">
+<p>17. ¿Por qué se usó Elohim en Génesis 1?</p>
+<div class="options">
+<label><input type="radio" name="q17" value="Para enfatizar el pacto"> Para enfatizar el pacto</label>
+<label><input type="radio" name="q17" value="Para destacar el poder creador de Dios"> Para destacar el poder creador de Dios</label>
+<label><input type="radio" name="q17" value="Para referirse a los ángeles"> Para referirse a los ángeles</label>
+<label><input type="radio" name="q17" value="Para destacar la relación íntima con el hombre"> Para destacar la relación íntima con el hombre</label>
+</div>
+<p class="feedback" id="fb17" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q18">
+<p>18. ¿Qué enseña Génesis sobre la genealogía?</p>
+<div class="options">
+<label><input type="radio" name="q18" value="Sirve para fechar todos los eventos"> Sirve para fechar todos los eventos</label>
+<label><input type="radio" name="q18" value="Omiten nombres y no son exactas cronológicamente"> Omiten nombres y no son exactas cronológicamente</label>
+<label><input type="radio" name="q18" value="Las fechas son científicas"> Las fechas son científicas</label>
+<label><input type="radio" name="q18" value="Todas las genealogías son perfectas"> Todas las genealogías son perfectas</label>
+</div>
+<p class="feedback" id="fb18" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q19">
+<p>19. ¿Qué finalidad especial tiene el libro de Génesis?</p>
+<div class="options">
+<label><input type="radio" name="q19" value="Presentar la historia del rey David"> Presentar la historia del rey David</label>
+<label><input type="radio" name="q19" value="Relatar las guerras de Israel"> Relatar las guerras de Israel</label>
+<label><input type="radio" name="q19" value="Contar fábulas hebreas"> Contar fábulas hebreas</label>
+<label><input type="radio" name="q19" value="Presentar los comienzos de la creación, del pecado y del plan redentor"> Presentar los comienzos de la creación, del pecado y del plan redentor</label>
+</div>
+<p class="feedback" id="fb19" style="color:red; display:none;"></p>
+</div>
+<div class="question" id="q20">
+<p>20. ¿Qué propósito tenía Dios al bendecir a Israel?</p>
+<div class="options">
+<label><input type="radio" name="q20" value="Para destruir a los pueblos paganos"> Para destruir a los pueblos paganos</label>
+<label><input type="radio" name="q20" value="Para mostrar favoritismo"> Para mostrar favoritismo</label>
+<label><input type="radio" name="q20" value="Para que fuera instrumento de bendición a las naciones"> Para que fuera instrumento de bendición a las naciones</label>
+<label><input type="radio" name="q20" value="Para imponer leyes"> Para imponer leyes</label>
+</div>
+<p class="feedback" id="fb20" style="color:red; display:none;"></p>
+</div>
+
+        <button type="button" onclick="submitQuiz()">Enviar respuestas</button>
+    </form>
+    <div id="results"></div>
+<div style="text-align:center; margin-top: 20px;">
+    <button onclick="window.top.location.href='index_semana1_global.html'">Evaluar otro tema</button>
+</div>
+
+    <div id="options" style="text-align:center; display:none;">
+        <button onclick="resetQuiz()">🔁 Volver a intentar este tema</button>
+        <button onclick="alert('En una futura versión podrá elegir otro tema')">📚 Elegir otro tema</button>
+    </div>
+
+    <script>
+        const correctAnswers = {"q1": "12 al 50", "q2": "Libro en cinco tomos", "q3": "Que el Pentateuco proviene de múltiples fuentes", "q4": "Una progresiva a lo largo de la historia del pueblo de Dios", "q5": "Torá", "q6": "1 al 11", "q7": "Una región desde el Golfo Pérsico hasta Palestina rica en agricultura", "q8": "El A.T. y el N.T. lo citan como autor", "q9": "Dos secciones: historia primitiva y patriarcal", "q10": "Es una revelación progresiva dada a un pueblo", "q11": "Subestima la coherencia interna", "q12": "Yo Soy el que Soy", "q13": "Espiritual y redentor", "q14": "Nacimiento o principio", "q15": "La redención del hombre", "q16": "Tenía ubicación estratégica entre grandes civilizaciones", "q17": "Para destacar el poder creador de Dios", "q18": "Omiten nombres y no son exactas cronológicamente", "q19": "Presentar los comienzos de la creación, del pecado y del plan redentor", "q20": "Para que fuera instrumento de bendición a las naciones"};
+
+        function submitQuiz() {
+            let score = 0;
+            let total = Object.keys(correctAnswers).length;
+            let student = document.getElementById("studentName").value.trim() || "Estudiante";
+            for (let i = 1; i <= total; i++) {
+                const key = "q" + i;
+                const selected = document.querySelector('input[name="' + key + '"]:checked');
+                const feedback = document.getElementById("fb" + i);
+                if (selected) {
+                    if (selected.value === correctAnswers[key]) {
+                        score++;
+                        feedback.innerText = "✅ Respuesta correcta.";
+                        feedback.style.color = "green";
+                    } else {
+                        feedback.innerText = "❌ Respuesta incorrecta.";
+                        feedback.style.color = "red";
+                    }
+                } else {
+                    feedback.innerText = "❌ No respondió esta pregunta.";
+                    feedback.style.color = "red";
+                }
+                feedback.style.display = "block";
+            }
+            let percentage = (score / total) * 100;
+            let resultText = `${student}\nNota obtenida: ${percentage.toFixed(2)}%\nResultado: `;
+            if (percentage >= 80) {
+                resultText += "✅ ¡Has superado el 80% y has aprobado!";
+            } else {
+                resultText += "❌ No alcanzaste el 80%. Puedes intentarlo de nuevo.";
+            }
+            window.parent.postMessage({ tema: 1, nota: percentage }, "*");
+document.getElementById("results").innerText = resultText;
+            document.getElementById("options").style.display = "block";
+        }
+
+        function resetQuiz() {
+            const form = document.getElementById("quizForm");
+            form.reset();
+            const feedbacks = document.querySelectorAll(".feedback");
+            feedbacks.forEach(fb => {
+                fb.style.display = "none";
+                fb.innerText = "";
+            });
+            window.parent.postMessage({ tema: 1, nota: percentage }, "*");
+document.getElementById("results").innerText = "";
+            document.getElementById("options").style.display = "none";
+        }
+    </script>
+</body>
+</html>
