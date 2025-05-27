@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Evaluación Pentateuco - Tema 2</title>
+    <title>Evaluación Pentateuco - Tema 1</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,7 +45,7 @@
 </head>
 <body>
     <h1>Evaluación del Pentateuco</h1>
-    <h2>Tema 2: La Creación – Génesis 1 y 2</h2>
+    <h2>Tema 1: Introducción y Autoría – El Pentateuco</h2>
     <p style="text-align:center;"><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre"></p>
     <form id="quizForm">
         
@@ -181,7 +181,7 @@
                 : "❌ No alcanzaste el 80%. Puedes intentarlo de nuevo.";
             document.getElementById("results").innerText = resultText;
             document.getElementById("options").style.display = "block";
-            window.parent.postMessage({ tema: 2, nota: percentage }, "*");
+            window.parent.postMessage({ tema: 1, nota: percentage }, "*");
         }
         function resetQuiz() {
             document.getElementById("quizForm").reset();
