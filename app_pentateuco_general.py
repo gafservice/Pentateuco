@@ -8,7 +8,7 @@ st.markdown("Seleccione una semana para acceder a sus formularios:")
 
 semanas = {
     "Semana 1": {
-        "Tema 1: Introducción y Autoría": "evaluacion_pentateuco_tema1_aleatorio_global.html",
+        "Tema 1: Introducción y Autoría": "evaluacion_pentateuco_tema1_aleatorio_globa.html",
         "Tema 2: La Creación": "evaluacion_pentateuco_tema2_creacion_global.html",
         "Tema 3: La Caída": "evaluacion_pentateuco_tema3_caida_global.html",
         "Tema 4: El Diluvio": "evaluacion_pentateuco_tema4_diluvio_global.html",
