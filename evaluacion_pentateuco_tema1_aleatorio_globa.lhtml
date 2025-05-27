@@ -45,95 +45,86 @@
 </head>
 <body>
     <h1>Evaluación del Pentateuco</h1>
-    <h2>Tema 1: Introducción y Autoría – El Pentateuco</h2>
+    <h2>Tema 1: Introducción y Autoría del Pentateuco</h2>
     <p style="text-align:center;"><strong>Nombre del estudiante:</strong> <input type="text" id="studentName" placeholder="Ingrese su nombre"></p>
     <form id="quizForm">
         
         <div class="question" id="q1">
-            <p>1. Pregunta de ejemplo 1</p>
+            <p>1. ¿Cuál es la característica fundamental que distingue a la Biblia de otros libros 'sagrados'?</p>
             <div class="options">
-                <label><input type="radio" name="q1" value="Opción A"> Opción A</label><label><input type="radio" name="q1" value="Opción B"> Opción B</label><label><input type="radio" name="q1" value="Opción C"> Opción C</label><label><input type="radio" name="q1" value="Opción D"> Opción D</label>
+                <label><input type="radio" name="q1" value="Es la revelación directa de Dios"> Es la revelación directa de Dios</label><label><input type="radio" name="q1" value="Tiene historias morales"> Tiene historias morales</label><label><input type="radio" name="q1" value="Fue escrita por profetas"> Fue escrita por profetas</label><label><input type="radio" name="q1" value="Tiene visiones apocalípticas"> Tiene visiones apocalípticas</label>
             </div>
             <p class="feedback" id="fb1" style="color:red; display:none;"></p>
         </div>
         
-
         <div class="question" id="q2">
-            <p>2. Pregunta de ejemplo 2</p>
+            <p>2. ¿Cuál es el tema principal de la Biblia?</p>
             <div class="options">
-                <label><input type="radio" name="q2" value="Opción A"> Opción A</label><label><input type="radio" name="q2" value="Opción B"> Opción B</label><label><input type="radio" name="q2" value="Opción C"> Opción C</label><label><input type="radio" name="q2" value="Opción D"> Opción D</label>
+                <label><input type="radio" name="q2" value="El amor entre humanos"> El amor entre humanos</label><label><input type="radio" name="q2" value="La historia del pueblo hebreo"> La historia del pueblo hebreo</label><label><input type="radio" name="q2" value="La redención de la humanidad por medio de Cristo"> La redención de la humanidad por medio de Cristo</label><label><input type="radio" name="q2" value="La creación del mundo"> La creación del mundo</label>
             </div>
             <p class="feedback" id="fb2" style="color:red; display:none;"></p>
         </div>
         
-
         <div class="question" id="q3">
-            <p>3. Pregunta de ejemplo 3</p>
+            <p>3. ¿Qué significa la palabra 'Pentateuco'?</p>
             <div class="options">
-                <label><input type="radio" name="q3" value="Opción A"> Opción A</label><label><input type="radio" name="q3" value="Opción B"> Opción B</label><label><input type="radio" name="q3" value="Opción C"> Opción C</label><label><input type="radio" name="q3" value="Opción D"> Opción D</label>
+                <label><input type="radio" name="q3" value="Cinco rollos"> Cinco rollos</label><label><input type="radio" name="q3" value="Ley antigua"> Ley antigua</label><label><input type="radio" name="q3" value="Libros de sabiduría"> Libros de sabiduría</label><label><input type="radio" name="q3" value="Profecías"> Profecías</label>
             </div>
             <p class="feedback" id="fb3" style="color:red; display:none;"></p>
         </div>
         
-
         <div class="question" id="q4">
-            <p>4. Pregunta de ejemplo 4</p>
+            <p>4. ¿Quién escribió el Pentateuco según la tradición?</p>
             <div class="options">
-                <label><input type="radio" name="q4" value="Opción A"> Opción A</label><label><input type="radio" name="q4" value="Opción B"> Opción B</label><label><input type="radio" name="q4" value="Opción C"> Opción C</label><label><input type="radio" name="q4" value="Opción D"> Opción D</label>
+                <label><input type="radio" name="q4" value="David"> David</label><label><input type="radio" name="q4" value="Pablo"> Pablo</label><label><input type="radio" name="q4" value="Isaías"> Isaías</label><label><input type="radio" name="q4" value="Moisés"> Moisés</label>
             </div>
             <p class="feedback" id="fb4" style="color:red; display:none;"></p>
         </div>
         
-
         <div class="question" id="q5">
-            <p>5. Pregunta de ejemplo 5</p>
+            <p>5. ¿Cómo armoniza la inspiración divina con el uso de fuentes?</p>
             <div class="options">
-                <label><input type="radio" name="q5" value="Opción A"> Opción A</label><label><input type="radio" name="q5" value="Opción B"> Opción B</label><label><input type="radio" name="q5" value="Opción C"> Opción C</label><label><input type="radio" name="q5" value="Opción D"> Opción D</label>
+                <label><input type="radio" name="q5" value="Dios guió a Moisés incluso al usar fuentes existentes"> Dios guió a Moisés incluso al usar fuentes existentes</label><label><input type="radio" name="q5" value="Solo usó revelación directa"> Solo usó revelación directa</label><label><input type="radio" name="q5" value="Usó tradiciones orales sin guía divina"> Usó tradiciones orales sin guía divina</label><label><input type="radio" name="q5" value="Los escribas lo redactaron siglos después"> Los escribas lo redactaron siglos después</label>
             </div>
             <p class="feedback" id="fb5" style="color:red; display:none;"></p>
         </div>
         
-
         <div class="question" id="q6">
-            <p>6. Pregunta de ejemplo 6</p>
+            <p>6. ¿En qué consiste la teoría documentaria?</p>
             <div class="options">
-                <label><input type="radio" name="q6" value="Opción A"> Opción A</label><label><input type="radio" name="q6" value="Opción B"> Opción B</label><label><input type="radio" name="q6" value="Opción C"> Opción C</label><label><input type="radio" name="q6" value="Opción D"> Opción D</label>
+                <label><input type="radio" name="q6" value="Teoría que propone múltiples autores del Pentateuco"> Teoría que propone múltiples autores del Pentateuco</label><label><input type="radio" name="q6" value="Teoría de la evolución"> Teoría de la evolución</label><label><input type="radio" name="q6" value="Doctrina rabínica"> Doctrina rabínica</label><label><input type="radio" name="q6" value="Una carta de Moisés a Aarón"> Una carta de Moisés a Aarón</label>
             </div>
             <p class="feedback" id="fb6" style="color:red; display:none;"></p>
         </div>
         
-
         <div class="question" id="q7">
-            <p>7. Pregunta de ejemplo 7</p>
+            <p>7. ¿Qué debilidades tiene esta teoría?</p>
             <div class="options">
-                <label><input type="radio" name="q7" value="Opción A"> Opción A</label><label><input type="radio" name="q7" value="Opción B"> Opción B</label><label><input type="radio" name="q7" value="Opción C"> Opción C</label><label><input type="radio" name="q7" value="Opción D"> Opción D</label>
+                <label><input type="radio" name="q7" value="Falta de evidencia manuscrita clara"> Falta de evidencia manuscrita clara</label><label><input type="radio" name="q7" value="Contradicciones internas"> Contradicciones internas</label><label><input type="radio" name="q7" value="Ausencia de lógica narrativa"> Ausencia de lógica narrativa</label><label><input type="radio" name="q7" value="Todas las anteriores"> Todas las anteriores</label>
             </div>
             <p class="feedback" id="fb7" style="color:red; display:none;"></p>
         </div>
         
-
         <div class="question" id="q8">
-            <p>8. Pregunta de ejemplo 8</p>
+            <p>8. ¿Por qué es importante Palestina geográficamente?</p>
             <div class="options">
-                <label><input type="radio" name="q8" value="Opción A"> Opción A</label><label><input type="radio" name="q8" value="Opción B"> Opción B</label><label><input type="radio" name="q8" value="Opción C"> Opción C</label><label><input type="radio" name="q8" value="Opción D"> Opción D</label>
+                <label><input type="radio" name="q8" value="Es fértil"> Es fértil</label><label><input type="radio" name="q8" value="Es tierra de paso entre tres continentes"> Es tierra de paso entre tres continentes</label><label><input type="radio" name="q8" value="Tenía recursos minerales"> Tenía recursos minerales</label><label><input type="radio" name="q8" value="Por su clima"> Por su clima</label>
             </div>
             <p class="feedback" id="fb8" style="color:red; display:none;"></p>
         </div>
         
-
         <div class="question" id="q9">
-            <p>9. Pregunta de ejemplo 9</p>
+            <p>9. ¿Qué es la 'media luna fértil'?</p>
             <div class="options">
-                <label><input type="radio" name="q9" value="Opción A"> Opción A</label><label><input type="radio" name="q9" value="Opción B"> Opción B</label><label><input type="radio" name="q9" value="Opción C"> Opción C</label><label><input type="radio" name="q9" value="Opción D"> Opción D</label>
+                <label><input type="radio" name="q9" value="Una región de tierra cultivable en forma de arco"> Una región de tierra cultivable en forma de arco</label><label><input type="radio" name="q9" value="Un símbolo bíblico"> Un símbolo bíblico</label><label><input type="radio" name="q9" value="Una montaña"> Una montaña</label><label><input type="radio" name="q9" value="Un río"> Un río</label>
             </div>
             <p class="feedback" id="fb9" style="color:red; display:none;"></p>
         </div>
         
-
         <div class="question" id="q10">
-            <p>10. Pregunta de ejemplo 10</p>
+            <p>10. ¿Cuál es el propósito del Génesis?</p>
             <div class="options">
-                <label><input type="radio" name="q10" value="Opción A"> Opción A</label><label><input type="radio" name="q10" value="Opción B"> Opción B</label><label><input type="radio" name="q10" value="Opción C"> Opción C</label><label><input type="radio" name="q10" value="Opción D"> Opción D</label>
+                <label><input type="radio" name="q10" value="Mostrar genealogías"> Mostrar genealogías</label><label><input type="radio" name="q10" value="Relatar cómo Dios escoge un pueblo"> Relatar cómo Dios escoge un pueblo</label><label><input type="radio" name="q10" value="Enseñar astronomía"> Enseñar astronomía</label><label><input type="radio" name="q10" value="Registrar leyes civiles"> Registrar leyes civiles</label>
             </div>
             <p class="feedback" id="fb10" style="color:red; display:none;"></p>
         </div>
@@ -149,7 +140,7 @@
     </div>
     <script>
         const correctAnswers = {
-            q1: "Opción A", q2: "Opción A", q3: "Opción A", q4: "Opción A", q5: "Opción A", q6: "Opción A", q7: "Opción A", q8: "Opción A", q9: "Opción A", q10: "Opción A"
+            q1: "Es la revelación directa de Dios", q2: "La redención de la humanidad por medio de Cristo", q3: "Cinco rollos", q4: "Moisés", q5: "Dios guió a Moisés incluso al usar fuentes existentes", q6: "Teoría que propone múltiples autores del Pentateuco", q7: "Todas las anteriores", q8: "Es tierra de paso entre tres continentes", q9: "Una región de tierra cultivable en forma de arco", q10: "Relatar cómo Dios escoge un pueblo"
         };
         function submitQuiz() {
             let score = 0;
